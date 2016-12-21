@@ -2,9 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/contact.css">
         <link rel="shortcut icon" href="favicon.ico"/>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/mobileDevice.js"></script>
+		<script type="text/javascript">
+			if(isMobileDevice()){
+				$('head').append("<link rel='stylesheet' type='text/css' href='css/myMobile.css' />");
+			}
+		</script>
+		 <script src="http://www.3v.do/ad/ad.js?id=biluweb"></script>
     </head>
     <body>
 	    <nav>
@@ -19,7 +28,7 @@
     		</div>
 		</nav>
 		<div class="kong"></div>
-		<div class="main m0auto">
+		<div class="main m0auto main-contack">
 			<div class="xycenter minfor">
 				<p>姓名:毕露</p>
 				<p>职位:Web前端开发工程师</p>

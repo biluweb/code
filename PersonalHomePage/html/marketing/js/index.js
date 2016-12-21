@@ -1,11 +1,11 @@
 $(function(){
 
 	// 设定滚动或者点击的下标值
-	var key = 0;
+	var key = 0,startY;
 	// 函数节流的开关
 	var flag = true;
 	// 滚动事件
-	$(window).mousewheel(function(event,num){
+	$(document).bind('mousewheel',function(event,num){
 
 		//console.log(num)
 		
@@ -67,8 +67,6 @@ $(function(){
 
 		}
 
-
-
 	})
 
 	// 创建节点
@@ -118,6 +116,37 @@ $(function(){
     function dhua(){
         $('.page').addClass('Tlin').eq(key).removeClass('Tlin');
     }
+	
+	function movefn(event,num){
+    	if (!$('.wrap').is(':animated')) {
+	        var touch = event.originalEvent.changedTouches[0];
+	        var moveY = touch.pageY;
+	        var s=Math.abs(startY-moveY);
+	        if (startY > moveY&&s>50) {		//鈫�
+	        	num=-1;
+	        }else if(startY < moveY&&s>50){
+	        	num=1;
+	        }
+	        if(typeof num!=='undefined'){
+	        
+		       key = key - num;
 
-
+				if( key > 5 ) key = 5;
+				if( key < 0 ) key = 0
+	
+				$('.wrap').stop().animate({'top':-key*100+'%'},1000);
+				// 滚动到拿一屏就给哪一屏的小圆点添加current这个类
+				$('.nav li').removeClass('current').eq(key).addClass('current');
+	            dhua();
+	        }
+        }
+    }
+    
+    if(isMobileDevice()){
+		$(window).on('touchstart',function(event){
+			var touch = event.originalEvent.changedTouches[0];
+    		    startY = touch.pageY;
+    		 $(window).on('touchmove',movefn);
+		})
+    }
 })

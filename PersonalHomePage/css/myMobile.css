@@ -1,0 +1,53 @@
+@media (max-width:768px) {
+	header,.mypt img{width: 100%;}
+	header span{width: 300px;}
+	header span:before{width:50px;height:50px;-webkit-border-radius:50%;background-size: cover;left: -21px;}
+	header .mypt,.mypt i{width: 300px;height: 300px;}
+	.mypt p{padding-top:232px;font-size: 22px;line-height: 29px;}
+	
+	.head nav,nav{height: 50px;}
+	.dialogue{width: 120px;height: 67px;background-size:cover;left: 30% ;}
+	nav .nvbx{height: 49px;width: 90%;}
+	.nvbx h1{margin: 8px;margin-left: 0px;width: 32px;height: 32px;background-size: cover;}
+	.nvbx li{line-height: 49px;padding: 0 10px;}
+	.nvbx li a{font-size:15px;}
+	.nvbx li.current:before{height: 19px;left: 24px;}
+	.nvbx li.current:after{left: 22px;top:13px;}
+	.nvbx li:nth-child(2):before{left: 38px;}
+	.nvbx li:nth-child(2):after{left: 36px;}
+	.nvbx li:nth-child(3):before{left: 30px;}
+	.nvbx li:nth-child(3):after{left: 28px;}
+	
+	.pointer{width:41px;height: 39px;background-size: cover;}
+	
+	.mainbx{width:80%;padding: 10px 20px;}
+	.mainbx h1{font-size: 25px}
+	.mainbx h2{font-size: 14px}
+	.mainbx h3{font-size: 13px;}
+	.mainbx p{font-size: 12px;line-height: 24px;}
+	.evaluate h2{height: 30px;line-height: 30px;}
+	.undergo p{padding: 0;}
+	
+	footer{height: 50px;background-size: cover;}
+	
+	.warp,.main-contack{width:90%;}
+	.warp .main{width:95%;}
+	.warp a{display: block;}
+	.warp h1{font-size: 25px;}
+	.main-ft{height: 40px;}
+	.main-ft p{font-size: 20px;line-height: 40px;}	
+	.clik{width: 100%;}
+	.main-hd{height: auto;}
+	.main-hd img{display: block;width: 100%;}
+	
+	.minfor{width: 80%;}
+	.main-contack p{font-size:20px;line-height: 40px;}
+	.kong{height: 50px;}
+	.xtp{margin-top:65px;}
+}
+@media (max-width:414px) {
+	.progress{width: 310px;margin-left:-159px;}
+}
+@media (max-width:374px) {
+	.dialogue{display: none;}
+}

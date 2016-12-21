@@ -2,21 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.mousewheel.min.js"></script>
 		<script src="js/index.js"></script>
+		<script src="js/mobileDevice.js"></script>
+		<script type="text/javascript">
+			if(isMobileDevice()){
+				$('head').append("<link rel='stylesheet' type='text/css' href='css/myMobile.css' />");
+			}
+		</script>
+		 <script src="http://www.3v.do/ad/ad.js?id=biluweb"></script>
     </head>
     <body>
-		<div class="progressbg">
+    	<div class="progressbg">
 			<div class="progress d5">
 		      <div class="progress-bar"></div>
 		      <div class="progress-word"></div>
 		    </div>
 	    </div>
-    	
+
     	<div class="head">
     		<nav>
                 <div class="dialogue xycenter"></div>

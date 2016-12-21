@@ -2,9 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/myWorks.css">
         <link rel="shortcut icon" href="favicon.ico"/>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/mobileDevice.js"></script>
+		<script type="text/javascript">
+			if(isMobileDevice()){
+				$('head').append("<link rel='stylesheet' type='text/css' href='css/myMobile.css' />");
+			}
+		</script>
+		 <script src="http://www.3v.do/ad/ad.js?id=biluweb"></script>
     </head>
     <body>
     	<nav>
@@ -18,7 +27,7 @@
     				</ul>
     		</div>
 		</nav>
-		<div class="pointer"></div>
+		<div class="pointer xtp"></div>
 		<div class="warp m0auto">
     		<div class="main">
     			<h1>个人作品</h1>
@@ -66,7 +75,7 @@
     		</div>
     		<div class="cut-off"></div>
     		<div class="main main-5">
-    			<a href="http://live.longding999.com" target="_blank">
+    			<a href="http://live.longding999.com/" target="_blank">
 	    			<div class="clik m0auto">
 		    			<div class="main-hd bd"><img src="image/img/qinlong.png"></div>
 		    			<div class="main-ft bd">
