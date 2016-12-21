@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+		<style type="text/css">
+			div{position: absolute;background:rgba(0,0,0,0.5);}
+			.box1{width: 100px;height: 100px;}
+			.box2{width: 200px;height: 200px;}
+			.box3{width: 300px;height: 300px;}
+			.box4{width: 400px;height: 400px;}
+			.box5{width: 500px;height: 500px;}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+	</body>
+	<script type="text/javascript">
+        function hcenter(obj,dir){
+    		var viewWidth=document.documentElement.clientWidth,
+    			viewHeight=document.documentElement.clientHeight,
+	    		 div=obj,
+	    		c=function(obj,dir){
+	    			if(obj){
+	    				if(dir=='xy'){
+	    					obj.css({top:(viewHeight-obj.height())/2,left:(viewWidth-obj.width())/2});
+	    				}else if(dir=='x'){
+	    					obj.css({left:(viewWidth-obj.width())/2});
+	    				}else if(dir=='y'){
+	    					obj.css({top:(viewHeight-obj.height())/2});
+	    				}
+	    			}
+	    		};
+			for(var i=0,l=div.length;i<l;i++){
+				c(div.eq(i),dir);
+			}
+        }
+		hcenter($('div'),'xy');
+		window.onresize=function(){
+			hcenter($('div'),'xy')
+		}
+	</script>
+</html>

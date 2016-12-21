@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*弹出层开始*/
+			.Popup-mask{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.3; filter:alpha(opacity=30);z-index:10000;}
+			.Popup-material{position:absolute;z-index:10001;}
+			.Material-content{position:relative;}
+			
+			.layui-layer-setwin {
+			    position: absolute;
+			    right: 15px;
+			    top: 15px;
+			    font-size: 0;
+			    line-height: initial;
+			}
+			.layui-layer-setwin a {
+			    position: relative;
+			    width: 16px;
+			    height: 16px;
+			    margin-left: 10px;
+			    font-size: 12px;
+			    _overflow: hidden;
+			}
+			.layui-layer-setwin .layui-layer-close2 {
+			    position: absolute;
+			    right: -28px;
+			    top: -28px;
+			    width: 30px;
+			    height: 30px;
+			    margin-left: 0;
+			    background-position: -149px -31px;
+			    _display: none;
+			}
+			.layui-layer-btn a, .layui-layer-dialog .layui-layer-ico, .layui-layer-setwin a {
+			    display: inline-block;
+			    vertical-align: top;
+			}
+			.layui-layer-ico {
+			    background: url(default/icon.png) no-repeat;
+			}
+			.layui-layer-close {
+			    position: absolute;
+			}
+		</style>
+		<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="material.js"></script>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	function kaov(n){
+        material.open({
+            position:n,    
+            src: '23534153_183041051300_2.jpg',        
+            behavior: 'link',   
+            doc: "http://biluweb.web3v.com",
+            area:['350px',''],
+            style: { content: 'border:1px solid #fff;border-top:1px solid #ff4'}, 
+            closable:true,
+            mask:false,
+        });
+    }
+
+        kaov('center');
+        kaov('left-bottom');
+        kaov('right-top');
+        kaov('top')
+        kaov('right')
+        kaov('bottom')
+        kaov('left')
+        kaov('left-top')
+        kaov('right-bottom')
+</script>
