@@ -134,7 +134,7 @@ window.onload=function(){
 			var time=8000+Math.floor(Math.random()*2000);
 			setTimeout(function(){newDiv.className+=' flight';}, 200);
             //测试专用函数
-			//setTimeout(function(){newDiv.parentNode.removeChild(newDiv);},time);
+			setTimeout(function(){newDiv.parentNode.removeChild(newDiv);},time);
 		},
 		kedown:function(){
 			document.addEventListener('keydown',fn.kd, false);
