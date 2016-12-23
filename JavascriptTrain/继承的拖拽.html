@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>继承的拖拽</title>
+	</head>
+	<style type="text/css">
+	body{color: #fff;}
+		div{width: 100px;height: 100px;background:yellowgreen;text-align: center;line-height: 100px;cursor: move;position: absolute;}
+		.a{left: 10%;}
+		.b{background:purple;left: 30%;}
+		button{display: block;margin: 5px auto;font-size: 25px;}
+	</style>
+	<body>
+		<button>添加卡片</button>
+	</body>
+</html>
+<script type="text/javascript">
+	//解决 IE 或者兼容模式不支持 document.getElementsByClassName() 的方法
+	//http://www.cnblogs.com/allforone/p/4184632.html
+	var getElementsByClassName = function (searchClass, node,tag) {
+	  if(document.getElementsByClassName){
+	    var nodes =  (node || document).getElementsByClassName(searchClass),result = [];
+	      for(var i=0 ;node = nodes[i++];){
+	        if(tag !== "*" && node.tagName === tag.toUpperCase()){
+	          result.push(node)
+	        }
+	      }
+	      return result
+	    }else{
+	      node = node || document;
+	      tag = tag || "*";
+	      var classes = searchClass.split(" "),
+	      elements = (tag === "*" && node.all)? node.all : node.getElementsByTagName(tag),
+	      patterns = [],
+	      current,
+	      match;
+	      var i = classes.length;
+	      while(--i >= 0){
+	        patterns.push(new RegExp("(^|\\s)" + classes[i] + "(\\s|$)"));
+	      }
+	      var j = elements.length;
+	      while(--j >= 0){
+	        current = elements[j];
+	        match = false;
+	        for(var k=0, kl=patterns.length; k<kl; k++){
+	          match = patterns[k].test(current.className);
+	          if (!match)  break;
+	        }
+	        if (match)  result.push(current);
+	      }
+	      return result;
+	    }
+   }
+
+
+	//继承拖拽
+	
+	//方法继承
+	function extend(obj1,obj2){
+		for(var attr in obj2){
+			obj1[attr]=obj2[attr];
+		}
+	}
+
+	function Drag(cl){//父类
+		this.obj=document.getElementsByClassName(cl);
+		this.disx=null;
+		this.disy=null;
+	}
+	Drag.prototype.init=function(){
+		var This=this;
+		for (var i=0;i<this.obj.length;i++) {
+			this.obj[i].index=i;
+			this.obj[i].onmousedown=function(e){
+				var e=e||window.event;
+				var index=this.index;
+				This.fndown(e,index)
+				document.onmousemove=function(e){
+					var e=e||window.event
+					This.fnmove(e,index)
+					return false;
+				}
+				document.onmouseup=function(){
+					This.fnup()
+				}
+			}
+		}
+	}
+	Drag.prototype.fndown=function(e,index){
+		this.disx=e.clientX-this.obj[index].offsetLeft;
+		this.disy=e.clientY-this.obj[index].offsetTop;
+	}
+	Drag.prototype.fnmove=function(e,index){
+		this.obj[index].style.left=e.clientX-this.disx+'px'
+		this.obj[index].style.top=e.clientY-this.disy+'px'
+	}
+	Drag.prototype.fnup=function(){
+		document.onmousemove=null;
+		document.onmouseup=null;
+	}
+	
+	function ChildDrag(cl){//子类
+		Drag.call(this,cl);//注意继承要写在前面
+	}
+	extend(ChildDrag.prototype,Drag.prototype);//注意继承要写在前面
+	
+	ChildDrag.prototype.fnmove=function(e,index){
+		var l=e.clientX-this.disx,
+			t=e.clientY-this.disy,
+			jw=document.documentElement.clientWidth-this.obj[index].clientWidth,
+			jh=document.documentElement.clientHeight-this.obj[index].clientHeight;
+			if(l<0){l=0}else if(l>jw){
+				l=jw
+			}
+			if(t<0){t=0}else if(t>jh){
+				t=jh;
+			}
+		this.obj[index].style.left=l+'px'
+		this.obj[index].style.top=t+'px'
+	}
+	
+
+	
+	//添加卡片
+	document.getElementsByTagName('button')[0].onclick=function(){
+		var oDiv = document.createElement('div'),
+			oDiv2=document.createElement('div');
+		oDiv.className='a';
+		oDiv.innerHTML='可以出界';
+		oDiv2.className='b';
+		oDiv2.innerHTML='不可以出界';
+		document.body.appendChild(oDiv);
+		document.body.appendChild(oDiv2);
+		
+		var drag1=new Drag('a');
+		drag1.init();
+		
+		var drag2=new ChildDrag('b');
+		drag2.init();
+	}
+</script>

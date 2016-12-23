@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>对象的继承</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//继承子类不影响父类
+	//属性继承： 调用父类的构造函数 call
+	//方法继承： for in 拷贝继承 （jquery）
+	
+	function extend(obj1,obj2){
+		for(var attr in obj2){
+			obj1[attr]=obj2[attr];
+		}
+	}
+	function CreatePerson(name,age){//父类
+		this.name=name;
+		this.age=age;
+	}
+	CreatePerson.prototype.Showname=function(){
+		alert(this.name);
+	}
+	
+	function CreateStars(name,age,sex){//子类
+		//.call 修改this指向
+		CreatePerson.call(this,name,age)
+		this.sex=sex;
+	}
+//	CreateStars.prototype=CreatePerson.prototype;   //对象的引用是可以互相影响的
+	extend(CreateStars.prototype,CreatePerson.prototype);
+	CreateStars.prototype.Showsex=function(){
+		alert(this.sex);
+	}
+	
+	var p=new CreatePerson('小敏','25');
+	var p2=new CreateStars('小敏','25','女');
+	console.log(p,p2);
+</script>
