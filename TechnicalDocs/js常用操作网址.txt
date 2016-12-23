@@ -1,0 +1,1 @@
+1.js DOM节点的创建、插入、删除、查找、替换例子--------http://www.111cn.net/wy/js-ajax/64107.htm
