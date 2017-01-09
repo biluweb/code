@@ -1,0 +1,47 @@
+
+.abstract{padding-bottom:80px;}
+.abstract .container{background: url(../images/kisslong_img/abstract_bg.png) 501px 63px no-repeat;}
+.abstract-tex h2{color: #404040;}
+.abstract-tex p{font-size: 16px;color: #888888;line-height: 30px;margin-top:22%;}
+.abstract .row{margin-top:74px;}
+.abstract-img img{float: left;}
+.abstractimg1{margin-top: 98px;}
+.abstractimg2{margin-left:20px;}
+
+.course{height: 655px;background: url(../images/kisslong_img/qoihgqka.jpg) no-repeat;background-size:1920px 100%;overflow: hidden;}
+.course h2{color: #fff;margin-top: 70px;}
+.course .path{width: 1170px;height:400px;margin-left:106px;background: url(../images/kisslong_img/yingdao.png) center no-repeat;position: relative;}
+.course .path img,.path .Plane{position: absolute;}
+.path .a1{top:274px;left:-7px;}
+.path .a2{top:203px;left:183px;}
+.path .a3{top:216px;left:353px;}
+.path .a4{top:141px;left:549px;}
+.path .a5{top:167px;left:724px;}
+.path .a6{top:92px;left:911px;}
+.path .Plane{top:533px;left:-217px;transform:rotate(66deg);transition: all 1.5s;}
+.path .Plane.f1{top:274px;left:47px;transform:rotate(69deg);}
+.path .Plane.f2{top:206px;left:216px;transform:rotate(69deg);}
+.path .Plane.f3{top:224px;left:402px;transform:rotate(94deg);}
+.path .Plane.f4{top:153px;left:590px;transform:rotate(65deg);}
+.path .Plane.f5{top:181px;left:776px;transform:rotate(101deg);}
+.path .Plane.f6{top:112px;left:962px;transform:rotate(65deg);}
+.path .Plane.f7{top:108px;left:1044px;transform:rotate(87deg);}
+.path .Plane.f8{top:31px;left:1091px;transform:rotate(26deg);}
+
+.paimg{display: none;width: 100%;}
+.paimg img{width: 100%;}
+
+.prospect{position: relative;}
+.prospect .pros-top{height: 466px;background: url(../images/kisslong_img/prosbg.png) center bottom no-repeat;}
+.prospect .pros-bot{height: 215px;background: #000;display: block;}
+.prospect h2{margin-top: 74px;}
+.prospect-tex{width: 592px;border: 1px solid #ccc;padding: 28px 55px;font-size: 16px;color: #888;line-height:150%;text-indent:2em;background: #fff;}
+.prospect-tex .eq2{margin-top: 42px;}
+
+.texture{padding: 56px 0 94px;}
+.texture img{width: 100%;}
+
+.institution{background:#000;padding: 29px 0 34px;}
+.institution h3{font-size: 24px;color:#fff;margin-bottom:20px;}
+.institution p{font-size: 14px;color: #fff;}
+.institution .fR{text-align: right;}

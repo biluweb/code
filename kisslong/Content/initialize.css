@@ -1,0 +1,24 @@
+@charset"utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,button,fieldset, legend,img { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ font-size:14px; /*font-weight:normal;*/}
+fieldset,img{ border:none; }
+img{display:block; }
+em{ font-style:normal;}
+ul,ol{list-style:none; }
+a{text-decoration:none;}
+body{background:#fff; font-size:12px;font-family:"微软雅黑";}
+.fL{float: left;}
+.fR{float: right;}
+.clearfix:after{content:"";display: block;clear:both;}
+.clearfix{zoom:1;}
+.m0auto{margin: 0 auto;}
+.m10auto{margin: 10px auto;}
+.xycenter{position:absolute;top: 50%;left: 50%;-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);
+}
+.ycenter{position:absolute;top: 50%;-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);
+}
+.xcenter{position:absolute;left: 50%;-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);-o-transform:translateX(-50%);-ms-transform:translateX(-50%);
+}

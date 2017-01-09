@@ -1,0 +1,67 @@
+/* iteration Responsive of Pc*/
+
+@media (min-width:0px)and (max-width:1420px){
+	.kissApp1 .phone{width:185px;height:382px;background-size:cover;-ms-behavior:url(bootstrap/js/backgroundsize.min.htc);behavior:url(bootstrap/js/backgroundsize.min.htc);}
+	.kissApp1 .kissApp-app .appb{height: auto;width: 371px;}
+	.kissApp1 .chop{width: 167px;height:294px;top:46px;left:9px;}
+	.kissApp1 .chop li{width: 167px;height: 294px;}
+	/*首页*/
+	.carousel-inner li.two .carousel-caption{top:35%}
+	.carousel-inner li.one .mg01{width:963px;height: auto;}
+	.carousel-inner li.two .e2mg01{width: 776px;height:auto;top: 58%;}
+	.abstract .row{margin-top: 8%;}
+	.abstract-tex p{margin-top: 13%;}
+	.abstract-img .abstractimg1{float:right;margin-right:114px;}
+	.abstractimg2{display: none;}
+	.kissApp h2{margin-top: 28px;}
+	.kissApp .row{margin-top:19px;}
+	.htex {margin-top: 22px;}
+	.ewmbox{margin-top: 50px;}
+/*	.kissApp-app .appb{margin-top: -52px;}*/
+	.attractconsult .ft01{width: 306px;}
+	.main-in{margin-top: 26px;}
+	.main-in img{width: 322px;}
+	.main-in .mpwrap a{left:30px;bottom:17px;font-size:12px;}
+	/*关于我们*/
+	.course .path{margin-left: -6px;}
+	.texture img{width:100%;}
+	/*公司风采*/
+	.carousel{width:100%;}
+	.carousel-in{width: 92%;}
+	.attractconsult2 .ft01{width: 496px;}
+	.attractconsult2 .main-in{margin-top:76px;}
+	/*加入我们*/
+	.Manner-infor img{width: 100%;}
+	.contact li{margin: 0 43px;}
+	/*吉林国际and华商*/
+	.file-in li{width: 323px;}
+	.aptitudehua .file-in li{margin:0 82px;}
+}
+@media (min-width:0px)and (max-width:1200px){
+	.carousel-inner li.one .mg01{width: 1170px;}
+	.Metalstouch-title img.logo_r{display: none;}
+	.attractconsult2 .ft01{width: 378px;right: 34px;height: auto;}
+	.contact li{margin: 0 18px;}
+	/*关于我们*/
+	.course .path{background-image: none;width: auto;}
+	.course .path>img{display: none;}
+	.paimg{display: block;}
+	/*吉林国际and华商*/
+	.league .main-r img{margin-top:100px;}
+	.file-in li{width:264px;}
+	.PCdownload h3{font-size: 22px;}
+	.bankimg li{height: 79px;}
+	.commodity .main-r img{margin-top:190px;}
+	.aptitudehua .file-in li{margin:0 77px;}
+}
+@media (min-width:0px)and (max-width:992px){
+	/*关于我们*/
+	.course .path{background-image: none;}
+	.course .path>img,.drop{display: none;}
+	.paimg{display: block;}
+	.course .path{width: 100%;}
+	/*.navbar-Metalstouch{overflow: hidden;}*/
+}
+@media (min-width:0px)and (max-width:767px){
+	
+}
