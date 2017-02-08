@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/Cal/Cal",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "计算器",
+    "navigationBarTextStyle":"black"
+  }
+}
