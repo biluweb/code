@@ -1,0 +1,6 @@
+/* pages/search/search.wxss */
+.searcht{background: #3a3a3a;padding: 20px 0 3px 20px;color: #ffffff;font-size: 12px;border-bottom: 1px solid #616161;}
+.receive{display: flex;}
+.receive input{border: 1px solid #ccc;background: #fff;color: #000;height: 26px;width: 212px;}
+.receive button{height: 30px;line-height: 30px;background: #dd5e0e;color: #fff;margin-left:10px;font-size: 15px;}
+.tips{padding-top: 8px;}
