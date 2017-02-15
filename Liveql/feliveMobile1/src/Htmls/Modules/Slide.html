@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/Content/css/Modules/Slide.css" />
+<div id="popover" class="off-canvas-top">
+	<header class="mui-bar mui-bar-nav">
+	<a href="javascript:;" class="mui-icon mui-action-menu mui-pull-left">
+		<img src="/Images/Zhibo/livebox/icon/youke.png" />
+	</a>
+    <a href="javascript:;" id="closePopover" class="mui-icon mui-pull-right">
+    	<i class="iconspri icon-slideclose"></i>
+    </a>
+    <h1 class="mui-title">
+    	<img src="/Images/base/Logo.png"/>
+    </h1>
+	</header>
+	
+	<div class="mui-content">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<dl class="zhibo-nav">
+					<dt>服务入口</dt>
+					<dd>
+						<a href="/Htmls/index.html"><i class="iconspri icon-home"></i> <span>首页</span></a>
+					</dd>
+					<dd>
+						<a href="/Htmls/SlideDetails/vipTic_m.html"><i class="iconspri icon-vipzf"></i> <span>VIP战法</span></a>
+					</dd>
+					<dd>
+						<a href="/Htmls/SlideDetails/calendar_m.html"><i class="iconspri icon-calendar"></i> <span>财经日历</span></a>
+					</dd>
+					<dd>
+						<a href="/Htmls/SlideDetails/teacher_m.html"><i class="iconspri icon-referral"></i> <span>老师介绍</span></a>
+					</dd>
+					<dd>
+						<a href="/Htmls/SlideDetails/softDown_m.html"><i class="iconspri icon-downloadsoft"></i> <span>软件下载</span></a>
+					</dd>
+					<dd>
+						<a href="/Htmls/SlideDetails/college_m.html"><i class="iconspri icon-college"></i> <span>钦龙学院</span></a>
+					</dd>
+					<dd>
+						<a href="/Htmls/SlideDetails/activity_m.html"><i class="iconspri icon-activitye"></i> <span>活动入口</span></a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+mui.ready(function(){
+	//下滑导航
+	var slidnav=new SlideDt('#openPopover','#closePopover');
+	slidnav.init();
+
+})
+</script>

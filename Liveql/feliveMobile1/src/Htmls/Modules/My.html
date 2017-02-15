@@ -1,0 +1,138 @@
+<!-- 菜单容器 -->
+<script type="text/javascript">
+	mui.init({
+		gestureConfig:{
+		   swipe: false, //默认为true
+		 }
+	});//mui初始化
+	
+</script>
+<script src="/Scripts/base/PackagingFunction.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="/Content/css/Modules/My.css" />
+<script src="/Scripts/ComPonent/layer_mobile/layer.js"></script>
+<aside class="mui-off-canvas-left" id="offCanvasSide">
+    <!-- 菜单具体展示内容 -->
+    <div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			
+			<!--酱油状态-->
+		    <div class="youke" >
+		    	<img src="/Images/Zhibo/livebox/icon/youke.png">
+		    	<span>游客402LF</span>
+		    	
+		    	<!--登录注册按钮-->
+		        <div id="user-state-container" class="logoOrSign">
+		            <a href="/Htmls/MyDetails/LoginAndRegistration.html" id="btnlogin" class="mui-btn login_btn">登录</a>
+		            <a href="/Htmls/MyDetails/LoginAndRegistration.html" class="mui-btn logoOrSign_sign" >注册</a>
+		        </div>
+		    </div>
+		    
+		    <!--登录状态-->
+		    <div class="logined" style="display: none;">
+		        <img src="/Images/Zhibo/livebox/icon/huiyuan.png">
+		        <span>text5288</span>
+		        
+		        <!--个人中心-->
+		        <div class="preinfor" >
+		        	<div class="concenper">
+						<a href="/Htmls/MyDetails/ModifyInfo.html">
+			            	<em><i class="iconspri icon-cenp"></i> <span>个人中心</span></em>
+			            	<i class="iconspri icon-detailso fr"></i>
+		            	</a>
+		        	</div>
+					<div class="conloginout">
+						<a href="javascript:;"><i class="iconspri icon-cout"></i> <span>退出</span></a>
+					</div>
+		        </div>
+		    </div>
+		    
+		    <!--内容区-->
+		    
+		    <div class="canvas-left-infor">
+		    	<div class="customer-service">
+		    		<h2 class="htitle"><span>在线客服</span></h2>
+		    		<a href="javascript:ContactQQ();" class="mui-btn tasi">
+		                <i class="iconspri icon-aid"></i>
+		                <span class="tlv-txt">老师助理</span>
+		            </a>
+		            <a href="javascript:ContactQQ();" class="mui-btn mof">
+		                <i class="iconspri icon-way"></i>
+		                <span class="tlv-txt">领取战法</span>
+		            </a>
+		            <a href="javascript:ContactQQ2();" class="mui-btn ptt">
+		                <i class="iconspri icon-league"></i>
+		                <span class="tlv-txt">招商加盟</span>
+		            </a>
+		            <a href="javascript:ContactQQ();" class="mui-btn ope">
+		                <i class="iconspri icon-openac"></i> <span>在线开户</span>
+		            </a>
+		            <a href="javascript:ContactQQ();" class="mui-btn sup">
+		                <i class="iconspri icon-support"></i> <span>技术支持</span>
+		            </a>
+		            <a href="javascript:ContactQQ();" class="mui-btn pre">
+		                <i class="iconspri icon-press"></i> <span>联系客服</span>
+		            </a>
+			    </div>
+			    
+			    <div class="share">
+			    	<h2 class="htitle"><span>分享</span></h2>
+			    	<div class="bdsharebuttonbox">
+						<a href="javascript:;" class="bds_sqq"></a>
+						<a href="javascript:;" class="bds_tsina"></a>
+						<a href="javascript:;" class="bds_qzone"></a>
+					</div>
+			    </div>
+			    
+			    <div class="clause">
+			    	<h2 class="htitle"><span>用户服务条款</span></h2>
+			    	<p class="mystatement">《风险提示及服务声明》</p>
+			    </div>
+		    </div>
+		</div>
+	</div>
+</aside>
+<script>
+mui.ready(function(){
+	//阻止侧滑菜单拖拽事件
+	var offCanvasInner = document.querySelector('.mui-inner-wrap');
+	offCanvasInner.addEventListener('drag', function(event) {
+	    event.stopPropagation();
+	});
+	
+	//mui滚动调用
+	mui('.mui-scroll-wrapper').scroll({
+		scrollY: true, //是否竖向滚动
+		 scrollX: false, //是否横向滚动
+		 startX: 0, //初始化时滚动至x
+		 startY: 0, //初始化时滚动至y
+		 indicators: true, //是否显示滚动条
+		 deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+		 bounce: true, //是否启用回弹
+	});
+	
+	//解决a标签不跳转问题
+	mui('body').on('tap','a',function(){document.location.href=this.href;});
+	
+	//风险提示说明
+	var statebtn=doc.querySelector('.mystatement');
+	statebtn.addEventListener('tap',myopenstate);
+	function myopenstate(){
+		layer.open({
+		  type: 1,
+		  className:'statementOpened',
+		  title: '风险提示与用户服务',  
+		  anim: 'up',
+		  content:'<div class="framewrap" style="width:100%;height:100%;-webkit-overflow-scrolling:touch;overflow:auto;"><iframe src="/htmls/MyDetails/Statement.html" frameborder="0" style="width:100%;height:100%;"></iframe>',
+//		  btn: ['同意','拒绝'],
+		  success: function(elem){
+			  var stat=elem.querySelector('.statementOpened'),
+			  	  title=stat.querySelector('h3'),
+			  	  btn=stat.querySelector('.layui-m-layerbtn');
+			  	  title.appendChild(doc.createElement("span"));
+		  	  stat.querySelector('h3 span').addEventListener('tap',function(index){layer.closeAll();})
+		  	  elem.querySelector('.framewrap').style.height=stat.clientHeight-title.clientHeight-18+'px';
+		  },
+		});  
+	}
+})
+</script>

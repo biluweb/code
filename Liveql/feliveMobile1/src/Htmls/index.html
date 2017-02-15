@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>钦龙点金</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Content/css/mui-sass/sass/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Content/css/reset.css" />
+		<link rel="stylesheet" href="/Content/css/Zhibo/icon.css" />
+		<link rel="stylesheet" href="/Content/css/index.css" />	
+		<script src="/Content/css/mui-sass/js/mui.js"></script>
+		<script src="/Scripts/ComPonent/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/Scripts/base/AnswerHeight.js"></script>
+	</head>
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		    <!-- 侧滑导航根容器 -->
+		    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+		        <!-- 主页面容器 -->
+		        <div class="mui-inner-wrap">
+	            <!-- 菜单容器 -->
+	            @@include('Modules/My.html')
+	            <!-- 主页面标题 -->
+	            @@include('Modules/Nav.html')	            
+				<!--快速导航-->
+				@@include('Modules/Slide.html')
+				
+				<!--主要内容-->			
+				<div class="mui-content">
+					
+					<!--视频区-->
+					@@include('Zhibo/Video.html')
+					
+					<!--功能区-->					
+					<div id="leftTabBox" class="tabBox">
+						<div class="hd">
+							<ul>
+								<li><a href="javascript:;">在线聊天</a></li>
+								<li><a href="javascript:;">课程表</a></li>
+								<li><a href="javascript:;">实时行情</a></li>
+								<li><a href="javascript:;">操作建议</a></li>
+							</ul>
+						</div>
+						<div class="bd">
+								<ul>
+									<!--这里是在线聊天-->
+									@@include('Zhibo/Chitchat.html')
+								</ul>
+								<ul>
+									<!--课程表-->
+									@@include('Zhibo/Syllabus.html')
+								</ul>
+								<ul>
+									<!--实时行情-->
+									@@include('Zhibo/Market.html')
+								</ul>
+								<ul>
+									<!--操作建议-->
+									@@include('Zhibo/Suggest.html')
+								</ul>
+						</div>
+					</div>
+					<script type="text/javascript">TouchSlide({ slideCell:"#leftTabBox"});</script>
+					
+				</div>
+		       	<div class="mui-off-canvas-backdrop"></div>
+		        </div>
+		    </div>
+	</body>
+</html>
+<script type="text/javascript">
+//mui.ready() ---入口函数
+mui.ready(function(){	
+	//页面响应
+	var tabulauto=new AutoHeight();
+	tabulauto.init();
+	window.addEventListener('resize',function(){
+		tabulauto.init();
+	})
+})
+</script>

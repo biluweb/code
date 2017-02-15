@@ -1,0 +1,44 @@
+//base
+@import 'Zhibo/base';
+
+/* 本例子css -------------------------------------- */
+.tabBox {
+    >.hd{
+        height:40px; line-height:40px;font-size:16px; background:#EBEBEB;
+        border-bottom: 1px solid #EA4335;
+        ul{ overflow:hidden;
+            li{ float:left;color:#515151;height:39px; line-height:39px;text-align: center;
+                width: 25%;border-right:1px solid #FFFFFF;border-left:1px solid #FFFFFF;
+            }
+            li:nth-child(4){
+                border-right-color: transparent;
+            }
+            li:nth-child(1){
+                border-left-color: transparent;
+            }
+            a{color: #2D2F33;}
+            .on{ border-bottom:1px solid #EA4335; 
+                a{ display:block; /* 修复Android 4.0.x 默认浏览器当前样色无效果bug */ color:#EA4335; }
+            }
+            .mui-scroll-wrapper{width: 100%;}
+        }
+    }
+    .bd{
+        >ul{ position: relative;height:387px; 
+            a{ -webkit-tap-highlight-color:rgba(0,0,0,0); }  /* 去掉链接触摸高亮 */ 
+            >li{ height:33px; line-height:33px;  
+                a{ color:#555;  }
+            }
+        }
+        >ul:last-child{background: #fafafa;}
+    }
+}
+
+//聊天区css
+@import 'Zhibo/Chitchat';
+
+//课程表css
+@import 'Zhibo/Syllabus';
+
+//操作建议css
+@import 'Zhibo/Suggest';

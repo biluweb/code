@@ -1,0 +1,89 @@
+$basecolor:#ea4335;
+.logandreg{padding-top: 48px;
+    .tab{font-size: 18px;color: #333333;text-align: center;padding-top: 66px;
+        li.on{color: $basecolor;border-bottom: 2px solid $basecolor;}
+        ul{overflow: hidden;zoom: 1;}
+        ul li{padding: 10px;display: inline-block;}
+    }
+    .mui-input-row{
+        input{height: 42px;color: #333333;padding: 10px;margin-bottom: 13px;font-size: 14px;}
+    }
+    form{width:85%;margin: 0 auto;}
+    .infor{padding-top: 18px;font-size: 14px;
+        >div{display: none;}
+        >div.active{display: block;}
+    }
+//  .loginerror,.regerror{color:$basecolor;height: 22px;
+//      em.error{position: relative;padding-left: 19px;}
+//      em.error:before{content: '';position: absolute;width:15px;height: 14px;top:3px;left: 0;background: url(/Images/base/iconspri.png) -23px -91px no-repeat;background-size: 414px 736px;}
+//  }
+    #loginpwd{margin-bottom: 10px;}
+    .login,.register{height: 44px;background: $basecolor;display: block;color: #fff;text-align: center;line-height: 44px;font-size: 16px;border-radius: 3px;margin: 26px 0 12px;}
+    .register{margin: 18px 0 14px;background: #afafaf;color: #fff;}
+    .register.yes{background: $basecolor;}
+    .login-fd{color: #666666;
+        .autlogin+label{top:2px;margin-right: 8px;}
+        .help{float:right;
+            a{ color: $basecolor;}
+        }
+    }
+    #reg_chkcode{display:inline-block;float: left;width: 67%;}
+    #re_TestGetCode{display: inline-block;    width: 30%;
+        background: #afafaf;
+        height: 42px;
+        color: #fff;
+        text-align: center;
+        float: right;
+        line-height:42px;
+        border-radius: 2px;
+        color: #333333;
+        }
+     .register-password input{margin-bottom: 8px;}
+     .agreement{position: relative;
+         p{display: inline-block;
+            a{color: $basecolor;}
+         }
+         .regular-checkbox+label{top:2px;margin-right: 8px;}
+     }
+     #reg_form{
+         p{color: #666666;}
+         .hint{padding-top:5px;}
+         .downapp{margin-top:48px;}
+     }
+     .pass-state{margin-top: 0;}
+    .downapp{font-size: 16px;color: $basecolor;text-align: center;height: 44px;line-height: 44px;display: block;border:1px solid $basecolor;border-radius: 2px;margin-top: 100px;margin-bottom: 40px;}
+}
+input[type='checkbox']{display: none;}//解决ios不隐藏问题
+.regular-checkbox + label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+//  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding:7px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+.regular-checkbox + label:before{
+    content: '';position: absolute;top:3px;left: 0px;width: 14px;height: 10px;background: url(/Images/base/iconspri.png) -23px -107px no-repeat;background-size: 414px 736px;display: none;
+}
+.regular-checkbox:checked + label:before{
+    display: block;
+}
+
+//.layui-m-layermain .statementOpened{
+//  width:95%;
+//  height: 85%;
+//  h3{background-color:#ececec; color:#333333;font-size: 18px;height: 42px;line-height: 42px;padding: 0 16px;border-bottom: 1px solid #D0D0D0;}
+//  .layui-m-layerbtn{
+////      span{height: 48px;color: #fff;border-radius: 0;font-size: 16px;}
+//      span[no]{color:#666}
+//      span[yes]{color:$basecolor;}
+//  }
+//  .layui-m-layercont{border: 1px solid #e6e6e6;margin: 4px 14px;}
+//  iframe{}
+//}
+
+@media(max-width:374px){
+    .logandreg .tab{padding-top: 14px;}
+    .logandreg .downapp{margin-top: 25px;}
+}

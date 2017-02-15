@@ -1,0 +1,100 @@
+//nav.css
+#top{
+	font-size: 14px;
+	.header .navbar,.navbar-header{height: 60px;}
+	.navbar-header,.account-save{float:left;}
+	.Metalstouch-title{padding:8px 30px}	
+	.btn{margin-top:14px;}
+	
+	.account-save{
+		margin-left:4px;
+		.btncl-2{margin-left: 10px;}
+	}
+	.btncl-1{
+		.con1{top:5px;}
+		span{position:relative;top:1px;}
+	}
+	.nav-l{float:left;}
+	.nav-r{
+		float:right;
+		.btnnav{
+			&.mof,&.ptt{margin-left: 8px;}
+		}
+		.navrt{
+			.tlv{
+				.taid{top:1px;font-size: 19px;
+					line-height: 1.42;
+				}
+				.mof{
+					.taid{top:2px;}
+				}
+			}
+		}
+	}
+	
+// #top .tourist .logined-in #btnlogininfo{ font-size: 16px; }
+// #top .tourist .logined-in .preinfor{ width: 110px;height: 80px;}
+// #top .tourist .logined-in .preinfor .prein div{ padding: 0px 5px;}
+// .prein .center-per,.prein .loginout{ width: 100%;line-height: 38px;}
+// #top .tourist .logined-in .preinfor .prein{ margin-top: 0}
+// #top .tourist .logined-in .preinfor .prein i{ margin: 0 3px }
+// .center-per:hover,.loginout:hover{background-color: black}
+
+// #top .tourist .logined-in .prein a{ font-size: 14px}
+
+	.logoOrSign {
+		margin-left: 12px;display: block;
+		.login_btn,.logoOrSign_sign{line-height: 1.9;margin-left:4px;}
+	    .logoOrSign_sign {}
+	}
+	
+	.tourist{
+		margin-right: 30px;margin-left: 15px;margin-top: 14px;
+		//游客
+		.youke{
+			display:inline-block;height: 30px;line-height: 30px;color: #fff;
+			text-align: center;display: none;
+		}
+		//登录
+		.logined-in{
+		    display:inline-block;height: 30px;line-height: 30px;color: #fff;position: relative;
+			text-align: center;display: block;
+			a{float: left;font-size: 16px;}
+			.lvyktx{
+			    height: 34px;margin-top: -2px;
+				width: 34px;margin-right: 16px;
+				display: inline-block;
+				img{
+					width: 100%;height: 100%;border-radius: 50%;
+				}
+			}
+			.lvykname{
+			    line-height: 36px;
+			}
+			.preinfor{
+				position: absolute;width: 110px;height:80px;top:33px;left:50%;margin-left:-55px;display: none;overflow: hidden;
+				.premask{position:absolute;width: 100%;height: 100%;background: #000;opacity:.5;
+					filter:alpha(opacity=50);z-index: -1;border-radius: 3px;
+					span{
+						position:absolute;
+					    width: 0;height:0;
+					    right: 50px;
+					    top: -10px;
+					    border-bottom: 10px solid #000;
+					    border-right: 6px solid transparent;
+					    border-left:6px solid transparent;
+					}
+				}
+				.prein{
+					text-align: left;margin-top:0px;
+					i{margin: 0 10px;margin: 0 3px}
+					div{padding:0 5px;cursor: pointer;}
+					.center-per,.loginout{ width: 100%;line-height: 38px;height: 38px;}
+					.center-per:hover,.loginout:hover{background-color: black}
+					a{font-size: 14px;}
+				}
+			}
+		}
+	}
+}
+

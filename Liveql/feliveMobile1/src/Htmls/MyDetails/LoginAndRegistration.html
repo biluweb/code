@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Content/css/mui-sass/sass/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Content/css/reset.css" />
+		<link rel="stylesheet" href="/Content/css/MyDetails/LoginAndRegistration.css"/>
+		<script src="/Content/css/mui-sass/js/mui.js"></script>
+	</head>
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		    <!-- 侧滑导航根容器 -->
+		    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+		        <!-- 主页面容器 -->
+		        <div class="mui-inner-wrap">
+	            <!-- 菜单容器 -->
+	            @@include('../Modules/My.html')
+	            <!-- 主页面标题 -->
+	            @@include('../Modules/Nav.html')
+				<!--快速导航-->
+				@@include('../Modules/Slide.html')
+					
+				<!--主要内容-->			
+	            <div class="mui-content">
+					<!--功能区-->					
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--这里放置真实显示的DOM内容-->
+							<div class="logandreg">
+								<div class="tab">
+									<ul>
+										<li class="on">登录</li>
+										<li>注册</li>
+									</ul>
+								</div>
+								<div class="infor">
+									<div class="active">
+										<form id="loginForm" novalidate="novalidate">
+								            <div class="mui-input-row">
+								                <input class="phonenumber mui-input-clear" id="phonenumber" name="phonenumber" type="text" value="" maxlength="11" placeholder="请输入11位手机号">
+								            </div>
+								            <div class="mui-input-row">
+								                <input class="password mui-input-password" id="loginpwd" type="password" name="loginpwd" value="" placeholder="请输入密码">
+								            </div>
+								            <div class="loginerror">
+								            	<span class="pass-state">
+													<em class="error">手机号或密码错误</em>
+								                </span>
+								            </div>
+								            <a href="javascript:;" class="login">登录</a>
+								            <div class="login-fd">
+								                <input class="autlogin regular-checkbox" id="checkbox-autlogin" type="checkbox"><label for="checkbox-autlogin"></label>30天自动登录
+								                <div class="help">
+								                    <a href="/Htmls/MyDetails/FinderPassword.html" class="help-forget" onclick="viewForgetPassword()">忘记密码？</a>
+								                </div>
+								            </div>
+								            <a href="javascript:;" class="downapp">下载钦龙点金App</a>
+								        </form>
+									</div>
+									<div >
+										<form id="reg_form" action="" class="register-foram" novalidate="novalidate">
+								            <div class="nickname mui-input-row">
+								                <input id="reg_nickname" class="mui-input-clear" name="reg_nickname" type="text" value="" placeholder="请输入会员昵称">
+								                <!--<span class="pass-state">
+								
+								                </span>-->
+								            </div>
+								            <div class="cellnumber mui-input-row">
+								                <input id="reg_phonenum" class="mui-input-clear" name="reg_phonenum" type="text" value="" maxlength="11" placeholder="请输入手机号码，将作为您的登录账号" autocomplete="off">
+								                <!--<span class="pass-state">
+								
+								                </span>-->
+								            </div>
+								            <div class="Securitycode clearfix mui-input-row">
+								                <input id="reg_chkcode" name="reg_chkcode" type="text" value="" maxlength="6" placeholder="请输入验证码">
+								                <a href="javascript:;" class="TestGetCode" id="re_TestGetCode">获取验证码</a>
+								                <input type="hidden" id="smsSendGuid">
+								                <!--<span class="pass-state" id="code">
+								
+								                </span>-->
+								            </div>
+								            <div class="register-password mui-input-row">
+								                <input id="reg_pwd" name="reg_pwd" class="mui-input-password" type="password" value="" maxlength="15" placeholder="请设置6-15位密码，区分大小写">
+								                <!--<span class="pass-state">
+								
+								                </span>-->
+								            </div>
+								            <div class="regerror">
+								            	<span class="pass-state">
+													<em class="error">输入会员昵称有误</em>
+								                </span>
+								            </div>
+								            <a href="javascript:;" class="register" id="register">立即注册</a>
+								            <div class="agreement">
+								                <input type="checkbox" id="agreeCkeckBox" class="regular-checkbox" disabled="disabled"><label for="agreeCkeckBox" class="statement"></label>
+								                <p><span class="agree">同意</span><a href="javascript:;" class="statement">《风险提示及服务说明》</a></p>
+								            </div>
+								            <p class="hint"><span>提示：</span>免费注册账号，手机号以及个人信息严格保密。</p>
+								            <a href="javascript:;" class="downapp">下载钦龙点金App</a>
+								        </form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	           </div>
+		       	<div class="mui-off-canvas-backdrop"></div>
+		        </div>
+		    </div>
+	</body>
+</html>
+
+<script type="text/javascript">
+//mui.ready() ---入口函数
+mui.ready(function(){	
+	//解决input无法取消焦点
+	var inputf=new InputFocus('.mui-input-row input');
+	inputf.hover();
+	
+	//登陆注册tab切换
+	var tablogreg=new LogregTab('.logandreg');
+	tablogreg.init();
+	
+	//chackebox写boolean值
+	var putchabox=new CheckedBoolean('#agreeCkeckBox');
+	putchabox.setVal('#checkbox-autlogin','label[for="checkbox-autlogin"]')
+	
+	//风险提示说明
+	var statebtn=doc.querySelectorAll('.statement');
+	for(var i=0;i<statebtn.length;i++){
+		statebtn[i].addEventListener('tap',openstatement);
+	}
+	function openstatement(){
+		layer.open({
+		  type: 1,
+		  className:'statementOpened',
+		  title: '风险提示与用户服务',  
+		  anim: 'up',
+		  content:'<div class="framewrap" style="width:100%;height:100%;-webkit-overflow-scrolling:touch;overflow:auto;"><iframe src="Statement.html" frameborder="0" style="width:100%;height:100%;"></iframe>',
+		  btn: ['同意', '拒绝'],
+		  success: function(elem){
+			  var stat=elem.querySelector('.statementOpened'),
+			  	  title=stat.querySelector('h3'),
+			  	  btn=stat.querySelector('.layui-m-layerbtn');
+			  	  title.appendChild(doc.createElement("span"));
+		  	  stat.querySelector('h3 span').addEventListener('tap',function(){layer.closeAll();})
+		  	  elem.querySelector('.framewrap').style.height=stat.clientHeight-title.clientHeight-btn.clientHeight-18+'px';
+		  },
+		  yes:function(index){
+			  layer.close(index);
+			  var chack=doc.querySelector('#agreeCkeckBox');
+			  chack.setAttribute("checked","true");
+			  putchabox.init('.register');
+		  },
+		  no:function(index){
+			 layer.close(index);
+			 var chack=doc.querySelector('#agreeCkeckBox');
+			  chack.removeAttribute("checked");
+			  putchabox.init('.register');
+		  }
+		});  
+	}
+})
+</script>

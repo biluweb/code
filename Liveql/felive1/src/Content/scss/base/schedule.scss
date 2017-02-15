@@ -1,0 +1,50 @@
+//课程表样式
+.schedule{display:none; width:800px;
+    .title{width:800px; height:50px; background:url("/Images/Zhibo/img/scheduletitle.jpg") no-repeat; padding:0 24px;
+        .text{color:#fff; font-size:20px; line-height: 50px; margin-right:10px;
+            span{font-size:16px;}
+        }
+    }
+    .table{width:800px; border:3px solid #ea4638; border-top:none; padding:12px 22px; margin-bottom:0; height:373px;
+        .weekBox{width:100%; height:35px;
+            li{float:left; width:20%; height:35px; border-right:1px solid #fff; background-color:#f7c6c1; 
+                color: #960c00; font-size:14px; text-align: center; line-height: 35px;}
+            li:hover,li.actived{background-color:#ea4335; color: #fff; cursor: pointer;}
+        };
+        .sheetBox{background:#fdfefe; margin-top:10px;
+            ul{display:none;}
+            ul.on{display:block; font-size:0; 
+                li{display: inline-block; width:20%; background-color:#fdfefe; border-right:1px dashed #cecece; border-bottom: 1px solid #ebebeb; vertical-align: top;
+                   .timer{font-size:16px; color:#333; background-color:#ebebeb; height:24px; line-height: 24px; text-align: center;}
+                   .programBox{color:#333;  height:72px; line-height: 72px;
+                                            display:table-cell;
+                                            vertical-align:middle;
+                                            text-align: center; 
+                        .programName{width:150px; font-size:16px; line-height: 28px; text-align: center;}
+                        .teacherName{width:150px;font-size:12px; line-height: 24px; text-align: center;}
+                   }
+                };
+                li:first-child,li:nth-child(6),li:nth-child(11){border-left:1px dashed #cecece;}
+                li.past{
+                    .timer{color:#959595;}
+                    .programBox{color:#b7b8b8;}   
+                };
+                li.doingNow{ 
+                    .timer{color:#ea4e41;}
+                    .programBox{color:#ea4335;position:relative;
+                        .icon{display:block; width:40px; height:40px; background: url("/Images/Zhibo/img/doingNow.png") no-repeat;
+                         position: absolute; top:0; left:0;}                    
+                    }   
+                };
+//              li.coming{ 
+//                  .timer{color:#333;}
+//                  .programBox{color:#333;position:relative;
+//                      .icon{display:block; width:40px; height:40px; background: url("/Images/Zhibo/img/coming.png") no-repeat;
+//                       position: absolute; top:0; left:0;}                    
+//                  }   
+//              }; 
+                                
+            }
+        }
+    }   
+}

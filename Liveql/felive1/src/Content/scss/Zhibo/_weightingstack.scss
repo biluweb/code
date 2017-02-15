@@ -1,0 +1,26 @@
+//点触验证层叠
+.touclick.touclick-block{top:50%!important;left: 50%!important;margin-top:-154px!important;margin-left: -188px!important;}
+
+//layer icon修改样式
+.layui-layer-dialog{
+	.layui-layer-content{
+		.layui-layer-ico {
+		    width: 16px;
+		    height: 16px;
+		    background-position-x: -76px;
+		    background-position-y: -222px;
+		}
+		.layui-layer-ico20 {
+		    top: 24px;
+		    background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+		    background-position-x: -76px;
+		    background-position-y: -222px;
+		}
+		.layui-layer-ico21 {
+		    top: 24px;
+		    background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+		    background-position-x: -76px;
+		    background-position-y: -204px;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+
+//头部scss
+@import "jumphead";
+//一对一战法主体scss
+.banner{width:100%; border-top:1px solid #e5362a;}
+.foronebg{width:100%;
+            background-color:#f7f7f7;  
+            background-image:url(/Images/JumpPage/img/vipTic/foronebg.png) ; 
+            background-repeat: no-repeat;
+            background-position:bottom center;
+}
+.forOne{width:1200px; margin:0 auto;  
+    .title{padding:80px 0 160px; font-size:0;  height:48px;
+    .bx2{width:440px; display:inline-block; font-size:48px; font-weight:bolder; line-height: 48px; vertical-align:middle ; text-align: center;}
+    .bx1{float:left;}
+    .bx3{float: right;}
+    }
+    .teahList{font-size:0; 
+        li{margin-left:40px; margin-bottom:50px; display:inline-block;  position:relative; vertical-align: top;
+            .box1{width:250px; height:350px;  vertical-align: top; background-color: #fff;
+                p{padding-top:20px; color:#333; padding-left:10px;}
+                p.name{font-size:18px; font-weight: bolder;}
+                p.tactic{font-size:16px;}
+            }
+            .box2{width:250px; height:350px;  background:rgba(0,0,0,.8); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);
+ position:absolute; top:0; left:0; padding:0 10px; display: none; 
+                .text{
+                    div{ margin-top:15px;
+                        p{font-size:16px; color:#fff; line-height: 26px;}
+                        p.tactictitle{font-size:18px; font-weight:bold; }                          
+                    }
+                  
+                };
+                a{display:block;  width:132px; height:36px; border-radius:18px; background:#ea4335; position:absolute; bottom:25px; right:60px;
+                font-size:18px; text-align:center; line-height:36px; color:#fff; }
+            }
+        };
+        li:hover{cursor: pointer;}
+    }
+};
+
+.root{width:1200px; margin:0 auto 80px;
+    .title{padding:80px 0 160px; font-size:0;  height:48px;
+    .bx2{width:440px; display:inline-block; font-size:48px; font-weight:bolder; line-height: 48px; vertical-align:middle ; text-align: center;}
+    .bx1{float:left;}
+    .bx3{float:right;}
+    }
+    .rootList{width:1200px; padding:0 70px; 
+        li{width:480px; display:inline-block; margin-bottom:88px; vertical-align: top;
+            img{display:inline-block; width:70px; height:70px; margin-right:10px; vertical-align: top;}
+            div{display:inline-block; vertical-align: top;
+                span{font-size:30px; color:#ea483a; line-height: 42px;} 
+                p{font-size:20px; line-height:30px; color: #333; margin-top:10px;}               
+                }
+
+        }
+        li.odd{margin-right:90px;}
+    }
+
+};
+
+
+
+#fixedBox{width:40px; height:auto; position: fixed; bottom:238px; right:26px; 
+    .getBack,.contactQQ{cursor: pointer;}
+}
+//尾部scss
+@import "foot"; 

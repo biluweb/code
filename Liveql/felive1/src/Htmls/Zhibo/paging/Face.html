@@ -1,0 +1,56 @@
+<!--滚动 glyphicon glyphicon-record-->
+<div class="lvbq">
+	<a href="javascript:;" class="lvbqbtn" title="表情"><i class="livespri con12"></i> 表情</a>
+	<div class="lvbqlist">
+		@@include('Emotioncons.html')
+	</div>
+</div>
+<a href="javascript:;" class="lvsmt" title="私密老师"><i class="livespri con13"></i> 私密老师</a>
+<a href="javascript:;" class="lvgd" title="当前为不滚动"><i class="livespri congf"></i> 滚动</a>
+<a href="javascript:;" class="lvqp" title="清屏"><i class="icon-cut"></i> 清屏</a>
+<script>
+	$(function() {
+		//是否滚动
+	    $('.lvgd').click(function(e) {
+	        e.preventDefault();
+	        $('.lvgd i').attr('class', $('.lvgd i').attr('class') == 'livespri congf' ? 'livespri congt' : 'livespri congf');
+	        $('.lvgd').attr('title', $('.lvgd').attr('title') == '当前为不滚动' ? '当前为滚动' : '当前为不滚动');
+	        if ($('.lvgd i').attr('class')== 'icon-circle'){
+	            // $.talk.scrollable = false;
+	        } else {
+	            // $.talk.scrollable = true;
+	        }
+	    });
+
+        //清屏
+		$(".lvqp").click(function () {
+        	$("#dissCumsg ul").html("");
+	    });
+
+		//表情弹出框
+	    $(document).bind("click", function (e) {
+	        var target = $(e.target);
+	        if (target.closest(".lvbq").length == 0) {
+	            if ($(".lvbqlist:visible")) {
+	                $(".lvbqlist").hide();
+	            }
+	        }
+	    });
+	    $(".lt_bqbox a").click(function () {
+	        var stvs = $(this).attr("stvs");
+	        $(".lt_bqbox table").hide();
+	        $(".lt_bqbox #imgfile_" + stvs).show();
+	        $(".lt_bqbox a").attr("class", "dxuan");
+	        $(this).attr("class", "");
+	    });
+	    $(".lt_bqbox img").click(function () {
+	        $("#TCommTextBox").html($("#TCommTextBox").html().replace("<br/>", "").replace("<br>", "") + "<img src=\"" + $(this).attr("src") + "\"/>");
+	        $(".lvbqlist").hide();
+	    });
+
+
+	    $(".lvbq").click(function () {
+	        $(".lvbqlist").show();
+	    });
+	})
+</script>

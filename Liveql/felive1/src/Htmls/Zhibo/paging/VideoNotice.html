@@ -1,0 +1,133 @@
+<div class="video-notice">
+	<div class="fold" title="收起左侧导航">
+		<i class="livespri con9"></i>
+		<p>收起导航</p>
+	</div>
+	<div class="cmcon"><i class="icon-circle"></i><b>股</b></div>
+	<div class="program">
+		<ul id="programList">
+			<li>当前节目-股网金来——霍老师、龙老师</li>
+			<li>当前节目-股网金来——霍老师、龙老师</li>
+			<li>当前节目-股网金来——霍老师、龙老师</li>
+			<li>当前节目-股网金来——霍老师、龙老师</li>
+			<li>当前节目-股网金来——霍老师、龙老师</li>
+		</ul>
+	</div>
+	<div class="vn-r">
+		<div class="OnlineCurrent">当前在线:<span>4206</span></div>
+		<a href="javascript:;" class="lookwhat">
+			<i class="livespri con10"></i> 微信看直播
+			<div class='lwewm'>
+				<div class="triangle-top"></div>
+				<div class="ewmbox">
+					<img src='/Images/Zhibo/img/app-ewm.jpg' onclick="window.open('http://m.longding999.com')"/>
+				</div>
+			</div>
+		</a>
+		<a href="javascript:;" class="reload"><i class="icon-refresh"></i> 刷新视频</a>
+	</div>
+</div>
+<script>
+	$(function() {
+		//live-video.
+		$('.reload').click(function() {
+			$('.video').html($('.video').html());
+		});
+
+		//微信看直播
+        $('.lookwhat').hover(function () {
+            layer.tips("<img style='width:100%; height:100%' src='/Images/Zhibo/img/app-ewm.jpg' />", '.lookwhat', { tips: [3, '#fff'], time: 0 });
+        }, function () {
+            layer.closeAll('tips');
+        });
+
+		 //导航折叠
+        $('.fold').click(function () {
+            var fload = $('.fold'),
+				introduce = $('#introduce'),
+				videoBox = $('#videoBox'),
+				chitchat = $('#chitchat'),
+				banner = $(".banner"),
+				slicklist = $('.slick-list.draggable'),
+				c = function () {
+				    if (fload.attr('title') == '收起左侧导航') {
+				        return true;
+				    } else {
+				        return false
+				    }
+				};
+            if (c()) {
+                introduce.addClass('zdn')
+                videoBox.attr('class', 'col-lg-41 col-md-8 col-sm-9').css({ 'paddingLeft': 0 })
+                chitchat.attr('class', 'col-lg-23 col-md-4 col-sm-3')
+                // $(".video").height($("#videoBox").height() - $(".video-notice").height());
+                // center.slick('unslick');//销毁banner        
+                banner.hide();
+                AutoHeight();
+            } else {
+                introduce.removeClass('zdn')
+                videoBox.attr('class', 'col-lg-37 col-md-8 col-sm-9').css({ 'paddingLeft': 5 })
+                chitchat.attr('class', 'col-lg-19 col-md-3 col-sm-3')
+                // function vcle(){videoBox.css({'transition':'' })}
+                // function slickautoh(){slicklist.height(banner.height());}
+                banner.show();
+                setTimeout(function () { $('.center').slick('unslick');}, 301); 
+                AutoHeight();
+                setTimeout(function () { AutoHeight(); bannerslick(); }, 1000);
+            }
+            fload.attr('title', fload.attr('title') == '展开左侧导航' ? '收起左侧导航' : '展开左侧导航');
+            fload.children('i').attr('class', fload.children('i').attr('class') == 'livespri con9r' ? 'livespri con9' : 'livespri con9r');
+            fload.children('p').html(fload.children('p').html() == '展开导航' ? '收起导航' : '展开导航');
+        });
+		// 
+		// $('.fold').click(function() {
+		// 	var fload=$('.fold'),
+		// 		introduce=$('#introduce'),
+		// 		videoBox=$('#videoBox'),
+		// 		chitchat=$('#chitchat'),
+		// 		introduceW=introduce.outerWidth(true)/2,
+		// 		videoBoxW=videoBox.outerWidth()+introduceW,
+		// 		chitchatW=chitchat.outerWidth()+introduceW,
+		// 		c=function(){
+		// 			if(fload.attr('title')=='收起左侧导航'){
+		// 				return true;
+		// 			}else{
+		// 				return false
+		// 			}
+		// 		};
+		// 		if(c()){
+		// 			introduce.addClass('zdn')
+		// 			videoBox.css({'transition':'all 1s','width':videoBoxW})
+		// 			chitchat.width(chitchatW-10)
+		// 		}else{
+		// 			introduce.removeClass('zdn')
+		// 			videoBox.width('')
+		// 			chitchat.width('')
+		// 			function clb(){videoBox.css('transition','')}
+		// 			setTimeout(function(){AutoHeight();clb();videoBoxAutoWidth();},1000);
+		// 		}
+		// 		fload.attr('title',fload.attr('title')=='展开左侧导航'?'收起左侧导航':'展开左侧导航');
+		// 		fload.children('i').attr('class',fload.children('i').attr('class')=='livespri con9r'?'livespri con9':'livespri con9r');
+		// 		fload.children('p').html(fload.children('p').html()=='展开导航'?'收起导航':'展开导航');
+		// });
+
+		//微信看直播		
+		// $('.lookwhat').on('mouseover',function() {
+		// 	layer.tips("<div class='kisslewm'><img src='/Images/Zhibo/img/app-ewm.jpg' onclick=\"window.open('http://m.longding999.com')\"/></div>", this, { tips: 1, time: 30000 })
+		// })
+		// 
+		
+		//节目滚动
+		 $("#programList").marquee1({
+            direction: "up",
+            showSpeed: 500, // 初始下拉速度         ,
+            scrollSpeed: 10 , // 滚动速度  
+            pauseSpeed: 5000,//滚动完到下一条的间隔时间 
+            pauseOnHover: true, // 鼠标滑向文字时是否停止滚动         ,
+            //loop: -1, // 设置循环滚动次数 （-1为无限循环）         ,
+            fxEasingShow: "swing", // 缓冲效果         ,
+            fxEasingScroll: "linear", // 缓冲效果         ,
+            cssShowing: "marquee-showing" //定义class
+        });
+	})
+</script>

@@ -1,0 +1,48 @@
+// .mui-content{top:48px;}
+//  .calendarbox{width:100%; 
+//      .hd{height:40px;  
+//          li{width:50%; float: left; background-color: #0f7ace;
+//              a{display:block; color: #fff; line-height: 40px; text-align: center;}                
+//          }
+//          .rili{
+//              span{display:inline-block; width:18px; height:18px; margin-right:10px; vertical-align:middle; background: url(/Images/SlideDetails/calendar_m/icon1.png) no-repeat; background-size:contain;}
+//          }
+//          .kuaixun{
+//              span{display:inline-block; width:18px; height:18px; margin-right:10px; vertical-align:middle; background: url(/Images/SlideDetails/calendar_m/icon2.png) no-repeat; background-size:contain;}
+//          }
+//          .on{
+//              background-color:#005191;
+//          }
+//      }
+//      .bd{
+//          li{width:100%;height: 100%;-webkit-overflow-scrolling:touch;overflow:auto;
+//          iframe{width:100%;  height: 100%;  background-color:transparent; }
+//         li{width:100%; height:1000px;  -webkit-overflow-scrolling: touch;  overflow-y: scroll; overflow:auto;
+//              iframe{width:100%;  height: 999px;  overflow-y: scroll; background-color:transparent; }
+//         }   
+//      }
+//   
+//  }
+
+.warp{
+    .tab{height:40px; 
+            li{width:50%; float: left; background-color: #0f7ace;
+                a{display:block; color: #fff; line-height: 40px; text-align: center;}                
+            }
+            li:nth-child(1){
+                span{display:inline-block; width:18px; height:18px; margin-right:10px; vertical-align:middle; background: url(/Images/SlideDetails/calendar_m/icon1.png) no-repeat; background-size:contain;}
+            }
+            li:nth-child(2){
+                span{display:inline-block; width:18px; height:18px; margin-right:10px; vertical-align:middle; background: url(/Images/SlideDetails/calendar_m/icon2.png) no-repeat; background-size:contain;}
+            }
+            li.on{
+                background-color:#005191;
+            }
+        }
+        .infor{
+            div{width:100%;height: 100%;-webkit-overflow-scrolling:touch;overflow:auto; display: none;
+                iframe{width:100%;  height: 100%;  background-color:transparent; }
+            }
+            div.active{display: block;}   
+        }
+}

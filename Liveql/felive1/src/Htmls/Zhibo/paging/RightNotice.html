@@ -1,0 +1,38 @@
+<div class="rn-hd">
+	<i class="icon-volume-up"></i>
+</div>
+<div class="rn-infor ver">
+	<ul id="listStr">
+		<li>恭喜张先生跟随<span>【双钩战法-胜老师】</span><span></span>盈利,恭喜发财！</li>
+        <li>恭喜刘女士跟随<span>【双钩战法-胜老师】</span><span></span>盈利,恭喜发财！</li>
+        <li>恭喜王小姐跟随<span>【双钩战法-胜老师】</span><span></span>盈利,恭喜发财！</li>
+        <li>恭喜宋先生跟随<span>【双钩战法-胜老师】</span><span></span>盈利,恭喜发财！</li>
+        <li>恭喜赵先生跟随<span>【双钩战法-胜老师】</span><span></span>盈利,恭喜发财！</li>
+	</ul>
+</div>
+<script>
+    $(function() {
+        //$('.rn-infor').marquee({
+        //    direction: "up",
+        //    showSpeed: 500, // 初始下拉速度         ,
+        //    scrollSpeed: 10, // 滚动速度         ,
+        //    pauseSpeed: 5000, // 滚动完到下一条的间隔时间    
+        //    pauseOnHover: true, // 鼠标滑向文字时是否停止滚动
+        //    //loop: -1, // 设置循环滚动次数 （-1为无限循环） 
+        //    fxEasingShow: "swing", // 缓冲效果         ,
+        //    fxEasingScroll: "linear", // 缓冲效果         ,
+        //    cssShowing: "marquee-showing" //定义class
+        //});
+        $('#listStr').marquee1({
+            direction: "up",
+            showSpeed: 500, // 初始下拉速度         ,
+            scrollSpeed: 10, // 滚动速度  
+            pauseSpeed: 5000,//滚动完到下一条的间隔时间 
+            pauseOnHover: true, // 鼠标滑向文字时是否停止滚动         ,
+            //loop: -1, // 设置循环滚动次数 （-1为无限循环）         ,
+            fxEasingShow: "swing", // 缓冲效果         ,
+            fxEasingScroll: "linear", // 缓冲效果         ,
+            cssShowing: "marquee-showing" //定义class
+        });
+    });
+</script>

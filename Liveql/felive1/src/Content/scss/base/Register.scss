@@ -1,0 +1,93 @@
+.Popup-register{
+	z-index:3;background:#fff;display: none;width: 100%;height:100%;position: relative;overflow: hidden;
+	.closePopup{color: #bfbfbf;position:absolute;top:10px;right: 10px;font-size: 30px;cursor: pointer;}
+	.Popup-register-infor{margin:60px;}
+	#agreeCkeckBox{background: #afafaf;color: #fff;}
+	font-size: 12px;
+	.register-foram{		
+		float: right;width: 269px;margin-top: 22px;
+		.title{font-size: 12px;
+			a{color: #ed4336;}
+			span{float: right;}
+			padding-bottom: 25px;
+		}
+		input{
+			display: block;width: 100%;height:34px;padding-left: 15px;border: 1px solid #afafaf;line-height: 34px;
+			border-radius: 2px;margin-bottom: 23px;
+			&:focus{
+				border-color:#333;
+			}
+		}
+		.Securitycode input,.TestGetCode{display: inline-block;float: left;}
+		.Securitycode input{width:67%;}
+		.TestGetCode{width: 30%;background: #afafaf;height:34px;color: #fff;text-align: center;float: right;
+			line-height: 34px;border-radius: 2px;color:#858585;
+			&.active{
+				background: #FFA472;color: #555;
+				&:hover{
+					background: #FFAA7C;
+				}
+				&:active{
+					background: #FFA06A;
+				}
+			}
+		}
+		.agreement{
+			color: #fff;font-size: 14px;margin-top: 12px;
+			a{color: #ea4335;}
+			input{float:left;display: inline-block; width:auto;height:auto;padding:0;margin:0;vertical-align:sub;outline: none;
+				margin-top: 4px;
+			}
+			.agree{color:black;margin-left:14px;
+				a{color: #ea4335;}
+			}
+		} 
+		.hint span{color:#ea4235;line-height: 25px;}
+	}
+	.noregister {
+    background: #afafaf;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 150px;
+    height: 43px;
+    line-height: 43px;
+    margin-top: 10px;}
+}
+
+.livespri {
+    background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+}
+.livespri.conclosep {
+    background-position: -66px -338px;
+    width: 25px;
+    height: 26px;
+}
+
+.nickname, .cellnumber, .Securitycode, .register-password, .Invitecode {position: relative;}
+
+em.error {
+    position: absolute;
+    top:-1px;
+    left:20px;
+}
+.register{
+	display: block;text-align: center;background: #ea4235;font-size: 16px;border-radius: 3px;
+	color: #fff;font-size:16px;width: 150px;height: 43px;line-height: 43px;margin-top: 10px;
+	&:hover{background: #eb5547;}
+	&:active{background: #d62e21;}
+}
+.pass-state{
+	position: absolute;top:35px;width:273px;line-height:22px;height: 22px;color: #EA4638;left: 0;
+	ins{
+	    display:inline-block;
+	    width: 14px;
+	    height:14px;
+	    background:url(/Images/base/register_false.png) no-repeat;
+	    position: relative;
+	    top:2px;
+	}
+}

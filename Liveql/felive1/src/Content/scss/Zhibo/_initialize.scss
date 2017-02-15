@@ -1,0 +1,16 @@
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,button,fieldset, legend,img { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ font-size:14px; /*font-weight:normal;*/}
+fieldset,img{ border:none; }
+img{display:block; }
+em{ font-style:normal;}
+ul,ol{list-style:none; }
+a{text-decoration:none;color: inherit;}
+body{background:#fff; font-size:12px;}
+.fL{float: left;}
+.fR{float: right;}
+.clearfix:after{content:"";display: block;clear:both;}
+.clearfix{zoom:1;}
+.m0auto{margin: 0 auto;}
+.m10auto{margin: 10px auto;}
+input{outline:none;}

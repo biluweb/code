@@ -1,0 +1,45 @@
+$bgColor:#181b1f;
+.guidance{
+	// .Bscwrap-guidance{height: 579px;}
+	background: $bgColor;padding-bottom:10px;
+	.Bscwrap-guidance{
+		padding:0;
+		.BSidebar>.bar{background: #ed1c39;border-radius:0;}
+		.BSidebar>.wire{background:#3b3b3b}
+	}
+	color: #C4C5C5;font-size: 16px;
+	i{color: #8C8D8F;font-size: 24px;top:5px;margin: 0 24px;width:24px;display:inline-block;
+		&:before{text-align: center;}
+	}
+	dt{font-weight: normal;padding-left: 30px;height: 45px;line-height: 45px;}
+	dd{
+		a{height: 45px;line-height: 45px;border-left:7px solid transparent;padding-left:20px;display: block;}
+		i.icon-download-alt,i.icon-calendar{top:2px;}
+		&:hover,&.active{
+			a{
+				background-color:#222428;border-color:#ED1C39;color:#fff;
+				.livespri{
+					&.con3,&.con4,&.con5,&.con6,&.con7,&.con8,&.con14,&.conczjy,&.convip{background-position-x:-2px;}
+				}
+				i.glyphicon,i.icon-download-alt,i.icon-calendar{color: #fff;}
+			}
+		}
+	}
+
+	
+	// .zhibo-room{
+	// 	.zbsp:hover,.zbsp.active{
+	// 		i{color: #fff}
+	// 	}
+	// }
+	// .entry{
+	// 	.download-soft{
+	// 		i{top:2px;}
+	// 		&:hover,&.active{i{color: #fff}}
+	// 	}
+	// 	.calendar-finance{
+	// 		i{top:2px}
+	// 		&:hover,&.active{i{color: #fff}}
+	// 	}
+	// }
+}

@@ -1,0 +1,45 @@
+.syllabus{
+    padding: 5px 10px 0;
+    .syllabus-tabh{padding-bottom: 2px;
+        ul{overflow: hidden;zoom:1;}
+        a{display: block;background: #f7c6c1;color: #9f1e12;font-size: 14px;}
+        li{float: left;width:20%;text-align: center;height: 28px;line-height: 28px;
+            padding: 0 1px;
+        }
+        li:first-child{padding-left:0;}
+        li:last-child{padding-right: 0;}
+        li.on a{color: #fff;background: #ea4335;}
+    }
+    .syllabus-tabd{
+        ul{overflow: hidden;zoom:1;display: none;}
+        ul.active{display: block;}
+        li{float:left;width: 33.333%;}
+        li.ProgramCurrent{
+            color: #ea4335;
+            .program .infor{position: relative;overflow: hidden;
+               background:#fff7e2; //url(/Images/Zhibo/icon/zhibo.png) left top no-repeat;
+               &:before{content: '直播';font-size: 14px;display: inline-block;background:#ea4335;color: #fff;position: absolute;left: -17px;top:2px;
+                transform:rotate(-45deg);width: 60px;
+               }
+            }
+        }
+        li:nth-child(3n+2){border:2px solid #dddddd;border-top:0;border-bottom: 0;}
+        .program{text-align: center;
+            .time{background: #ebebeb;height: 32px;line-height: 32px;}
+            .infor{background: #f7f7f7;height: 54px;
+                span{display: block;}
+            }
+            .program-name{font-size: 17px;padding-top: 7px;}
+            .program-teacher{font-size: 12px;}
+        }
+    }
+}
+@media (max-width:374px){
+    .syllabus{
+        .syllabus-tabd{
+            .program{
+                .program-name{font-size: 14px;}
+            }
+        }
+    }
+}

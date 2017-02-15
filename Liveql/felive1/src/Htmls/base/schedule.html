@@ -1,0 +1,152 @@
+
+    <div class="schedule" id="schedule">
+        <div class="title">
+        	<div class="text">本周课程表<span>（10月24日——10月28日）</span></div>
+        </div>
+        <div class="table">
+            <ul class="weekBox">
+                <li>星期一</li>
+                <li class="actived">星期二</li>
+                <li>星期三</li>
+                <li>星期四</li>
+                <li>星期五</li>
+            </ul>
+            <div class="sheetBox">
+            	<ul>11111</ul>
+            	<ul class="on">
+            		<li class="past ">
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li> 
+            		<li class="doingNow">
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<div class="icon"></div>
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				
+            			</div>
+            		</li>
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+            		<li>
+            			<div class="timer">14:00-15:00</div>
+            			<div class="programBox">
+            				<p class="programName">《行情连连看》</p>
+            				<p class="teacherName">霍老师,霍老师</p>
+            			</div>
+            		</li>            		
+           		            		            		
+            	</ul>
+            	<ul>3333</ul>
+            	<ul>4444</ul>
+            	<ul>55555</ul>           	
+            </div>
+        </div>
+
+    </div>
+
+<script>
+$(document).ready(function(){
+        $(".weekBox li").click(function(){        	
+	        $(".weekBox li").eq($(this).index()).addClass("actived").siblings().removeClass('actived');
+			$(".sheetBox>ul").hide().eq($(this).index()).show().siblings().hide();
+
+   		}); 
+   		
+   		$(".schedulebutton").on('click', function(event){
+  	 			 	layer.closeAll(); 	 			  
+  					layer.open({
+  					type: 1,
+  					title: false,
+  					shade :0,
+  					area : ['800px','423px'],
+  					shadeClose: true, 
+					content:$('#schedule'),
+ 				 	});   		  	 		
+   		  	 		
+   		  	 		
+   		});
+   })
+</script>
+
+	
+	

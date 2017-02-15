@@ -1,0 +1,46 @@
+$beseColor:#181b1f;
+html{font-size:40px;}
+body{background: #1E232D;font-family:"微软雅黑";
+-moz-user-select: none; 
+-webkit-user-select: none; 
+-ms-user-select: none;
+-o-user-select: none;  
+-khtml-user-select: none; 
+user-select: none;
+}
+#top.header{margin-bottom:0;}
+.header .navbar {
+    margin-bottom: 0;
+    background:$beseColor;
+    border: 0;
+    border-bottom: 2px solid #ed1c39; 
+}
+
+.navbar-fixed-top,.navbar-fixed-bottom{
+	position: relative!important;
+}
+
+#content{margin-top: 10px;}
+
+#introduce{padding-left: 0;padding-right: 5px;overflow: hidden;}//width: 245px;
+#introduce.zdn{width: 0;padding:0;}
+
+/*视频部分*/
+// padding: 0 5px; width: 1110px;
+#videoBox{padding:0px 5px;background: #1E232D;}
+// .exhibition{background:$beseColor;width: 100%;height: 100%}
+/*视频部分结束*/
+
+/*右侧模块开始*///width:565px;
+#chitchat{padding:0px;padding-left: 5px;}
+
+#introduce,#videoBox,#chitchat{transition:all 1s;}
+
+
+
+
+
+
+
+
+

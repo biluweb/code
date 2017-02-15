@@ -1,0 +1,68 @@
+<div class="Popup-register" id="Popup-register">
+    	<i class="livespri conclosep closePopup"></i>
+        <div class="Popup-register-infor">
+        	<div class="Popup-reg-lad fL">
+            	<img src="/Images/Zhibo/img/register.png">
+        	</div>
+            <form id="reg_form" action="" class="register-foram">
+            	<div class="title">欢迎注册 <span>已注册可<a href="javascript:;">直接登录</a></span></div>
+                <div class="nickname">
+                    <input id="reg_nickname" name="reg_nickname" type="text" value="" placeholder="请输入会员昵称" />
+                    <span class="pass-state">
+                        
+                    </span>
+                </div>
+                <div class="cellnumber">
+                    <input id="reg_phonenum" name="reg_phonenum" type="text" value="" maxlength="11" placeholder="请输入手机号码，将作为您的登录账号" />
+                    <span class="pass-state">
+                        
+                    </span>
+                </div>
+                <div class="Securitycode clearfix">
+                    <input id="reg_chkcode" name="reg_chkcode" type="text" value="" placeholder="请输入验证码" />
+                    <a id="TestGetCode" class="TestGetCode" href="javascript:;">获取验证码</a>
+                    <input type="hidden" id="smsSendGuid"/>
+                    <span class="pass-state">
+                        
+                    </span>
+                </div>
+                <div class="register-password">
+                    <input id="reg_pwd" name="reg_pwd" type="password" value="" placeholder="请设置6-15位密码，区分大小写" />
+                    <span class="pass-state">
+                        
+                    </span>
+                </div>
+                <a class="register" id='agreeCkeckBox' href="javascript:;">立即免费注册</a>
+                <div class="agreement">
+                    <input type="checkbox" id="agreeCkeckBox" class="agreement" checked="checked"/>
+                    <p><span class="agree">同意</span><a href="/college/RiskWarning">《风险提示及服务说明》</a></p>
+                </div>
+                <p class="hint"><span>提示：</span>免费注册账号，手机号以及个人信息严格保密。</p>
+            </form>
+        </div>
+    </div>
+
+<script>
+	//注册
+    function viewregister() {
+        layer.closeAll();
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            zIndex: 10000,
+            area: ['900px', '500px'],
+            //skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: $('#Popup-register')
+        });       
+        $(".closePopup").click(function () {
+            layer.closeAll();
+        });
+    }
+
+    //-----注册框-----
+    $('.logoOrSign_sign').click(function () {
+        viewregister();
+    });
+</script>
