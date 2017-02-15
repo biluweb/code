@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="content">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <swiper-item>
+            <image src="../../assets/img/001.jpg" class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../assets/img/002.jpg" class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../assets/img/003.jpg" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    
+    <import src="../template/movietpl"/>
+    <template is="movietpl" data="{{item}}"/>
+</view>
+
+<!--<view class="load">
+    <loading hidden="{{loadv}}" bindChange="">加载中...</loading>
+</view>-->

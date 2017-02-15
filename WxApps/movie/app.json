@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/recommend/recommend",
+    "pages/search/search",
+    "pages/details/details"
+  ],
+  "tabBar": {
+    "color": "#dddddd",
+    "backgroundColor": "#2b2b2b",
+    "borderStyle": "black",
+    "selectedColor": "#3cc51f",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "影院热映",
+      "iconPath": "assets/img/dy.png",
+      "selectedIconPath": "assets/img/dy-1.png"
+    },{
+      "pagePath": "pages/recommend/recommend",
+      "text": "电影推荐",
+      "iconPath": "assets/img/tj.png",
+      "selectedIconPath": "assets/img/tj-1.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "查询电影",
+      "iconPath": "assets/img/search.png",
+      "selectedIconPath": "assets/img/search-1.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b2b2b",
+    "navigationBarTitleText": "小电影",
+    "navigationBarTextStyle":"while"
+  }
+}

@@ -1,0 +1,18 @@
+
+.team{padding: 100px 0 85px;}
+.team h2{}
+.team p{text-align: center;font-size: 16px;color: #888888;line-height: 31px;margin: 46px 0 59px;}
+.carousel{width:1348px;margin: 0 auto;}
+.carousel-in{width: 1217px;overflow:hidden;}
+.carousel-in ul{position: relative;left: 0;width: 9999px;}
+.carousel-in ul li{float: left;margin: 0 10px;background: #000;border: 1px solid #ccc;}
+.carousel .btl,.carousel .btr{font-size: 30px;cursor: pointer;}
+.carousel .btl{left: 0;}
+.carousel .btr{right: 0;}
+
+
+.attractconsult{height: 590px;}
+.attractconsult .container{position: relative;height: 100%;}
+.attractconsult .ft01{width:395px;}
+.attractconsult .main,.attractconsult .ft01{bottom:0px;}
+

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="content">
+    <view class='reload' bindtap='reload'>刷新</view>
+    <view class="today">
+        <view class="info">
+            <view class="temp">{{today.wendu}}℃ </view>
+            <view class="weather">{{today.forecast[0].type}} {{today.forecast[0].fengxiang}} {{today.forecast[0].fengli}}</view>
+            <view > 友情提示： {{today.ganmao}}</view>
+            <view class="city">{{city}}</view>
+        </view>
+    </view>
+    <import src="../template/itemtpl"/>
+    <view class="future" >
+        <block wx:for="{{future}}">
+            <template is="future-item" data="{{item}}"/>
+        </block>
+    </view>
+</view>

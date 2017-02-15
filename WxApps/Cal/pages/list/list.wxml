@@ -1,0 +1,7 @@
+<view class="content">
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+    <block wx:for='{{logs}}' wx:for-item='log'>
+        <view class="item">{{log}}</view>
+    </block>
+  </scroll-view>
+</view>

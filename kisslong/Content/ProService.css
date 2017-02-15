@@ -1,0 +1,14 @@
+.kissApp{padding-bottom: 99px;}
+.kissApp h2{margin-bottom: 94px;}
+
+.meshtelecast{position: relative;padding-bottom: 129px;}
+.meshtelecast-peat{position: absolute;left:0;bottom:0;width: 100%;height:100%;background: url(../images/kisslong_img/meshtelecastp.png);}
+.meshtelecast h2{color: #363636;margin-top: 100px;margin-bottom: 118px;}
+.meshtelecast .btn{border-radius:0!important;font-size: 19px;margin:85px 19px 0;}
+.meshtelecast .btn span{top:3px;}
+.meshtelecast h4{font-size:16px;margin-bottom:37px;}
+.meshtelecast h4,.meshtelecast p{color: #363636;}
+.meshtelecast p{font-size: 14px;line-height:150%;text-indent:2em;text-align: left;}
+.meshtelecast .infor{text-align: center;}
+.meshtelecast-video a,.meshtelecast-explain a,.meshtelecast-askanswer a{color: #fff;}
+.meimg img{margin: 248px auto 0;}

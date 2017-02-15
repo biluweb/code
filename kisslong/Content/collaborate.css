@@ -1,0 +1,15 @@
+.Manner{padding: 63px 0 58px;}
+.Manner h2{margin-bottom: 71px;}
+
+.contact{padding: 31px 0 37px;background: #000;}
+.contact i{display:inline-block;height:40px;background: url(../images/kisslong_img/icon/sprap.png) 0 0 no-repeat;}
+.contact ul{text-align:center;}
+.contact li{width: 194px;display: inline-block;margin: 0 80px;}
+.contact li p{font-size: 16px;color: #fff;margin-top: 25px;}
+.contact li:hover p{color:#ea4335;}
+.contact li:hover i{background-position-y:-42px;}
+
+.contact .icon1{width: 46px;background-position: -112px 0;}
+.contact .icon2{width: 37px;background-position:-69px 0;}
+.contact .icon3{width: 26px;background-position: -2px 0;}
+.contact .icon4{width: 32px;background-position: -32px 0;}

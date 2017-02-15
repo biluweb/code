@@ -1,0 +1,11 @@
+/*首页*/
+.carousel-inner LI.one .mg01{margin-left:-823px;}
+.carousel-inner LI.two .e2mg01{margin-top:-262px;}
+.abstract .row{margin-top: 14%;}
+.meshtelecast .infor{margin-left:-419px;margin-top:-122px;}
+.attractconsult{background-repeat: repeat;}
+.Max1420 .carousel-inner li.one .mg01{margin-left:-481px;}
+.Max1420 .carousel-inner li.two .e2mg01{margin-top: -188px;}
+
+.abstract-tex,.abstract-img,.meshtelecast h2,.meshtelecast .infor,.kissApp h2,.kissApp-app,.kissApp-main,.attractconsult h2,.main-in{display: none;}
+.abstract-tex,.meshtelecast h2,.kissApp h2,.kissApp-app,.attractconsult h2{margin-left:0;}

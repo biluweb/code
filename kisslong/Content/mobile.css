@@ -1,0 +1,176 @@
+/* iteration Responsive of Mobile*/
+@media (min-width:0px)and (max-width:1200px){
+	.carousel-inner li.one .mg01 {width: 805px;}
+	.carousel-inner li.two .e2mg01{width: 714px;}
+}
+@media (min-width:0px)and (max-width:992px){
+	.drop span, .drop em{top: -18px;border-width: 9px;right:29px;}
+	.drop{padding: 10px;top: 49px;}
+	.drop li{line-height: 13px;}
+	/*首页*/
+	.carousel-inner li.one span, .carousel-inner li.three span{letter-spacing: 6px;}
+	.nav-list{margin-top: 17px;}
+	.nav-list li{padding: 20px;}
+	.carousel-inner li.one h2,.carousel-inner li.two h2,.carousel-inner li.three h2{font-size: 53px;}
+	.carousel-inner li.two h2{font-size: 47px;}
+	.carousel-inner li.one p,.carousel-inner li.two p{font-size:18px;}
+	
+	.carousel-inner li.three p{font-size: 18px;}
+.carousel-inner li.two .carousel-caption{left:10%!important;top: 33%;}
+	.list{right: 12px;}
+	.abstract-img .abstractimg1{float: none;margin: 100px auto;}
+	.meshtelecast .infor{width: 80%;}
+	.meshtelecast .btn{margin: 100px 21px 0;}
+	.kissApp-main .mwrap{margin: 10px auto;}
+	.attractconsult .main{position:inherit\9;position:initial;}
+	.attractconsult h2{margin-top: 99px;}
+	.main-in p{margin: 72px 0;font-size: 20px;margin-top: 94px;}
+	.attractconsult .ft01{right:44px;}
+	.main-in{margin-left: 70px;}
+	.main-in img{margin-top: 105px;}
+	#botm .fR{float: none;}
+	#botm .fR p{text-align: center;}
+	
+	/*公司风采*/
+	.attractconsult2{}
+	.attractconsult2 h2{margin-top: 60px;}
+	.attractconsult2 .mpwrap{width:322px;margin: 10px auto;}
+	.attractconsult2 .main-in img{width:322px;margin-top: 63px;}
+	.attractconsult2 .main-in{margin: 0 auto;}
+	.attractconsult2 .main-in p{margin: 45px 0;font-size: 16px;}
+	.attractconsult2 .ft01{display: none;}
+	/*产品服务*/
+	.meshtelecast2 h4{font-size: 24px;}
+	.meshtelecast2 .infor{margin: 0 auto;}
+	
+	/*吉贵and华商*/
+	.guidance-nav,.PCdownload,.appdown .appdown-in .ewm,.appdown p{display: none!important;}
+	.league h2,.commodity h2{margin-top: 56px;margin-bottom: 16px;}
+	.commodity h2{margin-bottom: 0;}
+	.main-l h3,.commodity h3{font-size: 16px;}
+	.league .main-r img,.commodity .main-r img{margin-top: 20px;}
+	.appdown{margin-top: 0;}
+	.appdown .texlb{right: 153px;}
+	.appdown .appdown-in,.appdown{width: 100%;}
+	.appdown .btndown{float: none;}
+	.APPdownload-hua .appdown .btndown div{display:block;width:171px;margin: 0 auto;}
+	.aptitude h2 {margin-bottom: 64px;margin-top: 43px;}
+	.bankimg li{height: 36px;padding:10px;}
+	.cooperbank h2{margin-bottom:29px;}
+	.bankimg{margin-bottom: 42px;}
+	.file-in li{width: 68px;}
+	.aptitudehua .file-in li {margin: 0 20px;width: 130px;}
+	.file .btl, .file .btr{font-size: 15px;margin-top:-7px;}
+	.hot-line{text-align: left;font-size: 24px;}
+	.hot-line .qq, .hot-line .chat, .hot-line .call{width: auto;margin: 5px 0;}
+	.hot-line .chat{margin: 0;}
+	.hot-line i{background-size: 38px 117px;width: 38px;height: 38px;margin-left: 25px;}
+	.hot-line i.con2{background-position-y:-40px;}
+	.hot-line i.con3{background-position-y:-79px;}
+}
+@media (min-width:0px)and (max-width:767px){
+	/*首页*/
+	#top,.navbar-Metalstouch{height: 50px;}
+	.Metalstouch-title{padding:10px;padding-right: 0;}
+	.Metalstouch-title img{width:98px}
+	.page{padding-top:50px;}
+	.navbar-header{float: left;}
+	.nav-list{margin-top: 11px;}
+	.nav-list li{padding: 7px;}
+	.nav-list li a{font-size: 12px;}
+	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{margin-right: 15px;}
+	.carousel-inner li.one h2, .carousel-inner li.two h2, .carousel-inner li.three h2{font-size: 31px;}
+	.carousel-inner li.two h2{font-size: 27px;}
+	.carousel-inner li.one span, .carousel-inner li.three span{letter-spacing: 1px;}
+	.carousel-inner li.one p, .carousel-inner li.two p{font-size: 12px;}
+	.carousel-inner li.three p{font-size: 16px;}
+	.carousel-inner li.one .mg01{width:405px;}
+	.carousel-inner li.two .e2mg01{width: 291px;bottom:227px;right: 50px;}
+	.htle{font-size: 28px;}
+	.abstract .row{margin: 0 auto;width: 90%;margin-top: 8%;}
+	.abstract-img .abstractimg1{margin:43px auto;width: 100%;}
+	.abstract-tex p{margin-top: 16px;}
+	.meshtelecast .btn{margin: 34px 21px 0;}
+	.meshtelecast h2{margin-top: 43px;}
+	.kissApp-main .mwrap{width: 85%;}
+	.kissApp-app{display: none;}
+	.ewmbox{margin-top: 18px;}
+	.ewmbox>div{display: block;}
+	.ewmbox img{margin:  0 auto;}
+	.ewmios{margin-right: 0;margin-bottom: 5px;}
+	.attractconsult .ft01{display: none;}
+	.attractconsult h2{margin-top: 37px;}
+	.main-in p{font-size: 16px;margin-top: 60px;}
+	.main-in{margin: 0 auto;width: 85%;}
+	#botm,#botm footer{height: 50px;}
+	#botm footer{overflow: hidden;}
+	#botm .ftt,#botm .fL,#botm br{display: none;}
+	#botm footer p{padding: 0;line-height:50px;}
+	/*关于我们*/
+	.prospect-tex{width:90%;}
+	.course{height: 364px;}
+	.institution .fR{display: none;}	
+	/*公司风采*/
+	.carousel-in{width: 85%;}
+	.carousel-in img{width:200px;}
+	/*产品服务*/
+	.meimg img{margin-top: 100px;}
+	.meshtelecast2{padding-bottom: 32px;}
+	.meshtelecast2 h2{margin-bottom: 47px;}
+	.kissApp2{padding-bottom: 20px;}
+	.kissApp2 .ewmios{margin-bottom: 40px;}
+}
+
+@media (min-width:0px)and (max-width:413px){
+	/*首页*/
+	.nav-list{margin-top: 14px;}
+	.nav-list li{padding: 4px;}
+	.carousel-inner li.two h2{font-size: 24px;}
+	.carousel-inner li.two .e2mg01{bottom:129px;}
+	.abstract-img .abstractimg1{display: none;}
+	.abstract-tex h2{margin-top: 36px;}
+	.meshtelecast p{display: none;}
+	.ewmbox img{padding: 5px;width: 104px;height: auto;}
+	.ewmios{margin-bottom: 12px;}
+	.main-in img{margin-top:20px;width: 253px;}
+	.main-in .mpwrap a{display: none;}
+	.main-in p{margin-bottom: 0;margin-top: 29px;}
+	.kissApp .row{margin-top: 0;}
+	.kissApp-main p{margin: 0;}
+	.ewmbox>div{display: inline-block;}
+	.ewmios{margin-right: 41px;}
+}
+@media (min-width:0px)and (max-width:374px){
+	/*首页*/
+	.ewmbox>div{display: block;}
+	.ewmios{margin-right:0px;}
+	#top .row{margin:0 -10px 0 -10px;}
+	.Metalstouch-title .logo_l{display: none;}
+	.Metalstouch-title .logo_lm{display: block;width: 29px;}
+	.carousel-inner li.one h2, .carousel-inner li.two h2, .carousel-inner li.three h2{font-size: 26px;}
+	.carousel-inner li.two h2{font-size: 20px;}
+	.carousel-inner li.one span, .carousel-inner li.three span{letter-spacing: 0;}
+	.carousel-inner li.two .e2mg01{width: 207px;}
+	.carousel-inner li.one .mg01{width: 332px;right: 6px;}
+	.abstract .row{margin-top: 0;}
+	.abstract-tex h2{margin-top: 22px;}
+	.htle{font-size: 21px;}
+	.abstract-tex p{margin-top: 8px;}
+	.abstract-tex p,p{font-size: 14px;}
+	.meshtelecast h4{display: none;}
+	.kissApp-main .htex p{display: none;}
+	.attractconsult h2{margin-top: 20px;}
+	.main-in p{margin-top: 19px;font-size:12px}
+	.main-in img{width: 228px;}
+	/*关于我们*/
+	.course{height: 284px;}
+	.institution h3{font-size: 20px;}
+	.institution p{font-size: 12px;}
+	/*公司风采*/
+	.team{padding-top:55px;}
+	.carousel .btl, .carousel .btr{font-size: 19px;}
+	.carousel-in img{width: 128px;}
+	.attractconsult2 .mpwrap,.attractconsult2 .main-in img{width: 100%;}
+	/*产品服务*/
+	.meimg img{width: 100%;}
+}

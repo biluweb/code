@@ -1,0 +1,12 @@
+<!--pages/search/search.wxml-->
+<view class="searcht">
+    <view class='receive'>
+        <input />  <button>查询</button>
+    </view>
+    <view class="tips">你要搜索:</view>
+</view>
+
+<import src="../template/movietpl"/>
+<template is="movietpl" data="{{item}}"/>
+
+

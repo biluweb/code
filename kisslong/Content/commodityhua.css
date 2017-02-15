@@ -1,0 +1,19 @@
+body{color:#5e5e5e;}
+.commodity{font-size: 16px;line-height: 250%;}
+.commodity h2{margin-top: 80px;margin-bottom: 70px;}
+.commodity p{text-indent:2em;margin: 20px 0;}
+.main-l h3{margin-top: 43px;font-weight: bold;font-size: 18px;}
+.main-r img{width: 100%;margin-top: 40px;}
+
+.file>span{display: none;}
+.file-in{border: 0;}
+.btndown div{display:inline-block;}
+.btndown div.ios{margin-right:60px;}
+.btndown div p{font-size:36px; line-height: 40px; margin-bottom:40px;}
+.btndown .ios p{color:#333; }
+.btndown .andrio p{color:#EA4335;}
+
+.file-in ul{width:100%;}
+.file-in ul li{margin:0px 35px;}
+.file-in ul li.r{float: right;}
+

@@ -1,0 +1,17 @@
+<!--pages/template/template.wxml-->
+<template name="movietpl">
+    <view class="list">
+        <block wx:for='22222'>
+            <view class='item' bindtap='jump'>
+            <image src="../../assets/img/003.jpg"></image>
+            <view class='infor'>
+                <text>名称：极限特工3：终极回归</text>
+                <text>导演：D.J.卡鲁索</text>
+                <text>主演：迪皮卡/迪赛尔皮卡</text>
+                <text>类型：动作/惊险</text>
+                <text>上映年份：2016（中国大陆）</text>
+            </view>
+           </view>
+        </block>
+    </view>
+</template>

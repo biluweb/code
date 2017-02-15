@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+<script>
+window.onload=function(){
+	var t=new Drag();
+	console.log(t.init)
+}
+
+
+function Drag(){
+	this.obj=null;
+	this.disX = 0;
+	this.disY = 0;
+	
+	this.setting={
+		toDown : function(){},
+		toUp : function(){}
+	}
+}
+Drag.prototype={
+	init:function(opt){
+		this.obj=document.getElmentByClassName('b')
+		extend(this.setting,opt)
+	}
+}
+
+
+function extend(obj1,obj2){
+	for(var attr in obj2){
+		obj1[attr] = obj2[attr];
+	}
+}
+</script>
