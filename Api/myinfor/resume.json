@@ -2,25 +2,25 @@
 		"infor":{
 			"name":"毕露",
 			"post":"职位:Web前端",
-			"age":"22",
+			"age":"年龄:22",
 			"hd":"男|三年工作经验|1995年4月|未婚",
 			"ch":"现居住于上海-| 户口重庆",
 			"phone":"手机：15099681691",
 			"email":"E-mail：bilu.verygood@aliyun.com"
 		},
-		"nav":["首页","个人作品","联系我"],
+		"nav":[["首页","index.html"],["个人作品","myWorks.html"],["联系我","contact.html"]],
 		"headline":{
 			"evaluate":[
 				"自我评价",
-				["1、掌握网页制作流程，精通应用HTML、DIV/CSS布局；<br/>",
-				"2、熟悉javascript类库，如jquery,实现常规Web效果开发；<br/>",
-				"3、熟悉html5 + css3的新功能，熟悉移动端的网页开发；<br/>",
-				"4、能够很好的兼容主流浏览器，IE8+   Chrome  Firefox...；<br/>",
-				"5、熟悉PS、FW相关作图软件；<br/>",
-				"6、具有强烈的团队合作意识，抗压能力强，能很快融入到集体中去；<br/>",
-				"7、熟悉Ajax、Json数据交互；<br/>",
-				"8、熟悉Bootstrap  Mui Angular Vue React 前端框架；<br/>",
-				"9、熟悉nodejs、实现sass、页面模块化、自动化开发环境；<br/>",
+				["1、掌握网页制作流程，精通应用HTML、DIV/CSS布局；",
+				"2、熟悉javascript类库，如jquery,实现常规Web效果开发；",
+				"3、熟悉html5 + css3的新功能，熟悉移动端的网页开发；",
+				"4、能够很好的兼容主流浏览器，IE8+   Chrome  Firefox...；",
+				"5、熟悉PS、FW相关作图软件；",
+				"6、具有强烈的团队合作意识，抗压能力强，能很快融入到集体中去；",
+				"7、熟悉Ajax、Json数据交互；",
+				"8、熟悉Bootstrap  Mui Angular Vue React 前端框架；",
+				"9、熟悉nodejs、实现sass、页面模块化、自动化开发环境；",
 				"10、对微信小程序开发 有所了解；"]
 			],
 			"intention":[
