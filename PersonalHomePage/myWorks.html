@@ -6,85 +6,87 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/myWorks.css">
         <link rel="shortcut icon" href="favicon.ico"/>
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/mobileDevice.js"></script>
+		<script src="js/require.js"></script>
+		<script src="js/requireconfig.js"></script>
 		<script type="text/javascript">
-			if(isMobileDevice()){
-				$('head').append("<link rel='stylesheet' type='text/css' href='css/myMobile.css' />");
-			}
+			require(['mybase'], function (){console.log('load js ok!')});
 		</script>
     </head>
     <body>
-    	<nav>
-        <div class="dialogue xycenter"></div>
-    		<div class="nvbx">
+    	<div id="app">
+    		<nav>
+	        <div class="dialogue xycenter"></div>
+	    		<div class="nvbx">
     				<h1>毕露</h1>
     				<ul class="fR">
-    					<li><a href="index.html">首页</a></li>
-    					<li class="current"><a href="myWorks.html">个人作品</a></li>
-    					<li><a href="contact.html">联系我</a></li>
+    					<template v-for="item in resume.nav">
+						    <li v-bind:class="{current:navcurt==item[1]?true:false}">
+	    						<a v-bind:href="item[1]">{{item[0]}}</a>
+							</li>
+					  	</template>
     				</ul>
-    		</div>
-		</nav>
-		<div class="pointer xtp"></div>
-		<div class="warp m0auto">
-    		<div class="main">
-    			<h1>个人作品</h1>
-    			<a href="html/fashion/index.html" target="_blank">
-	    			<div class="clik m0auto">
-		    			<div class="main-hd bd"><img src="image/img/fash.png"></div>
-		    			<div class="main-ft bd">
-		    				<p>时尚集团官网</p>
+	    		</div>
+			</nav>
+			<div class="pointer xtp"></div>
+			<div class="warp m0auto">
+	    		<div class="main">
+	    			<h1>个人作品</h1>
+	    			<a href="html/fashion/index.html" target="_blank">
+		    			<div class="clik m0auto">
+			    			<div class="main-hd bd"><img src="image/img/fash.png"></div>
+			    			<div class="main-ft bd">
+			    				<p>时尚集团官网</p>
+			    			</div>
 		    			</div>
-	    			</div>
-	    		</a>
-    		</div>
-    		<div class="cut-off"></div>
-    		<div class="main main-2">
-    			<a href="html/taobao/index.html" target="_blank">
-	    			<div class="clik m0auto">
-		    			<div class="main-hd bd"><img src="image/img/taobao.png"></div>
-		    			<div class="main-ft bd">
-		    				<p>淘宝网，淘你喜欢！</p>
+		    		</a>
+	    		</div>
+	    		<div class="cut-off"></div>
+	    		<div class="main main-2">
+	    			<a href="html/taobao/index.html" target="_blank">
+		    			<div class="clik m0auto">
+			    			<div class="main-hd bd"><img src="image/img/taobao.png"></div>
+			    			<div class="main-ft bd">
+			    				<p>淘宝网，淘你喜欢！</p>
+			    			</div>
 		    			</div>
-	    			</div>
-    			</a>
-    		</div>
-    		<div class="cut-off"></div>
-    		<div class="main main-3">
-    			<a href="html/mytaomao/index.html" target="_blank">
-	    			<div class="clik m0auto">
-		    			<div class="main-hd bd"><img src="image/img/mtaobao.png"></div>
-		    			<div class="main-ft bd">
-		    				<p>淘宝网---响应式/手机端</p>
+	    			</a>
+	    		</div>
+	    		<div class="cut-off"></div>
+	    		<div class="main main-3">
+	    			<a href="html/mytaomao/index.html" target="_blank">
+		    			<div class="clik m0auto">
+			    			<div class="main-hd bd"><img src="image/img/mtaobao.png"></div>
+			    			<div class="main-ft bd">
+			    				<p>淘宝网---响应式/手机端</p>
+			    			</div>
 		    			</div>
-	    			</div>
-	    		</a>
-    		</div>
-    		<div class="cut-off"></div>
-    		<div class="main main-4">
-    			<a href="html/marketing/html/index.html" target="_blank">
-	    			<div class="clik m0auto">
-		    			<div class="main-hd bd"><img src="image/img/yinxiao.png"></div>
-		    			<div class="main-ft bd">
-		    				<p>企业营销官网</p>
+		    		</a>
+	    		</div>
+	    		<div class="cut-off"></div>
+	    		<div class="main main-4">
+	    			<a href="html/marketing/html/index.html" target="_blank">
+		    			<div class="clik m0auto">
+			    			<div class="main-hd bd"><img src="image/img/yinxiao.png"></div>
+			    			<div class="main-ft bd">
+			    				<p>企业营销官网</p>
+			    			</div>
 		    			</div>
-	    			</div>
-	    		</a>
-    		</div>
-    		<div class="cut-off"></div>
-    		<div class="main main-5">
-    			<a href="http://www.longding999.com/" target="_blank">
-	    			<div class="clik m0auto">
-		    			<div class="main-hd bd"><img src="image/img/qinlong.png"></div>
-		    			<div class="main-ft bd">
-		    				<p>Bootstrap3-响应式布局</p>
+		    		</a>
+	    		</div>
+	    		<div class="cut-off"></div>
+	    		<div class="main main-5">
+	    			<a href="http://www.longding999.com/" target="_blank">
+		    			<div class="clik m0auto">
+			    			<div class="main-hd bd"><img src="image/img/qinlong.png"></div>
+			    			<div class="main-ft bd">
+			    				<p>Bootstrap3-响应式布局</p>
+			    			</div>
 		    			</div>
-	    			</div>
-	    		</a>
-    		</div>
+		    		</a>
+	    		</div>
+	    	</div>
+	    	<div class="pointer mt10"></div>
+	    	<footer></footer>
     	</div>
-    	<div class="pointer mt10"></div>
-    	<footer></footer>
     </body>
 </html>

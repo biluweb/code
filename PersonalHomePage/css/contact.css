@@ -3,7 +3,7 @@ nav{
 	background:#fff;border-top: 2px solid #f08e36;z-index: 100;
 	border-bottom:2px solid #666;
 }
-html,body{height: 100%;}
+html,body,#app{height: 100%;}
 body{background: #1a1a1a;}
 .main{width: 1200px;height: 100%;background:#c6c6c6;}
 .kong{height: 124px;}

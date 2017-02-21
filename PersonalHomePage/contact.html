@@ -6,36 +6,39 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/contact.css">
         <link rel="shortcut icon" href="favicon.ico"/>
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/mobileDevice.js"></script>
+        <script src="js/require.js"></script>
+		<script src="js/requireconfig.js"></script>
 		<script type="text/javascript">
-			if(isMobileDevice()){
-				$('head').append("<link rel='stylesheet' type='text/css' href='css/myMobile.css' />");
-			}
+			require(['mybase'], function (){console.log('load js ok!')});
 		</script>
     </head>
     <body>
-	    <nav>
-	    <div class="dialogue xycenter"></div>
-    		<div class="nvbx">
-				<h1>毕露</h1>
-				<ul class="fR">
-					<li><a href="index.html">首页</a></li>
-					<li><a href="myWorks.html">个人作品</a></li>
-					<li class="current"><a href="contact.html">联系我</a></li>
-				</ul>
-    		</div>
-		</nav>
-		<div class="kong"></div>
-		<div class="main m0auto main-contack">
-			<div class="xycenter minfor">
-				<p>姓名:毕露</p>
-				<p>职位:Web前端开发工程师</p>
-				<p>手机:15099681691</p>
-				<p>E-mail：bilu.verygood@aliyun.com </p>
+    	<div id="app">
+    		<nav>
+		    <div class="dialogue xycenter"></div>
+	    		<div class="nvbx">
+					<h1>{{resume.infor.name}}</h1>
+					<ul class="fR">
+						<template v-for="item in resume.nav">
+						    <li v-bind:class="{current:navcurt==item[1]?true:false}">
+	    						<a v-bind:href="item[1]">{{item[0]}}</a>
+							</li>
+					  	</template>
+					</ul>
+	    		</div>
+			</nav>
+			<div class="kong"></div>
+			<div class="main m0auto main-contack">
+				<div class="xycenter minfor">
+					<template v-for='(value, key) in resume.infor'>
+						<p v-if="key!='age'&&key!='hd'&&key!='ch'">
+							 {{value}}
+						</p>
+					</template>
+				</div>
 			</div>
-		</div>
-		<div class="pointer"></div>
-		<footer></footer>
+			<div class="pointer"></div>
+			<footer></footer>
+    	</div>
     </body>
 </html>

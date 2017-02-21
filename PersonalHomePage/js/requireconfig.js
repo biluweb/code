@@ -5,5 +5,6 @@ require.config({
 　　　　　　"jquery.mousewheel":"js/jquery.mousewheel.min",
 		    "mobileDevice":"js/mobileDevice",
 		    "vue":"https://unpkg.com/vue/dist/vue",
+		    "mybase":"js/mybase"
 　　　　}
 });
