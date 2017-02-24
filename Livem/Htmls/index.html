@@ -1,0 +1,1218 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>钦龙点金</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="/code/Livem/Content/css/mui-sass/sass/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/code/Livem/Content/css/reset.css" />
+    <link rel="stylesheet" href="/code/Livem/Content/css/Zhibo/icon.css" />
+    <link rel="stylesheet" href="/code/Livem/Content/css/index.css" />
+    <script src="/code/Livem/Content/css/mui-sass/js/mui.js"></script>
+    <script src="/code/Livem/Scripts/ComPonent/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/code/Livem/Scripts/base/AnswerHeight.js"></script>
+</head>
+<body>
+    <!-- 主界面菜单同时移动 -->
+    <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+        <!-- 主页面容器 -->
+        <div class="mui-inner-wrap">
+            <!-- 菜单容器 -->
+            <!-- 菜单容器 -->
+            <script type="text/javascript">
+                mui.init({
+                    gestureConfig: {
+                        swipe: false, //默认为true
+                    }
+                }); //mui初始化
+            </script>
+            <script src="/code/Livem/Scripts/base/PackagingFunction.js" type="text/javascript" charset="utf-8"></script>
+            <link rel="stylesheet" href="/code/Livem/Content/css/Modules/My.css" />
+            <script src="/code/Livem/Scripts/ComPonent/layer_mobile/layer.js"></script>
+            <aside class="mui-off-canvas-left" id="offCanvasSide">
+                <!-- 菜单具体展示内容 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+
+                        <!--酱油状态-->
+                        <div class="youke">
+                            <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png">
+                            <span>游客402LF</span>
+
+                            <!--登录注册按钮-->
+                            <div id="user-state-container" class="logoOrSign">
+                                <a href="/code/Livem/Htmls/MyDetails/LoginAndRegistration.html" id="btnlogin" class="mui-btn login_btn">登录</a>
+                                <a href="/code/Livem/Htmls/MyDetails/LoginAndRegistration.html" class="mui-btn logoOrSign_sign">注册</a>
+                            </div>
+                        </div>
+
+                        <!--登录状态-->
+                        <div class="logined" style="display: none;">
+                            <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                            <span>text5288</span>
+
+                            <!--个人中心-->
+                            <div class="preinfor">
+                                <div class="concenper">
+                                    <a href="/code/Livem/Htmls/MyDetails/ModifyInfo.html">
+                                        <em>
+                                            <i class="iconspri icon-cenp"></i>
+                                            <span>个人中心</span>
+                                        </em>
+                                        <i class="iconspri icon-detailso fr"></i>
+                                    </a>
+                                </div>
+                                <div class="conloginout">
+                                    <a href="javascript:;">
+                                        <i class="iconspri icon-cout"></i>
+                                        <span>退出</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--内容区-->
+
+                        <div class="canvas-left-infor">
+                            <div class="customer-service">
+                                <h2 class="htitle">
+                                    <span>在线客服</span>
+                                </h2>
+                                <a href="javascript:ContactQQ();" class="mui-btn tasi">
+                                    <i class="iconspri icon-aid"></i>
+                                    <span class="tlv-txt">老师助理</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn mof">
+                                    <i class="iconspri icon-way"></i>
+                                    <span class="tlv-txt">领取战法</span>
+                                </a>
+                                <a href="javascript:ContactQQ2();" class="mui-btn ptt">
+                                    <i class="iconspri icon-league"></i>
+                                    <span class="tlv-txt">招商加盟</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn ope">
+                                    <i class="iconspri icon-openac"></i>
+                                    <span>在线开户</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn sup">
+                                    <i class="iconspri icon-support"></i>
+                                    <span>技术支持</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn pre">
+                                    <i class="iconspri icon-press"></i>
+                                    <span>联系客服</span>
+                                </a>
+                            </div>
+
+                            <div class="share">
+                                <h2 class="htitle">
+                                    <span>分享</span>
+                                </h2>
+                                <div class="bdsharebuttonbox">
+                                    <a href="javascript:;" class="bds_sqq"></a>
+                                    <a href="javascript:;" class="bds_tsina"></a>
+                                    <a href="javascript:;" class="bds_qzone"></a>
+                                </div>
+                            </div>
+
+                            <div class="clause">
+                                <h2 class="htitle">
+                                    <span>用户服务条款</span>
+                                </h2>
+                                <p class="mystatement">《风险提示及服务声明》</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <script>
+                mui.ready(function() {
+                    //阻止侧滑菜单拖拽事件
+                    var offCanvasInner = document.querySelector('.mui-inner-wrap');
+                    offCanvasInner.addEventListener('drag', function(event) {
+                        event.stopPropagation();
+                    });
+
+                    //mui滚动调用
+                    mui('.mui-scroll-wrapper').scroll({
+                        scrollY: true, //是否竖向滚动
+                        scrollX: false, //是否横向滚动
+                        startX: 0, //初始化时滚动至x
+                        startY: 0, //初始化时滚动至y
+                        indicators: true, //是否显示滚动条
+                        deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+                        bounce: true, //是否启用回弹
+                    });
+
+                    //解决a标签不跳转问题
+                    mui('body').on('tap', 'a', function() {
+                        document.location.href = this.href;
+                    });
+
+                    //风险提示说明
+                    var statebtn = doc.querySelector('.mystatement');
+                    statebtn.addEventListener('tap', myopenstate);
+
+                    function myopenstate() {
+                        layer.open({
+                            type: 1,
+                            className: 'statementOpened',
+                            title: '风险提示与用户服务',
+                            anim: 'up',
+                            content: '<div class="framewrap" style="width:100%;height:100%;-webkit-overflow-scrolling:touch;overflow:auto;"><iframe src="/code/Livem/htmls/MyDetails/Statement.html" frameborder="0" style="width:100%;height:100%;"></iframe>',
+                            //		  btn: ['同意','拒绝'],
+                            success: function(elem) {
+                                var stat = elem.querySelector('.statementOpened'),
+                                    title = stat.querySelector('h3'),
+                                    btn = stat.querySelector('.layui-m-layerbtn');
+                                title.appendChild(doc.createElement("span"));
+                                stat.querySelector('h3 span').addEventListener('tap', function(index) {
+                                    layer.closeAll();
+                                })
+                                elem.querySelector('.framewrap').style.height = stat.clientHeight - title.clientHeight - 18 + 'px';
+                            },
+                        });
+                    }
+                })
+            </script>
+            <!-- 主页面标题 -->
+            <!-- 主页面标题 -->
+            <link rel="stylesheet" type="text/css" href="/code/Livem/Content/css/Modules/Nav.css" />
+            <link rel="stylesheet" type="text/css" href="/code/Livem/Content/css/Zhibo/icon.css" />
+            <header class="mui-bar mui-bar-nav">
+                <a class="mui-icon mui-action-menu mui-pull-left" href="#offCanvasSide">
+                    <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png" />
+                </a>
+                <a href="javascript:;" id="openPopover" class="mui-icon mui-pull-right">
+                    <!--<img src="/code/Livem/Images/Zhibo/icon/class.png"/>-->
+                    <i class="iconspri icon-slide"></i>
+                </a>
+                <h1 class="mui-title">
+                    <!--logo状态-->
+                    <img src="/code/Livem/Images/base/Logo.png" />
+
+                    <!--文字状态-->
+                    <!--个人中心-->
+                </h1>
+            </header>
+            <!--快速导航-->
+            <link rel="stylesheet" href="/code/Livem/Content/css/Modules/Slide.css" />
+            <div id="popover" class="off-canvas-top">
+                <header class="mui-bar mui-bar-nav">
+                    <a href="javascript:;" class="mui-icon mui-action-menu mui-pull-left">
+                        <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png" />
+                    </a>
+                    <a href="javascript:;" id="closePopover" class="mui-icon mui-pull-right">
+                        <i class="iconspri icon-slideclose"></i>
+                    </a>
+                    <h1 class="mui-title">
+                        <img src="/code/Livem/Images/base/Logo.png" />
+                    </h1>
+                </header>
+
+                <div class="mui-content">
+                    <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <dl class="zhibo-nav">
+                                <dt>服务入口</dt>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/index.html">
+                                        <i class="iconspri icon-home"></i>
+                                        <span>首页</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/vipTic_m.html">
+                                        <i class="iconspri icon-vipzf"></i>
+                                        <span>VIP战法</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/calendar_m.html">
+                                        <i class="iconspri icon-calendar"></i>
+                                        <span>财经日历</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/teacher_m.html">
+                                        <i class="iconspri icon-referral"></i>
+                                        <span>老师介绍</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/softDown_m.html">
+                                        <i class="iconspri icon-downloadsoft"></i>
+                                        <span>软件下载</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/college_m.html">
+                                        <i class="iconspri icon-college"></i>
+                                        <span>钦龙学院</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/activity_m.html">
+                                        <i class="iconspri icon-activitye"></i>
+                                        <span>活动入口</span>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                mui.ready(function() {
+                    //下滑导航
+                    var slidnav = new SlideDt('#openPopover', '#closePopover');
+                    slidnav.init();
+
+                })
+            </script>
+
+
+            <!--主要内容-->
+            <div class="mui-content">
+
+                <!--视频区-->
+                <div class="video">
+                    <span class="onlineCurrent">当前在线：2000</span>
+                    <gs:video-live id="videoComponent" site="longding999.gensee.com" ownerid="7578c6014df74874aff1ef2951a0839d" k="hUe18fHq8S26c7Vqliy0POu06lZmzxtj3lYrP6at1h3Pr5V0trDxhCQjVxkE3LaR6FhLN6gzyPY4l/A51KeK5EkzeCsTUmX2jxXIaWjDHac=" class="gs-sdk-widget">
+                        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="_GS_FLASH_ID_videoComponent" width="100%" height="100%" codebase="https://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab#version=11.1.0.0">
+                            <param name="movie" value="http://static.gensee.com/webcast/static/sdk/flash/GenseeEasyLive.swf?160426">
+                            <param name="wmode" value="transparent">
+                            <param name="quality" value="high">
+                            <param name="bgcolor" value="#000000">
+                            <param name="allowScriptAccess" value="always">
+                            <param name="allowFullScreen" value="true">
+                            <param name="flashvars" value="sc=0&amp;entry=http%3A%2F%2Flongding999.gensee.com%2Fwebcast&amp;code=7578c6014df74874aff1ef2951a0839d__20111e77c5b94d508e9a42ee54c59fa7&amp;lang=&amp;nickName=visitor_rOPPYq&amp;httpMode=false&amp;group=&amp;widgetid=videoComponent&amp;userdata=&amp;showCBar=&amp;backURI=&amp;ver=4.0&amp;publicChat=&amp;init=&amp;liveImprovedMode=false&amp;visible=true&amp;embedNetSettings=true&amp;batchRecChat=false">
+                            <embed src="http://static.gensee.com/webcast/static/sdk/flash/GenseeEasyLive.swf?160426" quality="high" bgcolor="#000000" wmode="transparent" width="100%" height="100%" name="_GS_FLASH_ID_videoComponent" align="middle" play="true"
+                                loop="false" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" flashvars="sc=0&amp;entry=http%3A%2F%2Flongding999.gensee.com%2Fwebcast&amp;code=7578c6014df74874aff1ef2951a0839d__20111e77c5b94d508e9a42ee54c59fa7&amp;lang=&amp;nickName=visitor_rOPPYq&amp;httpMode=false&amp;group=&amp;widgetid=videoComponent&amp;userdata=&amp;showCBar=&amp;backURI=&amp;ver=4.0&amp;publicChat=&amp;init=&amp;liveImprovedMode=false&amp;visible=true&amp;embedNetSettings=true&amp;batchRecChat=false"
+                                pluginspage="http://www.adobe.com/go/getflashplayer"> </object>
+                    </gs:video-live>
+                </div>
+
+                <!--功能区-->
+                <div id="leftTabBox" class="tabBox">
+                    <div class="hd">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">在线聊天</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">课程表</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">实时行情</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">操作建议</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <!--这里是在线聊天-->
+                            <div class="lvcenter">
+                                <div class="lvctcon">
+                                    <div class="lvctlist mui-scroll-wrapper" id="dissCumsg">
+                                        <div class="mui-scroll">
+                                            <ul>
+                                                <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                        <span>[10:50]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>
+                                                            万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                        <span>[10:50]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>
+                                                            万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                        <span>[14:08]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>希拉里 还有希望，是吧</span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                        <span>[10:50]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>
+                                                            万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                        <span>[10:50]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>
+                                                            万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                        <span>[10:50]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>
+                                                            万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                        <span>[14:08]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>希拉里 还有希望，是吧</span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                        <span>[14:08]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>希拉里 还有希望，是吧</span>
+                                                    </div>
+                                                </li>
+                                                <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                    <a href="javascript:void(0);" class="lvcttx">
+                                                        <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png">
+                                                    </a>
+                                                    <div class="lvctinfor">
+                                                        <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                        <span>[14:08]</span>
+                                                    </div>
+                                                    <div class="lvcttext">
+                                                        <span>希拉里 还有希望，是吧</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="speak">
+                                        <div class="lvctinput clearfix">
+                                            <input class="lvctarea fl" id="TCommTextBox" placeholder="游客每天仅有三次发言机会哦!" />
+                                            <a href="javascript:;" class="lvctsent" id="btnTouSend">发送</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                mui.ready(function() {
+                                    //解决input焦点无法取消
+                                    var inputf = new InputFocus('#TCommTextBox');
+                                    inputf.hover('.lvctsent');
+
+
+                                    setTimeout(function() {
+                                        mui('#dissCumsg').pullRefresh().scrollToBottom(500)
+                                    }, 1000)
+                                })
+                            </script>
+
+
+                        </ul>
+                        <ul>
+                            <!--课程表-->
+                            <div class="mui-scroll-wrapper">
+                                <div class="mui-scroll">
+                                    <div class="syllabus">
+                                        <div class="syllabus-tabh">
+                                            <ul>
+                                                <li class="on">
+                                                    <a href="javascript:;">星期一</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">星期二</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">星期三</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">星期四</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">星期五</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="syllabus-tabd">
+                                            <ul class="active">
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="ProgramCurrent">
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="ProgramCurrent">
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="ProgramCurrent">
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="ProgramCurrent">
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="ProgramCurrent">
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="program">
+                                                        <div class="time">09:00-11:00</div>
+                                                        <div class="infor">
+                                                            <span class="program-name">《股动人心》</span>
+                                                            <span class="program-teacher">姜俊平、张璐</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                mui.ready(function() {
+                                        var cuttab = new syllabusTab('.syllabus');
+                                        cuttab.init();
+                                    })
+                                    //tabs code
+                                function syllabusTab(dom) {
+                                    this.box = document.querySelector(dom);
+                                    this.tabh = this.box.querySelector('.syllabus-tabh');
+                                    this.tabhli = this.tabh.querySelectorAll('li');
+                                    this.tabd = this.box.querySelector('.syllabus-tabd');
+                                    this.tabdul = this.tabd.querySelectorAll('ul');
+                                }
+                                syllabusTab.prototype.init = function() {
+                                    for (var i = 0, l = this.tabhli.length; i < l; i++) {
+                                        var This = this;
+                                        this.tabhli[i].index = i;
+                                        this.tabhli[i].addEventListener('tap', function() {
+                                            for (var i = 0; i < This.tabhli.length; i++) {
+                                                This.tabhli[i].className = '';
+                                                This.tabdul[i].className = '';
+                                            }
+                                            this.className = 'on';
+                                            This.tabdul[this.index].className = 'active';
+                                        })
+                                    }
+                                }
+                            </script>
+                        </ul>
+                        <ul>
+                            <!--实时行情-->
+                            <style type="text/css">
+                                .market {
+                                    height: 100%;
+                                    position: relative;
+                                }
+                                
+                                .market .mask {
+                                    height: 100%;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                }
+                            </style>
+                            <div class="market">
+                                <iframe class="xcenter" src="http://cdn.jin10.com/bottomprice/indexp.html" frameborder="0" scrolling="no" style="width:100%;height:100%;padding:0px 10px 0;">
+                                </iframe>
+                                <div class="mask"></div>
+                            </div>
+                        </ul>
+                        <ul>
+                            <!--操作建议-->
+                            <div class="mui-scroll-wrapper">
+                                <div class="mui-scroll">
+                                    <div class="suggest">
+                                        <!--未登录布局-->
+                                        <div class="notlogged">
+                                            <span></span>
+                                            <p>
+                                                尊敬的用户：
+                                                <br> 目前此功能只对《钦龙点金》注册会员开放。
+                                                <br> 请
+                                                <a href='/code/Livem/Htmls/MyDetails/LoginAndRegistration.html'>登录</a>
+                                                <a href="/code/Livem/Htmls/MyDetails/LoginAndRegistration.html">注册</a>
+                                            </p>
+                                        </div>
+
+                                        <!--登录状态布局    more多单--empty空单-->
+                                        <div class="loggenon more" style="display:none;">
+                                            <h1>8500
+                                                <span>价格</span>
+                                            </h1>
+                                            <div class="OrderSend-time">开仓时间：7月13日 00:03</div>
+                                            <div class="infor">
+                                                <div class="theme">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="hd">类型</div>
+                                                            <div class="bd">现价做多</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="hd">商品</div>
+                                                            <div class="bd">原油</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="hd">止损价</div>
+                                                            <div class="bd">30点</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="hd">止盈价</div>
+                                                            <div class="bd">30-50点</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="explain">特殊说明：现价做空现价做空现价做空现价做空价做空现价做空现价做空</p>
+                                            </div>
+                                            <p>以上操作建议仅供参考。投资有风险，入市需谨慎。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    TouchSlide({
+                        slideCell: "#leftTabBox"
+                    });
+                </script>
+
+            </div>
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    //mui.ready() ---入口函数
+    mui.ready(function() {
+        //页面响应
+        var tabulauto = new AutoHeight();
+        tabulauto.init();
+        window.addEventListener('resize', function() {
+            tabulauto.init();
+        })
+    })
+</script>

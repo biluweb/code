@@ -1,0 +1,56 @@
+.mui-content .mui-scroll-wrapper {
+  top: 48px;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox {
+  width: 100%;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox h2 {
+  font-size: 16px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox div.text {
+  padding: 0 10px;
+  padding-bottom: 15px;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox div.text span {
+  font-size: 16px;
+  line-height: 62px;
+  color: #333;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox div.text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  text-indent: 2em;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox div.page {
+  border-top: 1px solid #ddd;
+  padding: 15px 10px;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox div.page a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox p.announce {
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 10px 10px;
+}
+
+.mui-content .mui-scroll-wrapper .mui-scroll .articleBox p.announce span {
+  color: #ea4335;
+}

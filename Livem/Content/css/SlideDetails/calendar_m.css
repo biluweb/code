@@ -1,0 +1,58 @@
+.warp .tab {
+  height: 40px;
+}
+
+.warp .tab li {
+  width: 50%;
+  float: left;
+  background-color: #0f7ace;
+}
+
+.warp .tab li a {
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+.warp .tab li:nth-child(1) span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url(/Images/SlideDetails/calendar_m/icon1.png) no-repeat;
+  background-size: contain;
+}
+
+.warp .tab li:nth-child(2) span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url(/Images/SlideDetails/calendar_m/icon2.png) no-repeat;
+  background-size: contain;
+}
+
+.warp .tab li.on {
+  background-color: #005191;
+}
+
+.warp .infor div {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  display: none;
+}
+
+.warp .infor div iframe {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.warp .infor div.active {
+  display: block;
+}

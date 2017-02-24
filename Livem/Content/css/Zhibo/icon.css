@@ -1,0 +1,140 @@
+.iconspri {
+  background: url(/code/Livem/Images/base/iconspri.png) -1px -1px no-repeat;
+  background-size: 414px 736px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.iconspri.icon-slide {
+  width: 23px;
+  height: 17px;
+}
+
+.iconspri.icon-slideclose {
+  background-position: -24px -62px;
+  width: 14px;
+  height: 16px;
+}
+
+.iconspri.icon-vipzf {
+  background-position-y: -18px;
+  width: 21px;
+  height: 16px;
+}
+
+.iconspri.icon-calendar {
+  background-position-y: -35px;
+  width: 20px;
+  height: 18px;
+  top: 4px;
+}
+
+.iconspri.icon-referral {
+  background-position-y: -55px;
+  width: 20px;
+  height: 17px;
+}
+
+.iconspri.icon-downloadsoft {
+  background-position-y: -73px;
+  width: 20px;
+  height: 18px;
+  top: 3px;
+}
+
+.iconspri.icon-college {
+  background-position-y: -93px;
+  width: 20px;
+  height: 15px;
+}
+
+.iconspri.icon-activitye {
+  background-position-y: -110px;
+  width: 20px;
+  height: 17px;
+}
+
+.iconspri.icon-cenp {
+  background-position-y: -129px;
+  width: 19px;
+  height: 19px;
+  top: 4px;
+}
+
+.iconspri.icon-cout {
+  background-position-y: -148px;
+  width: 17px;
+  height: 18px;
+  top: 4px;
+}
+
+.iconspri.icon-detailso {
+  background-position: -24px -44px;
+  width: 11px;
+  height: 18px;
+}
+
+.iconspri.icon-aid {
+  background-position-y: -166px;
+  width: 20px;
+  height: 18px;
+}
+
+.iconspri.icon-way {
+  background-position-y: -186px;
+  width: 23px;
+  height: 19px;
+}
+
+.iconspri.icon-league {
+  background-position-y: -206px;
+  width: 22px;
+  height: 20px;
+}
+
+.iconspri.icon-openac {
+  background-position-y: -227px;
+  width: 22px;
+  height: 19px;
+}
+
+.iconspri.icon-support {
+  background-position-x: -23px;
+  width: 22px;
+  height: 22px;
+}
+
+.iconspri.icon-press {
+  background-position: -24px -24px;
+  width: 18px;
+  height: 18px;
+}
+
+.iconspri.icon-home {
+  background-position: -21px -135px;
+  width: 19px;
+  height: 18px;
+}
+
+.pass-state {
+  color: #ea4335;
+  display: block;
+  margin-top: 10px;
+}
+
+.pass-state em.error {
+  position: relative;
+  padding-left: 19px;
+}
+
+.pass-state em.error:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  top: 3px;
+  left: 0;
+  background: url(/code/Livem/Images/base/iconspri.png) -23px -91px no-repeat;
+  background-size: 414px 736px;
+}

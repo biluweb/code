@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <meta charset="UTF-8" />
+    <title>钦龙直播室</title>
+    <link rel="icon" type="images/png" sizes="16*16" href="/code/Live/Images/base/favion.ico">
+    <!--[if lt IE 8 ]>
+    <style type="text/css">body{display:none;}</style>
+    <script type="text/javascript">alert("亲爱的投资朋友:\n为了提升您的用户体验请升级您的浏览器。");window.open("http://se.360.cn/");setTimeout(function(){alert('http://live.longding999.com/');},240000)</script>
+    <![endif]-->
+    <link rel="stylesheet" href="/code/Live/Content/css/bootstrap-sass/assets/stylesheets/bootstrap.css" />
+
+    <!--滚动条-->
+    <link rel="stylesheet" href="/code/Live/Content/mCustomScrollbar/jquery.Customscroll.css">
+    <link rel="stylesheet" href="/code/Live/Content/mCustomScrollbar/jquery.mCustomScrollbar.css">
+
+    <!--用户引导插件css-->
+    <link rel="stylesheet" href="/code/Live/Scripts/ComPonent/intro/introjs.css">
+
+    <!--css集合-->
+    <link rel="stylesheet" href="/code/Live/Content/css/Zhibo/Main.css" />
+
+    <!--[if IE 8]>
+    <script src="/code/Live/Content/css/bootstrap-sass/assets/javascripts/Respond1.4.2.js"></script>
+    <script src="/code/Live/Content/css/bootstrap-sass/assets/javascripts/html5v3.7.3.js"></script>
+    <link href="/code/Live/Content/css/Zhibo/CompatiBilityIE8.css" rel="stylesheet"/>
+    <![endif]-->
+    <!-- <script src="/code/Live/Scripts/base/jquery1.9.1.min.js"></script> -->
+
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <!--[if lte IE 10]>
+    <script src="/code/Live/Scripts/base/jquery.placeholder.min.js"></script>
+    <script type="text/javascript">
+    $(function(){$('input,textarea').placeholder();});
+    </script>
+    <![endif]-->
+
+    <script src="/code/Live/Scripts/base/Mobile-device.js"></script>
+    <!-- <script src="/code/Live/Content/css/bootstrap-sass/assets/javascripts/bootstrap.min.js" defer async="async"></script> -->
+
+    <!--layer-->
+    <script src="/code/Live/Content/layer/layer.js"></script>
+    <script src="/code/Live/Content/layer/material.js"></script>
+
+    <!--界面响应-->
+    <script src="/code/Live/Scripts/base/answerHeight.js"></script>
+
+    <!--滚动条js start-->
+    <script src="/code/Live/Content/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/code/Live/Content/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <!--自定义滚动插件-->
+    <script src="/code/Live/Content/mCustomScrollbar/jquery.Customscroll.js"></script>
+    <!--滚动条js end-->
+
+    <!--交互效果js-->
+    <script src="/code/Live/Scripts/Zhibo/Interaction.js"></script>
+
+    <!--滚动插件-->
+    <script src="/code/Live/Scripts/ComPonent/marquee/jquery.marquee.js"></script>
+    <script src="/code/Live/Scripts/ComPonent/marquee/jquery.marquee2.js"></script>
+
+    <!--用户引导插件-->
+    <script src="/code/Live/Scripts/ComPonent/intro/intro.js"></script>
+
+
+    <script>
+        if (isMobileDevice()) {
+            window.open('/code/Livem/htmls/index.html')
+        }
+        $(function() {
+            setTimeout(function() {
+                //调用自定义滚动条
+                $('.Bscwrap-guidance').Mscrool({
+                    scrlHeight: '580',
+                    scrlspeed: '10',
+                    autoshowbar: true,
+                });
+                AutoHeight();
+                // videoBoxAutoWidth();
+            }, 301)
+        })
+        $(window).resize(function() {
+            AutoHeight();
+            // videoBoxAutoWidth();
+        })
+    </script>
+</head>
+<body>
+    <!--导航-->
+    <!--头部开始-->
+    <div id="top" class="header clearfix">
+        <nav class="navbar navbar-Metalstouch navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 lbox">
+                        <div class="nav-l">
+                            <div class="navbar-header">
+                                <a href="/" class="navbar-brand Metalstouch-title">
+                                    <img class="logoImg" src="/code/Live/Images/base/Logo.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-save">
+                        <a href="javascript:;" class="btn btnnav btncl-1" title="在线开户">
+                            <i class="livespri con1"></i>
+                            <span>在线开户</span>
+                        </a>
+                        <a href="javascript:;" class="btn btnnav btncl-2" title="保存桌面">
+                            <i class="icon-desktop"></i>
+                            <span>保存桌面</span>
+                        </a>
+                    </div>
+                    <div class="nav-r">
+                        <div class="navrt">
+                            <div class="tlv fL">
+                                <a href="javascript:;" class="btn btnnav btncl-3 tasi" title="老师助理">
+                                    <i class="taid glyphicon glyphicon-user"></i>
+                                    <span class="tlv-txt">老师助理</span>
+                                </a>
+                                <a href="javascript:;" class="btn btnnav btncl-4 mof" title="领取战法">
+                                    <i class="icon-star taid "></i>
+                                    <span class="tlv-txt">领取战法</span>
+                                </a>
+                                <a href="javascript:;" class="btn btnnav btncl-5 ptt" title="招商加盟">
+                                    <i class="livespri con2"></i>
+                                    <span class="tlv-txt">招商加盟</span>
+                                </a>
+                            </div>
+                            <div class="logoOrSign fL">
+                                <div id="user-state-container" class="logoOrSign">
+                                    <a id="btnlogin" class="btn btnnav btncl-2 login_btn" href="javascript:;" title="登录">登录</a>
+                                    <a class="btn btnnav btncl-2 logoOrSign_sign" href="javascript:;" title="注册">注册</a>
+                                </div>
+                            </div>
+                            <div class="tourist fL">
+                                <!--酱油状态-->
+                                <div class="youke">游客_102500</div>
+                                <!--登录状态-->
+                                <div class="logined-in">
+                                    <a href="javascript:;" class="lvyktx">
+                                        <img src="/code/Live/Images/Zhibo/livebox/icon/023.png">
+                                    </a>
+                                    <a id="btnlogininfo" href="javascript:;" class="lvykname">普通用户_ text5288</a>
+                                    <div class="preinfor">
+                                        <div class="premask">
+                                            <span></span>
+                                        </div>
+                                        <div class="prein">
+                                            <div class="center-per">
+                                                <a href="javascript:;">
+                                                    <i class="livespri concenper"></i> 个人中心</a>
+                                            </div>
+                                            <div class="loginout">
+                                                <a href="javascript:;">
+                                                    <i class="livespri conloginout"></i> 退出</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+        //登录状态后退出,个人资料hover效果
+        // mousehover($('.logined-in'),'.preinfor','slid');
+        $(function() {
+            var login = $('.logined-in'),
+                loginpre = $('.logined-in .preinfor');
+            login.hover(function() {
+                loginpre.stop().show();
+            }, function() {
+                loginpre.stop().hide();
+            })
+        })
+    </script>
+
+
+    <!--登录页-->
+    <div class="Popup-login" id="Popup-login">
+        <i class="livespri conclosep closePopup"></i>
+        <div class="Popup-login-infor">
+            <div class="Popup-lad">
+                <img src="/code/Live/Images/Zhibo/img/loginim.png">
+            </div>
+            <form>
+                <div class="title">欢迎登录</div>
+                <div>
+                    <input class="phonenumber" id="phonenumber" type="text" value="" maxlength="12" placeholder="请输入11位手机号" />
+                    <!-- <span class="pass-state"><ins></ins><em id="loginpwd-error" class="error">请输入密码！</em></span> -->
+                </div>
+                <div>
+                    <input class="password" id="loginpwd" type="password" value="" placeholder="请输入密码" />
+                    <!-- <span class="pass-state"><ins></ins><em id="loginpwd-error" class="error">请输入密码！</em></span> -->
+                </div>
+                <a class="login">立即登录</a>
+                <div class="login-fd">
+                    <input class="autlogin" type="checkbox" name="" id="" value="" />30天自动登录
+                    <div class="help">
+                        <a class="help-forget" href="javascript:;" onclick="layer.closeAll();">忘记密码？</a>|
+                        <a class="help-register" href="javascript:;" onclick="layer.closeAll();">免费注册</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            function viewlogin() {
+                layer.closeAll();
+                layer.open({
+                    type: 1,
+                    title: false,
+                    scrollbar: false,
+                    closeBtn: 0,
+                    zIndex: 10000,
+                    area: ['900px', '500px'],
+                    //skin: 'layui-layer-nobg', //没有背景色
+                    shadeClose: true,
+                    content: $('.Popup-login')
+                });
+                //$('.Popup').fadeIn('slow');
+                //$('.Popup-login').fadeIn('slow').siblings().hide();
+                $(".login").unbind("click").click(function() {
+                    OnLogin($('#phonenumber').val(), $('#loginpwd').val(), "Popup-login");
+                });
+            }
+
+            //-----登录框-----
+            $('.login_btn').click(function() {
+                viewlogin();
+            });
+            //-----关闭弹出层-----
+            $('.closePopup').click(function() {
+                layer.closeAll();
+            });
+        })
+    </script>
+
+    <!--注册页-->
+    <div class="Popup-register" id="Popup-register">
+        <i class="livespri conclosep closePopup"></i>
+        <div class="Popup-register-infor">
+            <div class="Popup-reg-lad fL">
+                <img src="/code/Live/Images/Zhibo/img/register.png">
+            </div>
+            <form id="reg_form" action="" class="register-foram">
+                <div class="title">欢迎注册
+                    <span>已注册可
+                        <a href="javascript:;">直接登录</a>
+                    </span>
+                </div>
+                <div class="nickname">
+                    <input id="reg_nickname" name="reg_nickname" type="text" value="" placeholder="请输入会员昵称" />
+                    <span class="pass-state">
+
+                    </span>
+                </div>
+                <div class="cellnumber">
+                    <input id="reg_phonenum" name="reg_phonenum" type="text" value="" maxlength="11" placeholder="请输入手机号码，将作为您的登录账号" />
+                    <span class="pass-state">
+
+                    </span>
+                </div>
+                <div class="Securitycode clearfix">
+                    <input id="reg_chkcode" name="reg_chkcode" type="text" value="" placeholder="请输入验证码" />
+                    <a id="TestGetCode" class="TestGetCode" href="javascript:;">获取验证码</a>
+                    <input type="hidden" id="smsSendGuid" />
+                    <span class="pass-state">
+
+                    </span>
+                </div>
+                <div class="register-password">
+                    <input id="reg_pwd" name="reg_pwd" type="password" value="" placeholder="请设置6-15位密码，区分大小写" />
+                    <span class="pass-state">
+
+                    </span>
+                </div>
+                <a class="register" id='agreeCkeckBox' href="javascript:;">立即免费注册</a>
+                <div class="agreement">
+                    <input type="checkbox" id="agreeCkeckBox" class="agreement" checked="checked" />
+                    <p>
+                        <span class="agree">同意</span>
+                        <a href="/college/RiskWarning">《风险提示及服务说明》</a>
+                    </p>
+                </div>
+                <p class="hint">
+                    <span>提示：</span>免费注册账号，手机号以及个人信息严格保密。</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        //注册
+        function viewregister() {
+            layer.closeAll();
+            layer.open({
+                type: 1,
+                title: false,
+                closeBtn: 0,
+                zIndex: 10000,
+                area: ['900px', '500px'],
+                //skin: 'layui-layer-nobg', //没有背景色
+                shadeClose: true,
+                content: $('#Popup-register')
+            });
+            $(".closePopup").click(function() {
+                layer.closeAll();
+            });
+        }
+
+        //-----注册框-----
+        $('.logoOrSign_sign').click(function() {
+            viewregister();
+        });
+    </script>
+
+    <!--反馈页-->
+    <div class="feedback">
+        <h3>
+            <span>问题反馈</span>
+            <i class="livespri con15 closebtn"></i>
+        </h3>
+        <div class="feed-infor">
+            <p>您的宝贵意见和想法将帮祝我们不断改进</p>
+            <div class="issue clearfix">
+                <div class="cls">
+                    <input type="radio">
+                    <span>视频不清晰</span>
+                </div>
+                <div class="cls">
+                    <input type="radio">
+                    <span>视频不清晰</span>
+                </div>
+                <div class="cls">
+                    <input type="radio">
+                    <span>视频不清晰</span>
+                </div>
+                <div class="cls">
+                    <input type="radio">
+                    <span>视频不清晰</span>
+                </div>
+            </div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="feedbtn">
+                <a href="javascript:;" class="btn feedsubmit">提交</a>
+                <a href="javascript:;" class="btn feedcancel">取消</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            //问题反馈
+            $('.Suspend-tickling').click(function() {
+                layer.closeAll();
+                layer.open({
+                    type: 1,
+                    title: false,
+                    shadeClose: true,
+                    area: ['440px', ''],
+                    closeBtn: 0,
+                    shade: 0.5,
+                    content: $('.feedback')
+                });
+            });
+            $('.feedback .closebtn,.feedcancel').click(function() {
+                layer.closeAll();
+            })
+        })
+    </script>
+
+    <!--消息推送页-->
+    <div class="NotificationPush">
+        <div class="Notimask"></div>
+        <div class="infor">
+            <i class='livespri conotipu'></i>
+            <h3>【新的消息提醒】：</h3>
+            <p>未来3-5年，钦龙点金将始终专注于互联网金融深度改革。不断巩固团队实力，不断优化客户体验，不断提高服务质量。坚持创新，坚持走在行业前沿。为构建互联网金融第一平台而拼搏，努力打造互联网金融行业生态圈</p>
+        </div>
+    </div>
+    <script>
+        //关闭消息推送
+        setTimeout(function() {
+            $('.NotificationPush').show('slow');
+            $('.NotificationPush .conotipu').click(function() {
+                $('.NotificationPush').hide('slow');
+            })
+        }, 20000)
+    </script>
+
+    <!--内容部分开始-->
+    <div id="content">
+        <div class="container">
+            <div class="row positon">
+                <div class="col-lg-8 col-md-1" id="introduce">
+                    <div class="guidance">
+                        <div class="Bscwrap-guidance">
+                            <div class="Bscwin">
+                                <div class="Bcon">
+                                    <dl class="zhibo-room">
+                                        <dt>直播室</dt>
+                                        <dd title="视频直播" class="zbsp active">
+                                            <a href="javascript:;">
+                                                <i class="glyphicon glyphicon-play-circle"></i>
+                                                <span>视频直播</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="语音直播">
+                                            <a href="javascript:;">
+                                                <i class="livespri con3"></i>
+                                                <span>语音直播</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="钦龙微盘">
+                                            <a href="javascript:;">
+                                                <i class="livespri con4"></i>
+                                                <span>钦龙微盘</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="大户室">
+                                            <a href="javascript:;">
+                                                <i class="livespri con5"></i>
+                                                <span>大户室</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                    <dl class="entry">
+                                        <dt>快速入口</dt>
+                                        <dd title="操作建议">
+                                            <a href="javascript:;">
+                                                <i class="livespri conczjy"></i>
+                                                <span>操作建议</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="VIP战法">
+                                            <a href="javascript:;">
+                                                <i class="livespri convip"></i>
+                                                <span>VIP战法</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="课程安排" class="schedulebutton">
+                                            <a href="javascript:;">
+                                                <i class="livespri con6"></i>
+                                                <span>课程安排</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="钦龙学院">
+                                            <a href="javascript:;">
+                                                <i class="livespri con7"></i>
+                                                <span>钦龙学院</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="老师介绍">
+                                            <a href="javascript:;">
+                                                <i class="livespri con8"></i>
+                                                <span>老师介绍</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="软件下载" class="download-soft">
+                                            <a href="javascript:;">
+                                                <i class="icon-download-alt"></i>
+                                                <span>软件下载</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="财经日历" class="calendar-finance">
+                                            <a href="javascript:;">
+                                                <i class="icon-calendar"></i>
+                                                <span>财经日历</span>
+                                            </a>
+                                        </dd>
+                                        <dd title="实时行情" class="entry-market">
+                                            <a href="javascript:;">
+                                                <i class="livespri con14"></i>
+                                                <span>实时行情</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="jinshi" style='display:none;padding:0 10px;'>
+                        <iframe src='http://cdn.jin10.com/bottomprice/indexp.html' frameborder='0' height='260' width='100%'></iframe>
+                    </div>
+                    <script>
+                        $(function() {
+                            $('.entry-market').click(function(event) {
+                                layer.closeAll();
+                                layer.open({
+                                    type: 1,
+                                    id: 'jinshiwrap',
+                                    title: '实时行情',
+                                    shadeClose: true,
+                                    shade: 0,
+                                    content: $('#jinshi')
+                                });
+                            });
+                        })
+                    </script>
+
+                    <div class="infor-other">
+
+                        <div class="TwoDimensionalCode">
+                            <img src="/code/Live/Images/Zhibo/img/app-ewm.jpg">
+                            <p>扫一扫下载APP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-37 col-md-8 col-sm-9 col-xs-12" id="videoBox">
+                    <div class="exhibition">
+                        <div class="video-notice">
+                            <div class="fold" title="收起左侧导航">
+                                <i class="livespri con9"></i>
+                                <p>收起导航</p>
+                            </div>
+                            <div class="cmcon">
+                                <i class="icon-circle"></i>
+                                <b>股</b>
+                            </div>
+                            <div class="program">
+                                <ul id="programList">
+                                    <li>当前节目-股网金来——霍老师、龙老师</li>
+                                    <li>当前节目-股网金来——霍老师、龙老师</li>
+                                    <li>当前节目-股网金来——霍老师、龙老师</li>
+                                    <li>当前节目-股网金来——霍老师、龙老师</li>
+                                    <li>当前节目-股网金来——霍老师、龙老师</li>
+                                </ul>
+                            </div>
+                            <div class="vn-r">
+                                <div class="OnlineCurrent">当前在线:
+                                    <span>4206</span>
+                                </div>
+                                <a href="javascript:;" class="lookwhat">
+                                    <i class="livespri con10"></i> 微信看直播
+                                    <div class='lwewm'>
+                                        <div class="triangle-top"></div>
+                                        <div class="ewmbox">
+                                            <img src='/Live/Images/Zhibo/img/app-ewm.jpg' onclick="window.open('http://m.longding999.com')" />
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="reload">
+                                    <i class="icon-refresh"></i> 刷新视频</a>
+                            </div>
+                        </div>
+                        <script>
+                            $(function() {
+                                //live-video.
+                                $('.reload').click(function() {
+                                    $('.video').html($('.video').html());
+                                });
+
+                                //微信看直播
+                                $('.lookwhat').hover(function() {
+                                    layer.tips("<img style='width:100%; height:100%' src='/Images/Zhibo/img/app-ewm.jpg' />", '.lookwhat', {
+                                        tips: [3, '#fff'],
+                                        time: 0
+                                    });
+                                }, function() {
+                                    layer.closeAll('tips');
+                                });
+
+                                //导航折叠
+                                $('.fold').click(function() {
+                                    var fload = $('.fold'),
+                                        introduce = $('#introduce'),
+                                        videoBox = $('#videoBox'),
+                                        chitchat = $('#chitchat'),
+                                        banner = $(".banner"),
+                                        slicklist = $('.slick-list.draggable'),
+                                        c = function() {
+                                            if (fload.attr('title') == '收起左侧导航') {
+                                                return true;
+                                            } else {
+                                                return false
+                                            }
+                                        };
+                                    if (c()) {
+                                        introduce.addClass('zdn')
+                                        videoBox.attr('class', 'col-lg-41 col-md-8 col-sm-9').css({
+                                            'paddingLeft': 0
+                                        })
+                                        chitchat.attr('class', 'col-lg-23 col-md-4 col-sm-3')
+                                            // $(".video").height($("#videoBox").height() - $(".video-notice").height());
+                                            // center.slick('unslick');//销毁banner        
+                                        banner.hide();
+                                        AutoHeight();
+                                    } else {
+                                        introduce.removeClass('zdn')
+                                        videoBox.attr('class', 'col-lg-37 col-md-8 col-sm-9').css({
+                                            'paddingLeft': 5
+                                        })
+                                        chitchat.attr('class', 'col-lg-19 col-md-3 col-sm-3')
+                                            // function vcle(){videoBox.css({'transition':'' })}
+                                            // function slickautoh(){slicklist.height(banner.height());}
+                                        banner.show();
+                                        setTimeout(function() {
+                                            $('.center').slick('unslick');
+                                        }, 301);
+                                        AutoHeight();
+                                        setTimeout(function() {
+                                            AutoHeight();
+                                            bannerslick();
+                                        }, 1000);
+                                    }
+                                    fload.attr('title', fload.attr('title') == '展开左侧导航' ? '收起左侧导航' : '展开左侧导航');
+                                    fload.children('i').attr('class', fload.children('i').attr('class') == 'livespri con9r' ? 'livespri con9' : 'livespri con9r');
+                                    fload.children('p').html(fload.children('p').html() == '展开导航' ? '收起导航' : '展开导航');
+                                });
+                                // 
+                                // $('.fold').click(function() {
+                                // 	var fload=$('.fold'),
+                                // 		introduce=$('#introduce'),
+                                // 		videoBox=$('#videoBox'),
+                                // 		chitchat=$('#chitchat'),
+                                // 		introduceW=introduce.outerWidth(true)/2,
+                                // 		videoBoxW=videoBox.outerWidth()+introduceW,
+                                // 		chitchatW=chitchat.outerWidth()+introduceW,
+                                // 		c=function(){
+                                // 			if(fload.attr('title')=='收起左侧导航'){
+                                // 				return true;
+                                // 			}else{
+                                // 				return false
+                                // 			}
+                                // 		};
+                                // 		if(c()){
+                                // 			introduce.addClass('zdn')
+                                // 			videoBox.css({'transition':'all 1s','width':videoBoxW})
+                                // 			chitchat.width(chitchatW-10)
+                                // 		}else{
+                                // 			introduce.removeClass('zdn')
+                                // 			videoBox.width('')
+                                // 			chitchat.width('')
+                                // 			function clb(){videoBox.css('transition','')}
+                                // 			setTimeout(function(){AutoHeight();clb();videoBoxAutoWidth();},1000);
+                                // 		}
+                                // 		fload.attr('title',fload.attr('title')=='展开左侧导航'?'收起左侧导航':'展开左侧导航');
+                                // 		fload.children('i').attr('class',fload.children('i').attr('class')=='livespri con9r'?'livespri con9':'livespri con9r');
+                                // 		fload.children('p').html(fload.children('p').html()=='展开导航'?'收起导航':'展开导航');
+                                // });
+
+                                //微信看直播		
+                                // $('.lookwhat').on('mouseover',function() {
+                                // 	layer.tips("<div class='kisslewm'><img src='/Images/Zhibo/img/app-ewm.jpg' onclick=\"window.open('http://m.longding999.com')\"/></div>", this, { tips: 1, time: 30000 })
+                                // })
+                                // 
+
+                                //节目滚动
+                                $("#programList").marquee1({
+                                    direction: "up",
+                                    showSpeed: 500, // 初始下拉速度         ,
+                                    scrollSpeed: 10, // 滚动速度  
+                                    pauseSpeed: 5000, //滚动完到下一条的间隔时间 
+                                    pauseOnHover: true, // 鼠标滑向文字时是否停止滚动         ,
+                                    //loop: -1, // 设置循环滚动次数 （-1为无限循环）         ,
+                                    fxEasingShow: "swing", // 缓冲效果         ,
+                                    fxEasingScroll: "linear", // 缓冲效果         ,
+                                    cssShowing: "marquee-showing" //定义class
+                                });
+                            })
+                        </script>
+
+                        <div class="video">
+                            <gs:video-live id="videoComponent" site="longding999.gensee.com" ownerid="7578c6014df74874aff1ef2951a0839d" k="hUe18fHq8S26c7Vqliy0POu06lZmzxtj3lYrP6at1h3Pr5V0trDxhCQjVxkE3LaR6FhLN6gzyPY4l/A51KeK5EkzeCsTUmX2jxXIaWjDHac=" class="gs-sdk-widget">
+                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="_GS_FLASH_ID_videoComponent" width="100%" height="100%" codebase="https://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab#version=11.1.0.0">
+                                    <param name="movie" value="http://static.gensee.com/webcast/static/sdk/flash/GenseeEasyLive.swf?160426">
+                                    <param name="wmode" value="transparent">
+                                    <param name="quality" value="high">
+                                    <param name="bgcolor" value="#000000">
+                                    <param name="allowScriptAccess" value="always">
+                                    <param name="allowFullScreen" value="true">
+                                    <param name="flashvars" value="sc=0&amp;entry=http%3A%2F%2Flongding999.gensee.com%2Fwebcast&amp;code=7578c6014df74874aff1ef2951a0839d__20111e77c5b94d508e9a42ee54c59fa7&amp;lang=&amp;nickName=visitor_rOPPYq&amp;httpMode=false&amp;group=&amp;widgetid=videoComponent&amp;userdata=&amp;showCBar=&amp;backURI=&amp;ver=4.0&amp;publicChat=&amp;init=&amp;liveImprovedMode=false&amp;visible=true&amp;embedNetSettings=true&amp;batchRecChat=false">
+                                    <embed src="/codehttp://static.gensee.com/webcast/static/sdk/flash/GenseeEasyLive.swf?160426" quality="high" bgcolor="#000000" wmode="transparent" width="100%" height="100%" name="_GS_FLASH_ID_videoComponent" align="middle"
+                                        play="true" loop="false" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" flashvars="sc=0&amp;entry=http%3A%2F%2Flongding999.gensee.com%2Fwebcast&amp;code=7578c6014df74874aff1ef2951a0839d__20111e77c5b94d508e9a42ee54c59fa7&amp;lang=&amp;nickName=visitor_rOPPYq&amp;httpMode=false&amp;group=&amp;widgetid=videoComponent&amp;userdata=&amp;showCBar=&amp;backURI=&amp;ver=4.0&amp;publicChat=&amp;init=&amp;liveImprovedMode=false&amp;visible=true&amp;embedNetSettings=true&amp;batchRecChat=false"
+                                        pluginspage="http://www.adobe.com/go/getflashplayer"> </object>
+                            </gs:video-live>
+                        </div>
+
+                    </div>
+                    <div class="banner">
+                        <script src="/code/Live/Scripts/ComPonent/slick/slick.min.js"></script>
+                        <link type="text/css" rel="stylesheet" href="/code/Live/Scripts/ComPonent/slick/slick.css" />
+                        <link type="text/css" rel="stylesheet" href="/code/Live/Scripts/ComPonent/slick/slick-theme.css" />
+                        <style type="text/css">
+                            .slider {
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                overflow: hidden;
+                            }
+                            
+                            .slick-list {
+                                height: 100%;
+                            }
+                            
+                            .slick-track {
+                                height: 100%;
+                            }
+                            
+                            .slick-slide {
+                                margin: 0 -30px;
+                                zoom: 1;
+                                overflow: hidden;
+                                filter: alpha(opacity=20);
+                                opacity: 0.2;
+                            }
+                            
+                            .slick-current {
+                                position: relative;
+                                z-index: 1;
+                                filter: alpha(opacity=100);
+                                opacity: 1;
+                            }
+                            
+                            .center img {
+                                display: block;
+                                height: 100%;
+                                vertical-align: middle;
+                                margin: 0 auto;
+                            }
+                            
+                            .slick-prev:before,
+                            .slick-next:before {
+                                content: '';
+                                display: inline-block;
+                                line-height: 0.3;
+                                font-family: 'Microsoft YaHei';
+                                width: 18px;
+                                height: 30px;
+                                color: #fff;
+                                background: url('/Images/zhibo/icon/livespri.png') -57px 0 no-repeat;
+                            }
+                            
+                            .slick-prev {
+                                left: 10px;
+                            }
+                            
+                            .slick-next {
+                                right: 10px;
+                            }
+                            
+                            .slick-prev,
+                            .slick-next {
+                                width: 18px;
+                                height: 30px;
+                            }
+                            
+                            .slick-prev:before {
+                                background-position-y: -307px;
+                            }
+                            
+                            .slick-next:before {
+                                background-position-y: -276px;
+                            }
+                        </style>
+                        <!--[if IE 8]>
+	<style>
+	.slick-prev,.slick-next{
+		margin-top:-15px;
+	}
+	</style>
+    <![endif]-->
+                        <div class="center slider">
+                            <div>
+                                <a href="/College/OperationMethods" target="_blank">
+                                    <img src="/code/Live/Images/zhibo/banner/1.png">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/College/Teacher" target="_blank">
+                                    <img src="/code/Live/Images/zhibo/banner/2.png">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/College/Article" target="_blank">
+                                    <img src="/code/Live/Images/zhibo/banner/3.png">
+                                </a>
+                            </div>
+                        </div>
+                        <script>
+                            var flagblean;
+                            var bannerslick = function() {
+                                $(".center").slick({
+                                    centerMode: true,
+                                    autoplay: true,
+                                    centerPadding: "40px",
+                                    infinite: true,
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    accessibility: false,
+                                    variableWidth: true,
+                                    adaptiveHeight: true
+                                });
+                                flagblean = true;
+                            }
+                            $(function() {
+                                bannerslick();
+                                $(window).resize(function() {
+                                    //setTimeout(function () { $('.center').slick('unslick'); }, 301);
+                                    if (flagblean) {
+                                        flagblean = false;
+                                        $('.center').slick('unslick');
+                                        setTimeout(bannerslick, 1000);
+                                    }
+                                })
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <div class="col-lg-19 col-md-3 col-sm-3 col-xs-12" id="chitchat">
+                    <div class="right">
+                        <div class="right-infor">
+                            <div class="notify">通知栏</div>
+                            <div class="marquee">
+                                免责声明：分析师发表的言论均代表其个人对于投资环境的市场观点。投资者应充分考虑投资有风险，入市需谨慎。
+                            </div>
+                            <script>
+                                $(function() {
+                                    $('.marquee').marquee();
+                                })
+                            </script>
+                        </div>
+                        <div class="chitchat-in">
+                            <div class="lvcenter">
+                                <div class="lvctcon">
+                                    <div class="lvctlist" id="dissCumsg">
+                                        <ul>
+                                            <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                    <span>[10:50]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>
+                                                        万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        <img src="/code/Live/Content/kindeditor/plugins/emoticons/images/63.gif">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                    <span>[10:50]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>
+                                                        万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        <img src="/code/Live/Content/kindeditor/plugins/emoticons/images/63.gif">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/youke.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                    <span>[14:08]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>希拉里 还有希望，是吧</span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                    <span>[10:50]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>
+                                                        万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        <img src="/code/Live/Content/kindeditor/plugins/emoticons/images/63.gif">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                    <span>[10:50]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>
+                                                        万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        <img src="/code/Live/Content/kindeditor/plugins/emoticons/images/63.gif">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Huy 72b8457b-a18f-44bc-94ea-94322be56c7e" style="" id="Discuss_72b8457b-a18f-44bc-94ea-94322be56c7e" tag="72b8457b-a18f-44bc-94ea-94322be56c7e" datatime="10:50">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/huiyuan.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="赤子之心">赤子之心</a>
+                                                    <span>[10:50]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>
+                                                        万科今天涨8个点，是要封板吗？还是拉高出货？另两个连2个点都没有，会补涨吗？
+                                                        <img src="/code/Live/Content/kindeditor/plugins/emoticons/images/63.gif">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/youke.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                    <span>[14:08]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>希拉里 还有希望，是吧</span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/youke.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                    <span>[14:08]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>希拉里 还有希望，是吧</span>
+                                                </div>
+                                            </li>
+                                            <li class="cls Yke 9ece50a5-6072-4601-b464-416cd7b63337" id="Discuss_9ece50a5-6072-4601-b464-416cd7b63337" tag="9ece50a5-6072-4601-b464-416cd7b63337" datatime="14:08">
+                                                <a href="javascript:void(0);" class="lvcttx">
+                                                    <img src="/code/Live/Images/Zhibo/livebox/icon/youke.png">
+                                                </a>
+                                                <div class="lvctinfor">
+                                                    <a href="javascript:;" class="lvctname" data-username="游客B6R86">游客B6R86</a>
+                                                    <span>[14:08]</span>
+                                                </div>
+                                                <div class="lvcttext">
+                                                    <span>希拉里 还有希望，是吧</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--@推送消息-->
+                                    <div class="talktome-warp">
+                                        <div class="talktome">
+                                            <p>
+                                                <span>某某某</span>@你</p>
+                                            <a href="javascript:;">点击查阅</a>
+                                            <i class="livespri con11"></i>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        $(function() {
+                                            setTimeout(function() {
+                                                $('.talktome-warp').fadeIn('slow');
+                                                $('.talktome-warp i').click(function() {
+                                                    $('.talktome-warp').fadeOut('slow');
+                                                })
+                                            }, 15000)
+                                        })
+                                    </script>
+                                </div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    //调用聊天滚动条
+                                    $("#dissCumsg").mCustomScrollbar({
+                                        scrollButtons: {
+                                            enable: false
+                                        },
+                                        scrollInertia: 300,
+                                        advanced: {
+                                            autoScrollOnFocus: true
+                                        }
+                                    });
+                                })
+                            </script>
+
+
+                        </div>
+                        <div class="right-notice">
+                            <div class="rn-hd">
+                                <i class="icon-volume-up"></i>
+                            </div>
+                            <div class="rn-infor ver">
+                                <ul id="listStr">
+                                    <li>恭喜张先生跟随
+                                        <span>【双钩战法-胜老师】</span>
+                                        <span></span>盈利,恭喜发财！</li>
+                                    <li>恭喜刘女士跟随
+                                        <span>【双钩战法-胜老师】</span>
+                                        <span></span>盈利,恭喜发财！</li>
+                                    <li>恭喜王小姐跟随
+                                        <span>【双钩战法-胜老师】</span>
+                                        <span></span>盈利,恭喜发财！</li>
+                                    <li>恭喜宋先生跟随
+                                        <span>【双钩战法-胜老师】</span>
+                                        <span></span>盈利,恭喜发财！</li>
+                                    <li>恭喜赵先生跟随
+                                        <span>【双钩战法-胜老师】</span>
+                                        <span></span>盈利,恭喜发财！</li>
+                                </ul>
+                            </div>
+                            <script>
+                                $(function() {
+                                    //$('.rn-infor').marquee({
+                                    //    direction: "up",
+                                    //    showSpeed: 500, // 初始下拉速度         ,
+                                    //    scrollSpeed: 10, // 滚动速度         ,
+                                    //    pauseSpeed: 5000, // 滚动完到下一条的间隔时间    
+                                    //    pauseOnHover: true, // 鼠标滑向文字时是否停止滚动
+                                    //    //loop: -1, // 设置循环滚动次数 （-1为无限循环） 
+                                    //    fxEasingShow: "swing", // 缓冲效果         ,
+                                    //    fxEasingScroll: "linear", // 缓冲效果         ,
+                                    //    cssShowing: "marquee-showing" //定义class
+                                    //});
+                                    $('#listStr').marquee1({
+                                        direction: "up",
+                                        showSpeed: 500, // 初始下拉速度         ,
+                                        scrollSpeed: 10, // 滚动速度  
+                                        pauseSpeed: 5000, //滚动完到下一条的间隔时间 
+                                        pauseOnHover: true, // 鼠标滑向文字时是否停止滚动         ,
+                                        //loop: -1, // 设置循环滚动次数 （-1为无限循环）         ,
+                                        fxEasingShow: "swing", // 缓冲效果         ,
+                                        fxEasingScroll: "linear", // 缓冲效果         ,
+                                        cssShowing: "marquee-showing" //定义class
+                                    });
+                                });
+                            </script>
+
+                        </div>
+                        <div class="right-help">
+
+                            <a href="javascript:;" class="btn btnnav btncl-3 tasi" title="老师助理">
+                                <i class="taid glyphicon glyphicon-user"></i>
+                                <span class="tlv-txt">老师助理</span>
+                            </a>
+                            <a href="javascript:;" class="btn btnnav btncl-4 mof" title="领取战法">
+                                <i class="icon-star taid "></i>
+                                <span class="tlv-txt">领取战法</span>
+                            </a>
+                            <a href="javascript:;" class="btn btnnav btncl-5 ptt" title="招商加盟">
+                                <i class="livespri con2"></i>
+                                <span class="tlv-txt">招商加盟</span>
+                            </a>
+                            <a href="javascript:;" class="btn btnnav btncl-1 zkh" title="在线开户">
+                                <i class="livespri con1"></i>
+                                <span class="tlv-txt">在线开户</span>
+                            </a>
+
+                        </div>
+                        <div class="face clearfix">
+                            <!--滚动 glyphicon glyphicon-record-->
+                            <div class="lvbq">
+                                <a href="javascript:;" class="lvbqbtn" title="表情">
+                                    <i class="livespri con12"></i> 表情</a>
+                                <div class="lvbqlist">
+
+                                    <div unselectable="on" class="lt_bqbox ke-shadow ke-menu">
+                                        <div class="ke-plugin-emoticons">
+                                            <table cellspacing="0" cellpadding="0" border="0" id="imgfile_1" class="ke-table" style="display: table;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table cellspacing="0" cellpadding="0" border="0" id="imgfile_2" style="display: none;" class="ke-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                        <td class="ke-cell">
+                                                            <img />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!--<table cellspacing="0" cellpadding="0" border="0" id="imgfile_3" style="display: none;" class="ke-table">
+        <tbody>
+            <tr>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/90.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/91.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/92.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/93.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/94.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/95.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/96.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/97.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/98.gif">
+                </td>
+            </tr>
+            <tr>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/99.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/100.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/101.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/102.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/103.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/104.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/105.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/106.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/107.gif">
+                </td>
+            </tr>
+            <tr>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/108.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/109.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/110.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/111.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/112.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/113.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/114.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/115.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/116.gif">
+                </td>
+            </tr>
+            <tr>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/117.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/118.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/119.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/120.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/121.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/122.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/123.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/124.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/125.gif">
+                </td>
+            </tr>
+            <tr>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/126.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/127.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/128.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/129.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/130.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/131.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/132.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/133.gif">
+                </td>
+                <td class="ke-cell">
+                    <img src="/code/Live/kindeditor/plugins/emoticons/images/134.gif">
+                </td>
+            </tr>
+        </tbody>
+    </table>-->
+                                            <!--<a stvs="3" class="dxuan">[3]</a>-->
+                                            <a stvs="2" class="dxuan">[2]</a>
+                                            <a stvs="1" class="">[1]</a>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function Emotimgload() {
+                                            var basrc = "/Content/kindeditor/plugins/emoticons/images/",
+                                                arry = ['' + basrc + '0.gif', '' + basrc + '1.gif', '' + basrc + '2.gif', '' + basrc + '3.gif', '' + basrc + '4.gif', '' + basrc + '5.gif', '' + basrc + '6.gif', '' + basrc + '7.gif', '' + basrc + '8.gif', '' + basrc + '9.gif', '' + basrc + '10.gif', '' + basrc + '11.gif', '' + basrc + '12.gif', '' + basrc + '13.gif', '' + basrc + '14.gif', '' + basrc + '15.gif', '' + basrc + '16.gif', '' + basrc + '17.gif', '' + basrc + '18.gif', '' + basrc + '19.gif', '' + basrc + '20.gif', '' + basrc + '21.gif', '' + basrc + '22.gif', '' + basrc + '23.gif', '' + basrc + '24.gif', '' + basrc + '25.gif', '' + basrc + '26.gif', '' + basrc + '27.gif', '' + basrc + '28.gif', '' + basrc + '29.gif', '' + basrc + '30.gif', '' + basrc + '31.gif', '' + basrc + '32.gif', '' + basrc + '33.gif', '' + basrc + '34.gif', '' + basrc + '35.gif', '' + basrc + '36.gif', '' + basrc + '37.gif', '' + basrc + '38.gif', '' + basrc + '39.gif', '' + basrc + '40.gif', '' + basrc + '41.gif', '' + basrc + '42.gif', '' + basrc + '43.gif', '' + basrc + '44.gif', '' + basrc + '45.gif', '' + basrc + '46.gif', '' + basrc + '47.gif', '' + basrc + '48.gif', '' + basrc + '49.gif', '' + basrc + '50.gif', '' + basrc + '51.gif', '' + basrc + '52.gif', '' + basrc + '53.gif', '' + basrc + '54.gif', '' + basrc + '55.gif', '' + basrc + '56.gif', '' + basrc + '57.gif', '' + basrc + '58.gif', '' + basrc + '59.gif', '' + basrc + '60.gif', '' + basrc + '61.gif', '' + basrc + '62.gif', '' + basrc + '63.gif', '' + basrc + '64.gif', '' + basrc + '65.gif', '' + basrc + '66.gif', '' + basrc + '67.gif', '' + basrc + '68.gif', '' + basrc + '69.gif', '' + basrc + '70.gif', '' + basrc + '71.gif', '' + basrc + '72.gif', '' + basrc + '73.gif', '' + basrc + '74.gif', '' + basrc + '75.gif', '' + basrc + '76.gif', '' + basrc + '77.gif', '' + basrc + '78.gif', '' + basrc + '79.gif', '' + basrc + '80.gif', '' + basrc + '81.gif', '' + basrc + '82.gif', '' + basrc + '83.gif', '' + basrc + '84.gif', '' + basrc + '85.gif', '' + basrc + '86.gif', '' + basrc + '87.gif', '' + basrc + '88.gif', '' + basrc + '89.gif'];
+                                            if (!isMobileDevice() || isMobileDevice() && $(window).width() > 767) {
+                                                setTimeout(function() {
+                                                    for (var i = 0; i < arry.length; i++) {
+                                                        $('.lt_bqbox td img').eq(i).attr('src', arry[i])
+                                                    }
+                                                }, 500)
+                                            }
+                                        }
+                                        setTimeout(function() {
+                                            Emotimgload();
+                                        }, 100)
+                                    </script>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="lvsmt" title="私密老师">
+                                <i class="livespri con13"></i> 私密老师</a>
+                            <a href="javascript:;" class="lvgd" title="当前为不滚动">
+                                <i class="livespri congf"></i> 滚动</a>
+                            <a href="javascript:;" class="lvqp" title="清屏">
+                                <i class="icon-cut"></i> 清屏</a>
+                            <script>
+                                $(function() {
+                                    //是否滚动
+                                    $('.lvgd').click(function(e) {
+                                        e.preventDefault();
+                                        $('.lvgd i').attr('class', $('.lvgd i').attr('class') == 'livespri congf' ? 'livespri congt' : 'livespri congf');
+                                        $('.lvgd').attr('title', $('.lvgd').attr('title') == '当前为不滚动' ? '当前为滚动' : '当前为不滚动');
+                                        if ($('.lvgd i').attr('class') == 'icon-circle') {
+                                            // $.talk.scrollable = false;
+                                        } else {
+                                            // $.talk.scrollable = true;
+                                        }
+                                    });
+
+                                    //清屏
+                                    $(".lvqp").click(function() {
+                                        $("#dissCumsg ul").html("");
+                                    });
+
+                                    //表情弹出框
+                                    $(document).bind("click", function(e) {
+                                        var target = $(e.target);
+                                        if (target.closest(".lvbq").length == 0) {
+                                            if ($(".lvbqlist:visible")) {
+                                                $(".lvbqlist").hide();
+                                            }
+                                        }
+                                    });
+                                    $(".lt_bqbox a").click(function() {
+                                        var stvs = $(this).attr("stvs");
+                                        $(".lt_bqbox table").hide();
+                                        $(".lt_bqbox #imgfile_" + stvs).show();
+                                        $(".lt_bqbox a").attr("class", "dxuan");
+                                        $(this).attr("class", "");
+                                    });
+                                    $(".lt_bqbox img").click(function() {
+                                        $("#TCommTextBox").html($("#TCommTextBox").html().replace("<br/>", "").replace("<br>", "") + "<img src=\"" + $(this).attr("src") + "\"/>");
+                                        $(".lvbqlist").hide();
+                                    });
+
+
+                                    $(".lvbq").click(function() {
+                                        $(".lvbqlist").show();
+                                    });
+                                })
+                            </script>
+
+                        </div>
+                        <div class="speak">
+                            <div class="lvctinput clearfix">
+                                <div contenteditable="true" class="lvctarea fL" id="TCommTextBox">游客每天仅有三次发言机会哦!</div>
+                                <a href="javascript:;" class="lvctsent" id="btnTouSend">发送</a>
+                            </div>
+                            <script>
+                                $(function() {
+                                    //按回车提交发言
+                                    $("#TCommTextBox").keydown(function(e) {
+                                        if (e.which === 13) {
+                                            $('#btnTouSend').click();
+                                        }
+                                    });
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容部分结束-->
+
+    <!--右侧悬浮分享-->
+    <div class="Suspend">
+        <!-- 	<div class="Suspend-app">
+		<p>手机App</p>
+		<div class="app-down">
+			<h4>下载钦龙点金APP</h4>
+			<div class="triangle-right"></div>
+			<img src="/code/Live/Images/Zhibo/img/app-ewm.jpg">
+		</div>
+	</div> -->
+        <div class="Suspend-share">
+            <p>分享</p>
+            <div class="share-infor">
+                <div class="triangle-right"></div>
+                <div class="box">
+                    <div class="fL boxl">
+                        <!--百度分享-->
+                        <div class="bds_title">
+                            <i class="livespri"></i> 分享</div>
+                        <div class="bdsharebuttonbox" data-tag="share_1">
+                            <!-- 此处添加展示按钮 -->
+                            <a class="bds_tsina" data-cmd="tsina"></a>
+                            <a class="bds_sqq" data-cmd="sqq"></a>
+                            <a class="bds_qzone" data-cmd="qzone"></a>
+                        </div>
+                    </div>
+                    <!-- <div class="fL boxr">
+					<div class="wechatfx"><i class="livespri"></i> 微信扫码分享</div>
+					<div class="ewm">
+						<img src="/code/Live/Images/Zhibo/img/app-ewm.jpg">
+					</div>
+				</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="Suspend-tickling">
+            <p>反馈</p>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var btnStatus;
+            $(".Suspend-share").hover(function() {
+                layer.tips($(".share-infor").prop("outerHTML"), ".Suspend-share", {
+                    tips: [2, '#fff'],
+                    time: 0,
+                    success: function() {
+                        $(".layui-layer-content .share-infor .bdsharebuttonbox a").click(function() {
+                            $(".Suspend-share .share-infor .bdsharebuttonbox a")[$(this).index()].click();
+                        });
+                    }
+                });
+                var shainfor = $(".layui-layer-content .share-infor");
+                shainfor.hover(function(e) {
+                    btnStatus = e.type;
+                }, function(e) {
+                    btnStatus = e.type;
+                    layer.closeAll("tips");
+                });
+            }, function() {
+                setTimeout(function() {
+                    if (btnStatus == "mouseenter") {
+                        return;
+                    }
+                    layer.closeAll("tips");
+                }, 200);
+            });
+        })
+    </script>
+    <script>
+        window._bd_share_config = {
+            //此处添加分享具体设置
+            common: {
+                //此处放置通用设置
+                bdText: '互联网金融第一平台，打造全球金融行业领袖',
+                bdDesc: '钦龙点金直播室',
+                bdUrl: 'http://live.longding999.com',
+                bdPic: '/Images/base/Logo.png',
+            },
+            share: [{
+                //此处放置分享按钮设置
+                "bdSize": 32,
+            }],
+            // slide:[]
+        }
+
+        //以下为js加载部分
+        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+
+        //分享hover效果
+        // mousehover($('.Suspend-app'),'.app-down','fade');
+        // layerhover($('.Suspend-share'),'.share-infor',2);
+    </script>
+
+    <!--课程表-->
+
+    <div class="schedule" id="schedule">
+        <div class="title">
+            <div class="text">本周课程表
+                <span>（10月24日——10月28日）</span>
+            </div>
+        </div>
+        <div class="table">
+            <ul class="weekBox">
+                <li>星期一</li>
+                <li class="actived">星期二</li>
+                <li>星期三</li>
+                <li>星期四</li>
+                <li>星期五</li>
+            </ul>
+            <div class="sheetBox">
+                <ul>11111</ul>
+                <ul class="on">
+                    <li class="past ">
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li class="doingNow">
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <div class="icon"></div>
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timer">14:00-15:00</div>
+                        <div class="programBox">
+                            <p class="programName">《行情连连看》</p>
+                            <p class="teacherName">霍老师,霍老师</p>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul>3333</ul>
+                <ul>4444</ul>
+                <ul>55555</ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".weekBox li").click(function() {
+                $(".weekBox li").eq($(this).index()).addClass("actived").siblings().removeClass('actived');
+                $(".sheetBox>ul").hide().eq($(this).index()).show().siblings().hide();
+
+            });
+
+            $(".schedulebutton").on('click', function(event) {
+                layer.closeAll();
+                layer.open({
+                    type: 1,
+                    title: false,
+                    shade: 0,
+                    area: ['800px', '423px'],
+                    shadeClose: true,
+                    content: $('#schedule'),
+                });
+
+
+            });
+        })
+    </script>
+
+
+
+
+</body>
+</html>
+<script>
+    $(function() {
+        //写cookies...
+        function setCookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+        //读取cookies 
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+            if (arr = document.cookie.match(reg))
+
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+        var visitdata = getCookie('visitnub');
+        if (visitdata) {
+            console.log(getCookie('visitnub'))
+        } else {
+            setTimeout(function() {
+                setCookie('visitnub', 1);
+                introJs().setOptions({
+                    //对应的按钮
+                    prevLabel: "上一步",
+                    nextLabel: "下一步",
+                    skipLabel: "朕知道了",
+                    doneLabel: "结束",
+                    // 对应的数组，顺序出现每一步引导提示
+                    steps: [{
+                        //第一步引导
+                        //这个属性类似于jquery的选择器， 可以通过jquery选择器的方式来选择你需要选中的对象进行指引
+                        element: '#user-state-container',
+                        //这里是每个引导框具体的文字内容，中间可以编写HTML代码
+                        intro: '会员登录,免费注册,点这里',
+                        //这里可以规定引导框相对于选中对象出现的位置 top,bottom,left,right
+                        position: 'bottom'
+                    }, {
+                        //第二步引导
+                        element: '#introduce',
+                        intro: '直播室导航,快速入口',
+                        position: 'right'
+                    }, {
+                        //第三步引导
+                        element: '.fold',
+                        intro: '左侧导航功能按钮,隐藏左侧导航,显示左侧导航记得点我哦',
+                        position: 'bottom'
+                    }, {
+                        element: '.program',
+                        intro: '节目信息列表,动态显示',
+                        position: 'bottom'
+                    }, {
+                        element: '.banner',
+                        intro: '活动信息,点击图片可查看活动详情',
+                        position: 'top'
+                    }, {
+                        element: '.Suspend',
+                        intro: '分享直播室,向我们提意见在这里',
+                        position: 'left'
+                    }]
+                }).start();
+                $('.introjs-button').on('click', function() {
+                    setTimeout(function() {
+                        AutoHeight();
+                    }, 1000)
+                })
+            }, 305)
+        }
+    })
+</script>

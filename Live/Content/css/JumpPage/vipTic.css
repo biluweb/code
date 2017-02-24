@@ -1,0 +1,428 @@
+@charset "UTF-8";
+body {
+  font-family: "微软雅黑";
+}
+
+#top {
+  height: 90px;
+  width: 996px;
+  margin: 0 auto;
+}
+
+#top .container {
+  padding: 0;
+  width: 996px;
+}
+
+#top .container .logo {
+  float: left;
+  margin-right: 35px;
+  height: 90px;
+}
+
+#top .container .logo img {
+  width: 202px;
+  height: 53px;
+  margin-top: 20px;
+}
+
+#top .container .nav {
+  float: left;
+  position: relative;
+}
+
+#top .container .nav #navslip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 123px;
+  z-index: 22;
+}
+
+#top .container .nav a {
+  display: inline-block;
+  margin-right: 23px;
+  width: 100px;
+  height: 90px;
+  font-size: 18px;
+  line-height: 90px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+#top .container .nav a.active, #top .container .nav a:hover {
+  color: #ea4335;
+}
+
+#top .container .nav a.active img, #top .container .nav a:hover img {
+  display: block;
+  margin-top: -8px;
+}
+
+#top .container .enterbox {
+  width: 196px;
+  height: 90px;
+  float: right;
+}
+
+#top .container .enterbox a {
+  float: left;
+  width: 90px;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#top .container .enterbox a.login {
+  background: #EA4335;
+}
+
+#top .container .enterbox a.register {
+  background: #2f5895;
+}
+
+#top .container .entersucced {
+  height: 90px;
+  float: right;
+}
+
+#top .container .entersucced .min {
+  height: 35px;
+  margin-top: 34px;
+}
+
+#top .container .entersucced .min img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: middele;
+  background-color: #f60;
+}
+
+#top .container .entersucced .min span {
+  font-size: 16px;
+  vertical-align: middele;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 996px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 30px 0 86px;
+}
+
+.content .container {
+  width: 996px;
+  padding: 0;
+  margin: 0 auto;
+  background: #f7f7f7;
+}
+
+#fixedBox {
+  width: 40px;
+  height: 80px;
+  position: fixed;
+  bottom: 238px;
+  right: 26px;
+}
+
+#fixedBox .contactQQ {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat;
+}
+
+#fixedBox .getBack {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat;
+}
+
+#fixedBox .contactQQ:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat -40px 0;
+}
+
+#fixedBox .getBack:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat -40px 0;
+}
+
+.banner {
+  width: 100%;
+  border-top: 1px solid #e5362a;
+}
+
+.foronebg {
+  width: 100%;
+  background-color: #f7f7f7;
+  background-image: url(/Images/JumpPage/img/vipTic/foronebg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.forOne {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.forOne .title {
+  padding: 80px 0 160px;
+  font-size: 0;
+  height: 48px;
+}
+
+.forOne .title .bx2 {
+  width: 440px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.forOne .title .bx1 {
+  float: left;
+}
+
+.forOne .title .bx3 {
+  float: right;
+}
+
+.forOne .teahList {
+  font-size: 0;
+}
+
+.forOne .teahList li {
+  margin-left: 40px;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.forOne .teahList li .box1 {
+  width: 250px;
+  height: 350px;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.forOne .teahList li .box1 p {
+  padding-top: 20px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.forOne .teahList li .box1 p.name {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.forOne .teahList li .box1 p.tactic {
+  font-size: 16px;
+}
+
+.forOne .teahList li .box2 {
+  width: 250px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  display: none;
+}
+
+.forOne .teahList li .box2 .text div {
+  margin-top: 15px;
+}
+
+.forOne .teahList li .box2 .text div p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 26px;
+}
+
+.forOne .teahList li .box2 .text div p.tactictitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.forOne .teahList li .box2 a {
+  display: block;
+  width: 132px;
+  height: 36px;
+  border-radius: 18px;
+  background: #ea4335;
+  position: absolute;
+  bottom: 25px;
+  right: 60px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+}
+
+.forOne .teahList li:hover {
+  cursor: pointer;
+}
+
+.root {
+  width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.root .title {
+  padding: 80px 0 160px;
+  font-size: 0;
+  height: 48px;
+}
+
+.root .title .bx2 {
+  width: 440px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.root .title .bx1 {
+  float: left;
+}
+
+.root .title .bx3 {
+  float: right;
+}
+
+.root .rootList {
+  width: 1200px;
+  padding: 0 70px;
+}
+
+.root .rootList li {
+  width: 480px;
+  display: inline-block;
+  margin-bottom: 88px;
+  vertical-align: top;
+}
+
+.root .rootList li img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.root .rootList li div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.root .rootList li div span {
+  font-size: 30px;
+  color: #ea483a;
+  line-height: 42px;
+}
+
+.root .rootList li div p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.root .rootList li.odd {
+  margin-right: 90px;
+}
+
+#fixedBox {
+  width: 40px;
+  height: auto;
+  position: fixed;
+  bottom: 238px;
+  right: 26px;
+}
+
+#fixedBox .getBack, #fixedBox .contactQQ {
+  cursor: pointer;
+}
+
+#botm > div {
+  width: 100%;
+  height: 98px;
+  background: #46505a;
+  min-width: 996px;
+  margin: 0 auto;
+}
+
+#botm > div .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#botm > div p {
+  padding-top: 26px;
+  line-height: 150%;
+  font-size: 14px;
+  color: #fff;
+}
+
+#botm .fR p {
+  text-align: right;
+}
+
+#botm a {
+  color: #fff;
+}
+
+.touclick.touclick-block {
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -154px !important;
+  margin-left: -188px !important;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico {
+  width: 16px;
+  height: 16px;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico20 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico21 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -204px;
+}

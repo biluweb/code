@@ -1,0 +1,382 @@
+@charset "UTF-8";
+body {
+  font-family: "微软雅黑";
+}
+
+#top {
+  height: 90px;
+  width: 996px;
+  margin: 0 auto;
+}
+
+#top .container {
+  padding: 0;
+  width: 996px;
+}
+
+#top .container .logo {
+  float: left;
+  margin-right: 35px;
+  height: 90px;
+}
+
+#top .container .logo img {
+  width: 202px;
+  height: 53px;
+  margin-top: 20px;
+}
+
+#top .container .nav {
+  float: left;
+  position: relative;
+}
+
+#top .container .nav #navslip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 123px;
+  z-index: 22;
+}
+
+#top .container .nav a {
+  display: inline-block;
+  margin-right: 23px;
+  width: 100px;
+  height: 90px;
+  font-size: 18px;
+  line-height: 90px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+#top .container .nav a.active, #top .container .nav a:hover {
+  color: #ea4335;
+}
+
+#top .container .nav a.active img, #top .container .nav a:hover img {
+  display: block;
+  margin-top: -8px;
+}
+
+#top .container .enterbox {
+  width: 196px;
+  height: 90px;
+  float: right;
+}
+
+#top .container .enterbox a {
+  float: left;
+  width: 90px;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#top .container .enterbox a.login {
+  background: #EA4335;
+}
+
+#top .container .enterbox a.register {
+  background: #2f5895;
+}
+
+#top .container .entersucced {
+  height: 90px;
+  float: right;
+}
+
+#top .container .entersucced .min {
+  height: 35px;
+  margin-top: 34px;
+}
+
+#top .container .entersucced .min img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: middele;
+  background-color: #f60;
+}
+
+#top .container .entersucced .min span {
+  font-size: 16px;
+  vertical-align: middele;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 996px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 30px 0 86px;
+}
+
+.content .container {
+  width: 996px;
+  padding: 0;
+  margin: 0 auto;
+  background: #f7f7f7;
+}
+
+#fixedBox {
+  width: 40px;
+  height: 80px;
+  position: fixed;
+  bottom: 238px;
+  right: 26px;
+}
+
+#fixedBox .contactQQ {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat;
+}
+
+#fixedBox .getBack {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat;
+}
+
+#fixedBox .contactQQ:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat -40px 0;
+}
+
+#fixedBox .getBack:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat -40px 0;
+}
+
+#leftbox {
+  width: 238px;
+  float: left;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-bottom: 3px solid #e4e4e4;
+}
+
+#leftbox #titlePic {
+  width: 236px;
+  height: 50px;
+  background: #eee;
+  text-align: left;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+
+#leftbox #titlePic span {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  background: url(/Images/JumpPage/img/school/cuPicon.png);
+  vertical-align: middle;
+}
+
+#leftbox #menu {
+  width: 236px;
+  background: #fff;
+}
+
+#leftbox #menu li {
+  width: 236px;
+  height: 38px;
+  margin: 6px 0;
+  color: #333;
+  text-align: left;
+  line-height: 38px;
+  font-size: 16px;
+}
+
+#leftbox #menu li b {
+  width: 48px;
+  height: 38px;
+  border-left: 4px solid #fff;
+  display: block;
+  float: left;
+}
+
+#leftbox #menu li a {
+  width: 158px;
+  text-decoration: none;
+  text-align: left;
+  color: #333;
+  display: block;
+  float: left;
+}
+
+#leftbox #menu li span {
+  width: 30px;
+  text-align: left;
+  display: block;
+  float: left;
+  color: #fff;
+}
+
+#leftbox #menu li:hover, #leftbox #menu li.actived {
+  cursor: pointer;
+  background: #f7f7f7;
+}
+
+#leftbox #menu li:hover b, #leftbox #menu li.actived b {
+  width: 48px;
+  height: 38px;
+  border-left: 4px solid #EA4335;
+  display: block;
+  float: left;
+}
+
+#leftbox #menu li:hover a, #leftbox #menu li.actived a {
+  width: 158px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  float: left;
+  color: #EA4335;
+}
+
+#leftbox #menu li:hover span, #leftbox #menu li.actived span {
+  width: 30px;
+  text-align: left;
+  display: block;
+  float: left;
+  color: #EA4335;
+}
+
+#rightBox {
+  width: 747px;
+  height: auto;
+  float: right;
+  vertical-align: top;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-bottom: 3px solid #e4e4e4;
+}
+
+#rightBox .article {
+  width: 688px;
+  margin: 0 auto;
+}
+
+#rightBox .article h3 {
+  font-size: 18px;
+  line-height: 72px;
+  text-align: center;
+  color: #EA4335;
+}
+
+#rightBox .article p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #676767;
+}
+
+#rightBox .article h4 {
+  font-size: 16px;
+  line-height: 110px;
+  color: #262626;
+}
+
+#rightBox .article .dutyAnnoun {
+  margin: 45px auto;
+}
+
+#rightBox .article .dutyAnnoun h4 {
+  color: #da3636;
+  line-height: 34px;
+}
+
+#rightBox .article .dutyAnnoun p {
+  color: #7e7e7e;
+  font-size: 14px;
+}
+
+#rightBox .skip {
+  margin: 99px;
+}
+
+#rightBox .skip a {
+  display: block;
+  line-height: 40px;
+  color: #acacac;
+}
+
+#rightBox .skip a:hover {
+  color: #ff7e37;
+}
+
+#botm > div {
+  width: 100%;
+  height: 98px;
+  background: #46505a;
+  min-width: 996px;
+  margin: 0 auto;
+}
+
+#botm > div .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#botm > div p {
+  padding-top: 26px;
+  line-height: 150%;
+  font-size: 14px;
+  color: #fff;
+}
+
+#botm .fR p {
+  text-align: right;
+}
+
+#botm a {
+  color: #fff;
+}
+
+.touclick.touclick-block {
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -154px !important;
+  margin-left: -188px !important;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico {
+  width: 16px;
+  height: 16px;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico20 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico21 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -204px;
+}

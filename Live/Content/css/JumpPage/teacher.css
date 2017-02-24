@@ -1,0 +1,433 @@
+@charset "UTF-8";
+body {
+  font-family: "微软雅黑";
+}
+
+#top {
+  height: 90px;
+  width: 996px;
+  margin: 0 auto;
+}
+
+#top .container {
+  padding: 0;
+  width: 996px;
+}
+
+#top .container .logo {
+  float: left;
+  margin-right: 35px;
+  height: 90px;
+}
+
+#top .container .logo img {
+  width: 202px;
+  height: 53px;
+  margin-top: 20px;
+}
+
+#top .container .nav {
+  float: left;
+  position: relative;
+}
+
+#top .container .nav #navslip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 123px;
+  z-index: 22;
+}
+
+#top .container .nav a {
+  display: inline-block;
+  margin-right: 23px;
+  width: 100px;
+  height: 90px;
+  font-size: 18px;
+  line-height: 90px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+#top .container .nav a.active, #top .container .nav a:hover {
+  color: #ea4335;
+}
+
+#top .container .nav a.active img, #top .container .nav a:hover img {
+  display: block;
+  margin-top: -8px;
+}
+
+#top .container .enterbox {
+  width: 196px;
+  height: 90px;
+  float: right;
+}
+
+#top .container .enterbox a {
+  float: left;
+  width: 90px;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#top .container .enterbox a.login {
+  background: #EA4335;
+}
+
+#top .container .enterbox a.register {
+  background: #2f5895;
+}
+
+#top .container .entersucced {
+  height: 90px;
+  float: right;
+}
+
+#top .container .entersucced .min {
+  height: 35px;
+  margin-top: 34px;
+}
+
+#top .container .entersucced .min img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: middele;
+  background-color: #f60;
+}
+
+#top .container .entersucced .min span {
+  font-size: 16px;
+  vertical-align: middele;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 996px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 30px 0 86px;
+}
+
+.content .container {
+  width: 996px;
+  padding: 0;
+  margin: 0 auto;
+  background: #f7f7f7;
+}
+
+#fixedBox {
+  width: 40px;
+  height: 80px;
+  position: fixed;
+  bottom: 238px;
+  right: 26px;
+}
+
+#fixedBox .contactQQ {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat;
+}
+
+#fixedBox .getBack {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat;
+}
+
+#fixedBox .contactQQ:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat -40px 0;
+}
+
+#fixedBox .getBack:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat -40px 0;
+}
+
+.list-one {
+  width: 996px;
+  height: 356px;
+  background: url(/Images/JumpPage/img/teacher/bg-2.jpg);
+  padding: 20px 30px;
+  margin: 0 auto 36px;
+}
+
+.list-one p.title {
+  margin-bottom: 12px;
+}
+
+.list-one div.teacher {
+  background: #fff;
+  width: 644px;
+  height: 272px;
+  padding: 15px 0;
+}
+
+.list-one div.teacher .pic {
+  width: 198px;
+  height: 244px;
+  margin: 0 12px;
+  float: left;
+}
+
+.list-one div.teacher .pic img {
+  width: 198px;
+  height: 244px;
+}
+
+.list-one div.teacher .text {
+  width: 382px;
+  height: 244px;
+  margin-left: 14px;
+  float: left;
+  position: relative;
+}
+
+.list-one div.teacher .text span {
+  color: #ea4335;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.list-one div.teacher .text p {
+  color: #666;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.list-one div.teacher .text p.smalltitle {
+  color: #ea4335;
+}
+
+.list-one div.teacher .text p.length {
+  margin-top: 10px;
+}
+
+.list-one div.teacher .text a {
+  color: #ea4335;
+  position: absolute;
+  bottom: 0;
+}
+
+.list-one div.teacher .clear {
+  clear: both;
+}
+
+.list-two {
+  width: 996px;
+  margin: 84px auto 110px;
+  background: #f7e3af;
+  padding: 20px 30px;
+  margin: 0 auto 36px;
+}
+
+.list-two p.title {
+  margin-bottom: 12px;
+}
+
+.list-two div.teacher {
+  background: #fff;
+  width: 457px;
+  height: 272px;
+  padding: 15px 0;
+  display: inline-block;
+}
+
+.list-two div.teacher .pic {
+  width: 198px;
+  height: 244px;
+  margin: 0 12px;
+  float: left;
+}
+
+.list-two div.teacher .pic img {
+  width: 198px;
+  height: 244px;
+}
+
+.list-two div.teacher .text {
+  width: 190px;
+  height: 244px;
+  margin-left: 14px;
+  float: left;
+  position: relative;
+}
+
+.list-two div.teacher .text span {
+  color: #ea4335;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.list-two div.teacher .text p {
+  color: #666;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.list-two div.teacher .text p.smalltitle {
+  color: #ea4335;
+}
+
+.list-two div.teacher .text p.length {
+  margin-top: 10px;
+}
+
+.list-two div.teacher .text a {
+  color: #ea4335;
+  position: absolute;
+  bottom: 0;
+}
+
+.list-two div.teacher .clear {
+  clear: both;
+}
+
+#popUp {
+  display: none;
+  font-size: 0;
+  width: 700px;
+}
+
+#popUp .blackbox {
+  height: 70px;
+  background: #fff;
+}
+
+#popUp .blackbox .teacherName {
+  float: left;
+  color: #333;
+  font-size: 18px;
+  line-height: 70px;
+  margin-left: 30px;
+}
+
+#popUp .blackbox .likebox {
+  float: right;
+  height: 70px;
+  margin-right: 22px;
+}
+
+#popUp .blackbox .likebox div {
+  display: inline-block;
+}
+
+#popUp .blackbox .likebox .assistant {
+  width: 100px;
+  height: 32px;
+  vertical-align: middle;
+  margin: 19px 0;
+  margin-right: 35px;
+  background: url(/Images/JumpPage/img/teacher/assitant.png) no-repeat 0 -38px;
+}
+
+#popUp .blackbox .likebox .assistant:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/teacher/assitant.png) no-repeat;
+}
+
+#popUp .blackbox .likebox .good {
+  vertical-align: middle;
+}
+
+#popUp .blackbox .likebox .good .pic {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+  background: url(/Images/JumpPage/img/teacher/good.png) no-repeat;
+}
+
+#popUp .blackbox .likebox .good .pic:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/teacher/good.png) no-repeat 0 -16px;
+}
+
+#popUp .blackbox .likebox .good .number {
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  margin: 0 5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #666;
+}
+
+#botm > div {
+  width: 100%;
+  height: 98px;
+  background: #46505a;
+  min-width: 996px;
+  margin: 0 auto;
+}
+
+#botm > div .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#botm > div p {
+  padding-top: 26px;
+  line-height: 150%;
+  font-size: 14px;
+  color: #fff;
+}
+
+#botm .fR p {
+  text-align: right;
+}
+
+#botm a {
+  color: #fff;
+}
+
+.touclick.touclick-block {
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -154px !important;
+  margin-left: -188px !important;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico {
+  width: 16px;
+  height: 16px;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico20 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico21 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -204px;
+}

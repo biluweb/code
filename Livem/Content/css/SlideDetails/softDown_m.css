@@ -1,0 +1,76 @@
+body, .mui-content {
+  background-color: #fafafa;
+}
+
+.mui-content .mui-scroll-wrapper {
+  top: 48px;
+}
+
+.mui-content .softDownbox {
+  background-color: #fafafa;
+}
+
+.mui-content .softDownbox .huazhongApp, .mui-content .softDownbox .qinlongApp {
+  padding: 22px 0 18px;
+  font-size: 0;
+}
+
+.mui-content .softDownbox .huazhongApp .pic {
+  margin-right: 24px;
+}
+
+.mui-content .softDownbox .qinlongApp .info {
+  margin-right: 24px;
+}
+
+.mui-content .softDownbox div {
+  width: 256px;
+  margin: 0 auto;
+}
+
+.mui-content .softDownbox div .pic {
+  width: 123px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.mui-content .softDownbox div .pic img {
+  float: left;
+}
+
+.mui-content .softDownbox div .info {
+  width: 109px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.mui-content .softDownbox div .info p.appName {
+  font-size: 20px;
+  color: #333;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+
+.mui-content .softDownbox div .info p.text {
+  font-size: 15px;
+  color: #666;
+  line-height: 25px;
+}
+
+.mui-content .softDownbox div .info a {
+  display: block;
+  width: 100%;
+  height: 37px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.mui-content .softDownbox div .info a img {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+.mui-content .softDownbox div .info a.andriod {
+  margin-bottom: 8px;
+}

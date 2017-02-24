@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>软件下载</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="/code/Livem/Content/css/mui-sass/sass/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/code/Livem/Content/css/reset.css" />
+    <link rel="stylesheet" href="/code/Livem/Content/css/Zhibo/icon.css" />
+    <link rel="stylesheet" href="/code/Livem/Content/css/SlideDetails/softDown_m.css" />
+    <script src="/code/Livem/Content/css/mui-sass/js/mui.js"></script>
+    <script src="/code/Livem/Scripts/ComPonent/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <!-- 主界面菜单同时移动 -->
+    <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+        <!-- 主页面容器 -->
+        <div class="mui-inner-wrap">
+            <!-- 菜单容器 -->
+            <!-- 菜单容器 -->
+            <script type="text/javascript">
+                mui.init({
+                    gestureConfig: {
+                        swipe: false, //默认为true
+                    }
+                }); //mui初始化
+            </script>
+            <script src="/code/Livem/Scripts/base/PackagingFunction.js" type="text/javascript" charset="utf-8"></script>
+            <link rel="stylesheet" href="/code/Livem/Content/css/Modules/My.css" />
+            <script src="/code/Livem/Scripts/ComPonent/layer_mobile/layer.js"></script>
+            <aside class="mui-off-canvas-left" id="offCanvasSide">
+                <!-- 菜单具体展示内容 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+
+                        <!--酱油状态-->
+                        <div class="youke">
+                            <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png">
+                            <span>游客402LF</span>
+
+                            <!--登录注册按钮-->
+                            <div id="user-state-container" class="logoOrSign">
+                                <a href="/code/Livem/Htmls/MyDetails/LoginAndRegistration.html" id="btnlogin" class="mui-btn login_btn">登录</a>
+                                <a href="/code/Livem/Htmls/MyDetails/LoginAndRegistration.html" class="mui-btn logoOrSign_sign">注册</a>
+                            </div>
+                        </div>
+
+                        <!--登录状态-->
+                        <div class="logined" style="display: none;">
+                            <img src="/code/Livem/Images/Zhibo/livebox/icon/huiyuan.png">
+                            <span>text5288</span>
+
+                            <!--个人中心-->
+                            <div class="preinfor">
+                                <div class="concenper">
+                                    <a href="/code/Livem/Htmls/MyDetails/ModifyInfo.html">
+                                        <em>
+                                            <i class="iconspri icon-cenp"></i>
+                                            <span>个人中心</span>
+                                        </em>
+                                        <i class="iconspri icon-detailso fr"></i>
+                                    </a>
+                                </div>
+                                <div class="conloginout">
+                                    <a href="javascript:;">
+                                        <i class="iconspri icon-cout"></i>
+                                        <span>退出</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--内容区-->
+
+                        <div class="canvas-left-infor">
+                            <div class="customer-service">
+                                <h2 class="htitle">
+                                    <span>在线客服</span>
+                                </h2>
+                                <a href="javascript:ContactQQ();" class="mui-btn tasi">
+                                    <i class="iconspri icon-aid"></i>
+                                    <span class="tlv-txt">老师助理</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn mof">
+                                    <i class="iconspri icon-way"></i>
+                                    <span class="tlv-txt">领取战法</span>
+                                </a>
+                                <a href="javascript:ContactQQ2();" class="mui-btn ptt">
+                                    <i class="iconspri icon-league"></i>
+                                    <span class="tlv-txt">招商加盟</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn ope">
+                                    <i class="iconspri icon-openac"></i>
+                                    <span>在线开户</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn sup">
+                                    <i class="iconspri icon-support"></i>
+                                    <span>技术支持</span>
+                                </a>
+                                <a href="javascript:ContactQQ();" class="mui-btn pre">
+                                    <i class="iconspri icon-press"></i>
+                                    <span>联系客服</span>
+                                </a>
+                            </div>
+
+                            <div class="share">
+                                <h2 class="htitle">
+                                    <span>分享</span>
+                                </h2>
+                                <div class="bdsharebuttonbox">
+                                    <a href="javascript:;" class="bds_sqq"></a>
+                                    <a href="javascript:;" class="bds_tsina"></a>
+                                    <a href="javascript:;" class="bds_qzone"></a>
+                                </div>
+                            </div>
+
+                            <div class="clause">
+                                <h2 class="htitle">
+                                    <span>用户服务条款</span>
+                                </h2>
+                                <p class="mystatement">《风险提示及服务声明》</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <script>
+                mui.ready(function() {
+                    //阻止侧滑菜单拖拽事件
+                    var offCanvasInner = document.querySelector('.mui-inner-wrap');
+                    offCanvasInner.addEventListener('drag', function(event) {
+                        event.stopPropagation();
+                    });
+
+                    //mui滚动调用
+                    mui('.mui-scroll-wrapper').scroll({
+                        scrollY: true, //是否竖向滚动
+                        scrollX: false, //是否横向滚动
+                        startX: 0, //初始化时滚动至x
+                        startY: 0, //初始化时滚动至y
+                        indicators: true, //是否显示滚动条
+                        deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+                        bounce: true, //是否启用回弹
+                    });
+
+                    //解决a标签不跳转问题
+                    mui('body').on('tap', 'a', function() {
+                        document.location.href = this.href;
+                    });
+
+                    //风险提示说明
+                    var statebtn = doc.querySelector('.mystatement');
+                    statebtn.addEventListener('tap', myopenstate);
+
+                    function myopenstate() {
+                        layer.open({
+                            type: 1,
+                            className: 'statementOpened',
+                            title: '风险提示与用户服务',
+                            anim: 'up',
+                            content: '<div class="framewrap" style="width:100%;height:100%;-webkit-overflow-scrolling:touch;overflow:auto;"><iframe src="/code/Livem/htmls/MyDetails/Statement.html" frameborder="0" style="width:100%;height:100%;"></iframe>',
+                            //		  btn: ['同意','拒绝'],
+                            success: function(elem) {
+                                var stat = elem.querySelector('.statementOpened'),
+                                    title = stat.querySelector('h3'),
+                                    btn = stat.querySelector('.layui-m-layerbtn');
+                                title.appendChild(doc.createElement("span"));
+                                stat.querySelector('h3 span').addEventListener('tap', function(index) {
+                                    layer.closeAll();
+                                })
+                                elem.querySelector('.framewrap').style.height = stat.clientHeight - title.clientHeight - 18 + 'px';
+                            },
+                        });
+                    }
+                })
+            </script>
+            <!-- 主页面标题 -->
+            <!-- 主页面标题 -->
+            <link rel="stylesheet" type="text/css" href="/code/Livem/Content/css/Modules/Nav.css" />
+            <link rel="stylesheet" type="text/css" href="/code/Livem/Content/css/Zhibo/icon.css" />
+            <header class="mui-bar mui-bar-nav">
+                <a class="mui-icon mui-action-menu mui-pull-left" href="#offCanvasSide">
+                    <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png" />
+                </a>
+                <a href="javascript:;" id="openPopover" class="mui-icon mui-pull-right">
+                    <!--<img src="/Images/Zhibo/icon/class.png"/>-->
+                    <i class="iconspri icon-slide"></i>
+                </a>
+                <h1 class="mui-title">
+                    <!--logo状态-->
+                    <img src="/code/Livem/Images/base/Logo.png" />
+
+                    <!--文字状态-->
+                    <!--个人中心-->
+                </h1>
+            </header>
+            <!--快速导航-->
+            <link rel="stylesheet" href="/code/Livem/Content/css/Modules/Slide.css" />
+            <div id="popover" class="off-canvas-top">
+                <header class="mui-bar mui-bar-nav">
+                    <a href="javascript:;" class="mui-icon mui-action-menu mui-pull-left">
+                        <img src="/code/Livem/Images/Zhibo/livebox/icon/youke.png" />
+                    </a>
+                    <a href="javascript:;" id="closePopover" class="mui-icon mui-pull-right">
+                        <i class="iconspri icon-slideclose"></i>
+                    </a>
+                    <h1 class="mui-title">
+                        <img src="/code/Livem/Images/base/Logo.png" />
+                    </h1>
+                </header>
+
+                <div class="mui-content">
+                    <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <dl class="zhibo-nav">
+                                <dt>服务入口</dt>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/index.html">
+                                        <i class="iconspri icon-home"></i>
+                                        <span>首页</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/vipTic_m.html">
+                                        <i class="iconspri icon-vipzf"></i>
+                                        <span>VIP战法</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/calendar_m.html">
+                                        <i class="iconspri icon-calendar"></i>
+                                        <span>财经日历</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/teacher_m.html">
+                                        <i class="iconspri icon-referral"></i>
+                                        <span>老师介绍</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/softDown_m.html">
+                                        <i class="iconspri icon-downloadsoft"></i>
+                                        <span>软件下载</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/college_m.html">
+                                        <i class="iconspri icon-college"></i>
+                                        <span>钦龙学院</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="/code/Livem/Htmls/SlideDetails/activity_m.html">
+                                        <i class="iconspri icon-activitye"></i>
+                                        <span>活动入口</span>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                mui.ready(function() {
+                    //下滑导航
+                    var slidnav = new SlideDt('#openPopover', '#closePopover');
+                    slidnav.init();
+
+                })
+            </script>
+
+            <!--主要内容-->
+            <div class="mui-content">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="softDownbox">
+                            <div class="huazhongApp">
+                                <div class="pic">
+                                    <img src="/code/Livem/Images/SlideDetails/softDown_m/phone1.png" />
+                                </div>
+                                <div class="info">
+                                    <p class="appName">华中矿产品</p>
+                                    <p class="text">行情交易软件
+                                        <br />APP下载</p>
+                                    <a class="ios">
+                                        <img src="/code/Livem/Images/SlideDetails/softDown_m/ios.png" />
+                                    </a>
+                                    <a class="andriod">
+                                        <img src="/code/Livem/Images/SlideDetails/softDown_m/andrio.png" />
+                                    </a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="qinlongApp">
+                                <div class="info">
+                                    <p class="appName">钦龙点金</p>
+                                    <p class="text">APP下载</p>
+                                    <a class="ios">
+                                        <img src="/code/Livem/Images/SlideDetails/softDown_m/ios.png" />
+                                    </a>
+                                    <a class="andriod">
+                                        <img src="/code/Livem/Images/SlideDetails/softDown_m/andrio.png" />
+                                    </a>
+                                </div>
+                                <div class="pic">
+                                    <img src="/code/Livem/Images/SlideDetails/softDown_m/phone2.png" />
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--黑色遮罩-->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+</script>

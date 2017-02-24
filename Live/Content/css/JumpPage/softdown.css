@@ -1,0 +1,398 @@
+@charset "UTF-8";
+.mobileBox {
+  display: none;
+}
+
+body {
+  font-family: "微软雅黑";
+}
+
+#top {
+  height: 90px;
+  width: 996px;
+  margin: 0 auto;
+}
+
+#top .container {
+  padding: 0;
+  width: 996px;
+}
+
+#top .container .logo {
+  float: left;
+  margin-right: 35px;
+  height: 90px;
+}
+
+#top .container .logo img {
+  width: 202px;
+  height: 53px;
+  margin-top: 20px;
+}
+
+#top .container .nav {
+  float: left;
+  position: relative;
+}
+
+#top .container .nav #navslip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 123px;
+  z-index: 22;
+}
+
+#top .container .nav a {
+  display: inline-block;
+  margin-right: 23px;
+  width: 100px;
+  height: 90px;
+  font-size: 18px;
+  line-height: 90px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+#top .container .nav a.active, #top .container .nav a:hover {
+  color: #ea4335;
+}
+
+#top .container .nav a.active img, #top .container .nav a:hover img {
+  display: block;
+  margin-top: -8px;
+}
+
+#top .container .enterbox {
+  width: 196px;
+  height: 90px;
+  float: right;
+}
+
+#top .container .enterbox a {
+  float: left;
+  width: 90px;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#top .container .enterbox a.login {
+  background: #EA4335;
+}
+
+#top .container .enterbox a.register {
+  background: #2f5895;
+}
+
+#top .container .entersucced {
+  height: 90px;
+  float: right;
+}
+
+#top .container .entersucced .min {
+  height: 35px;
+  margin-top: 34px;
+}
+
+#top .container .entersucced .min img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: middele;
+  background-color: #f60;
+}
+
+#top .container .entersucced .min span {
+  font-size: 16px;
+  vertical-align: middele;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 996px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 30px 0 86px;
+}
+
+.content .container {
+  width: 996px;
+  padding: 0;
+  margin: 0 auto;
+  background: #f7f7f7;
+}
+
+#fixedBox {
+  width: 40px;
+  height: 80px;
+  position: fixed;
+  bottom: 238px;
+  right: 26px;
+}
+
+#fixedBox .contactQQ {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat;
+}
+
+#fixedBox .getBack {
+  width: 40px;
+  height: 40px;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat;
+}
+
+#fixedBox .contactQQ:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/headset.jpg) no-repeat -40px 0;
+}
+
+#fixedBox .getBack:hover {
+  cursor: pointer;
+  background: url(/Images/JumpPage/img/uparrow.jpg) no-repeat -40px 0;
+}
+
+.pcdown {
+  width: 996px;
+  margin: 0 auto;
+  margin-top: 26px;
+  background-color: #fff;
+}
+
+.pcdown .title {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.pcdown .title p {
+  height: 24px;
+  padding-left: 10px;
+  border-left: 5px solid #EA4235;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 24px;
+}
+
+.pcdown .downlist {
+  width: 996px;
+  font-size: 0;
+}
+
+.pcdown .downlist div {
+  width: 332px;
+  display: inline-block;
+}
+
+.pcdown .downlist div img {
+  display: block;
+  width: 200px;
+  height: 134px;
+  margin: 0 auto;
+}
+
+.pcdown .downlist div p {
+  font-size: 20px;
+  width: 230px;
+  margin: 18px auto 30px;
+  color: #333;
+}
+
+.pcdown .downlist div a {
+  display: block;
+  width: 230px;
+  height: 54px;
+  background: #ea4335;
+  border-radius: 3px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 54px;
+}
+
+.pcdown .downlist div a span {
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  background: url(/Images/JumpPage/img/softdown/dIcon.png) no-repeat;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.pcdown .downlist div a:hover {
+  background: #eb5547;
+}
+
+.appdown {
+  width: 996px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+.appdown .title {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30px;
+}
+
+.appdown .title p {
+  height: 24px;
+  padding-left: 10px;
+  border-left: 5px solid #EA4235;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 24px;
+}
+
+.appdown .downlist {
+  margin: 0 auto 150px;
+  padding-left: 90px;
+}
+
+.appdown .downlist div.huazhong {
+  margin-bottom: 56px;
+}
+
+.appdown .downlist div p {
+  font-size: 20px;
+  line-height: 64px;
+  color: #323232;
+}
+
+.appdown .downlist div ul li.IOS a {
+  background-color: #333;
+  vertical-align: middle;
+}
+
+.appdown .downlist div ul li.IOS a span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(/Images/JumpPage/img/softdown/ios.png);
+  margin: 10px 4px 12px;
+  vertical-align: middle;
+}
+
+.appdown .downlist div ul li.Andrio a {
+  background-color: #72b520;
+}
+
+.appdown .downlist div ul li.Andrio a span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(/Images/JumpPage/img/softdown/andrio.png);
+  margin: 10px 4px 12px;
+  vertical-align: middle;
+}
+
+.appdown .downlist div ul li {
+  width: 450px;
+  display: inline-block;
+}
+
+.appdown .downlist div ul li div {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.appdown .downlist div ul li div.lBox {
+  margin-right: 45px;
+}
+
+.appdown .downlist div ul li div.RBox {
+  margin-bottom: 22px;
+}
+
+.appdown .downlist div ul li div.RBox img {
+  border: 3px solid #ea4434;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.appdown .downlist div ul li div.RBox a {
+  display: block;
+  width: 130px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+#botm > div {
+  width: 100%;
+  height: 98px;
+  background: #46505a;
+  min-width: 996px;
+  margin: 0 auto;
+}
+
+#botm > div .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#botm > div p {
+  padding-top: 26px;
+  line-height: 150%;
+  font-size: 14px;
+  color: #fff;
+}
+
+#botm .fR p {
+  text-align: right;
+}
+
+#botm a {
+  color: #fff;
+}
+
+.touclick.touclick-block {
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -154px !important;
+  margin-left: -188px !important;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico {
+  width: 16px;
+  height: 16px;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico20 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -222px;
+}
+
+.layui-layer-dialog .layui-layer-content .layui-layer-ico21 {
+  top: 24px;
+  background: url("/Images/Zhibo/icon/livespri.png") 0 0 no-repeat;
+  background-position-x: -76px;
+  background-position-y: -204px;
+}

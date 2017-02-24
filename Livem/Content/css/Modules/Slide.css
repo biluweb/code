@@ -1,0 +1,69 @@
+#popover .mui-content {
+  background: transparent;
+}
+
+#popover .mui-scroll-wrapper {
+  top: 48px;
+}
+
+.off-canvas-top {
+  min-width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: #f6f6f6;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.mui-off-canvas-wrap.mui-slide-in .off-canvas-top {
+  -webkit-transform: translate3d(0px, -100%, 0px);
+  z-index: 10000 !important;
+  overflow: hidden;
+}
+
+.mui-off-canvas-left.mui-transitioning, .off-canvas-top.mui-transitioning {
+  webkit-transition: -webkit-transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: -webkit-transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.zhibo-nav {
+  color: #999999;
+  font-size: 17px;
+  text-indent: 4em;
+}
+
+.zhibo-nav a {
+  color: #999999;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+}
+
+.zhibo-nav i {
+  margin-right: 10px;
+}
+
+.zhibo-nav dd, .zhibo-nav dt {
+  margin: 38px 0;
+}
+
+@media (max-width: 375px) {
+  .zhibo-nav dd, .zhibo-nav dt {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .zhibo-nav dd, .zhibo-nav dt {
+    margin: 20px 0;
+  }
+}

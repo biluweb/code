@@ -1,0 +1,201 @@
+.logandreg {
+  padding-top: 48px;
+}
+
+.logandreg .tab {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  padding-top: 66px;
+}
+
+.logandreg .tab li.on {
+  color: #ea4335;
+  border-bottom: 2px solid #ea4335;
+}
+
+.logandreg .tab ul {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.logandreg .tab ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.logandreg .mui-input-row input {
+  height: 42px;
+  color: #333333;
+  padding: 10px;
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.logandreg form {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.logandreg .infor {
+  padding-top: 18px;
+  font-size: 14px;
+}
+
+.logandreg .infor > div {
+  display: none;
+}
+
+.logandreg .infor > div.active {
+  display: block;
+}
+
+.logandreg #loginpwd {
+  margin-bottom: 10px;
+}
+
+.logandreg .login, .logandreg .register {
+  height: 44px;
+  background: #ea4335;
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 26px 0 12px;
+}
+
+.logandreg .register {
+  margin: 18px 0 14px;
+  background: #afafaf;
+  color: #fff;
+}
+
+.logandreg .register.yes {
+  background: #ea4335;
+}
+
+.logandreg .login-fd {
+  color: #666666;
+}
+
+.logandreg .login-fd .autlogin + label {
+  top: 2px;
+  margin-right: 8px;
+}
+
+.logandreg .login-fd .help {
+  float: right;
+}
+
+.logandreg .login-fd .help a {
+  color: #ea4335;
+}
+
+.logandreg #reg_chkcode {
+  display: inline-block;
+  float: left;
+  width: 67%;
+}
+
+.logandreg #re_TestGetCode {
+  display: inline-block;
+  width: 30%;
+  background: #afafaf;
+  height: 42px;
+  color: #fff;
+  text-align: center;
+  float: right;
+  line-height: 42px;
+  border-radius: 2px;
+  color: #333333;
+}
+
+.logandreg .register-password input {
+  margin-bottom: 8px;
+}
+
+.logandreg .agreement {
+  position: relative;
+}
+
+.logandreg .agreement p {
+  display: inline-block;
+}
+
+.logandreg .agreement p a {
+  color: #ea4335;
+}
+
+.logandreg .agreement .regular-checkbox + label {
+  top: 2px;
+  margin-right: 8px;
+}
+
+.logandreg #reg_form p {
+  color: #666666;
+}
+
+.logandreg #reg_form .hint {
+  padding-top: 5px;
+}
+
+.logandreg #reg_form .downapp {
+  margin-top: 48px;
+}
+
+.logandreg .pass-state {
+  margin-top: 0;
+}
+
+.logandreg .downapp {
+  font-size: 16px;
+  color: #ea4335;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  border: 1px solid #ea4335;
+  border-radius: 2px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.regular-checkbox + label {
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  padding: 7px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  width: 14px;
+  height: 10px;
+  background: url(/Images/base/iconspri.png) -23px -107px no-repeat;
+  background-size: 414px 736px;
+  display: none;
+}
+
+.regular-checkbox:checked + label:before {
+  display: block;
+}
+
+@media (max-width: 374px) {
+  .logandreg .tab {
+    padding-top: 14px;
+  }
+  .logandreg .downapp {
+    margin-top: 25px;
+  }
+}

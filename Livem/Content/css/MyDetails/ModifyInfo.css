@@ -1,0 +1,187 @@
+.mycenter {
+  padding-top: 48px;
+}
+
+.mycenter form {
+  width: 85%;
+  margin: 0 auto;
+  color: #5e5e5e;
+}
+
+.mycenter form > div {
+  margin: 10px 0;
+}
+
+.mycenter form input {
+  height: 42px;
+  color: #333333;
+  padding: 10px;
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.mycenter form > span {
+  display: block;
+  height: 22px;
+  padding-left: 10px;
+}
+
+.mycenter form input[type='radio'] {
+  display: none;
+}
+
+.mycenter .tab {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  padding-top: 66px;
+}
+
+.mycenter .tab ul {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.mycenter .tab li {
+  padding: 10px 0;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.mycenter .tab li.on {
+  color: #ea4335;
+  border-bottom: 2px solid #ea4335;
+}
+
+.mycenter .infor {
+  padding-top: 18px;
+  font-size: 14px;
+}
+
+.mycenter .infor > div {
+  display: none;
+}
+
+.mycenter .infor > div.active {
+  display: block;
+}
+
+.mycenter .operate {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mycenter .operate > a {
+  display: inline-block;
+  width: 88px;
+  height: 34px;
+}
+
+#mydatum label {
+  margin: 0 10px;
+  width: 80px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#mydatum input {
+  width: 69%;
+  font-size: 14px;
+  color: #333333;
+}
+
+#mydatum input, #mydatum select {
+  height: 42px;
+  line-height: 42px;
+  padding-left: 10px;
+}
+
+#mydatum select {
+  width: 25%;
+}
+
+#mydatum .controls {
+  display: inline-block;
+  width: 69%;
+}
+
+#mydatum .controls > input {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#mydatum .gender_container input {
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+
+#mydatum .gender_container > div {
+  display: inline-block;
+}
+
+#mydatum .gender_container > div:nth-child(3) {
+  padding-left: 20px;
+}
+
+#mydatum input[type="checkbox"] {
+  display: none;
+}
+
+#mydatum .regular-radio + label {
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  padding: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+#mydatum .regular-radio + label:before {
+  content: ' ';
+  border-radius: 50%;
+  position: absolute;
+  background: #ea4335;
+  opacity: 0.8;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  display: none;
+}
+
+#mydatum .regular-radio:checked + label:before {
+  display: block;
+}
+
+#mydatum #nickname {
+  font-size: 14px;
+}
+
+.mui-btn-default {
+  margin-left: 22px;
+  background: #999999;
+  color: #fff;
+}
+
+#modifyPassword input {
+  margin-bottom: 0;
+}
+
+@media (max-width: 413px) {
+  #mydatum input, #mydatum .controls {
+    width: 66%;
+  }
+}
+
+@media (max-width: 374px) {
+  .mycenter .tab {
+    padding-top: 14px;
+  }
+  #mydatum input, #mydatum .controls {
+    width: 59%;
+  }
+}

@@ -1,0 +1,23 @@
+.mui-bar-nav {
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.mui-bar-nav .mui-icon img {
+  width: 35px;
+  margin-top: -4px;
+}
+
+.mui-bar-nav .mui-pull-right i {
+  top: 3px;
+}
+
+.mui-bar-nav .mui-title img {
+  width: 142px;
+  margin-top: 11px;
+}
+
+.mui-bar-nav .mui-title {
+  font-size: 18px;
+  color: #2d2f33;
+}

@@ -1,0 +1,123 @@
+.mui-content .mui-scroll-wrapper {
+  top: 48px;
+}
+
+.mui-content .vipbox {
+  margin-bottom: 40px;
+  border-top: 1px solid #ea4335;
+}
+
+.mui-content .vipbox .banner img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.mui-content .vipbox .banner .text {
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.mui-content .vipbox .contentBox {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.mui-content .vipbox .contentBox .forOne .title {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mui-content .vipbox .contentBox .forOne ul li {
+  margin-top: 25px;
+}
+
+.mui-content .vipbox .contentBox .forOne ul li .photo {
+  width: 30.21978%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mui-content .vipbox .contentBox .forOne ul li .text {
+  width: 67.032967%;
+  padding-left: 4%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mui-content .vipbox .contentBox .root .title {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mui-content .vipbox .contentBox .root ul.rootList {
+  width: 100%;
+  font-size: 0;
+}
+
+.mui-content .vipbox .contentBox .root ul.rootList li {
+  margin-top: 25px;
+  width: 50%;
+  display: inline-block;
+  font-size: 0;
+}
+
+.mui-content .vipbox .contentBox .root ul.rootList li img {
+  width: 24.590164%;
+  padding: 0 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mui-content .vipbox .contentBox .root ul.rootList li div {
+  width: 75.409836%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mui-content .vipbox .contentBox .root ul.rootList li div span {
+  font-size: 16px;
+  color: #ea4335;
+}
+
+.mui-content .vipbox .contentBox .root ul.rootList li div p {
+  font-size: 13px;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.mui-content .vipbox .foot {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.mui-content .vipbox .foot p.fl {
+  float: left;
+  vertical-align: bottom;
+  font-size: 10px;
+}
+
+.mui-content .vipbox .foot p.fr {
+  float: right;
+  vertical-align: bottom;
+  font-size: 10px;
+}
+
+.mui-content .vipbox .foot .clear {
+  clear: both;
+}
+
+.mui-content .contactQQ {
+  width: 100%;
+  height: 40px;
+  background-color: #ea4335;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
