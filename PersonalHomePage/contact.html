@@ -17,7 +17,7 @@
     		<nav>
 		    <div class="dialogue xycenter"></div>
 	    		<div class="nvbx">
-					<h1>姓名:{{resume.infor.name}}</h1>
+					<h1>{{resume.infor.name}}</h1>
 					<ul class="fR">
 						<template v-for="item in resume.nav">
 						    <li v-bind:class="{current:navcurt==item[1]?true:false}">
@@ -32,7 +32,12 @@
 				<div class="xycenter minfor">
 					<template v-for='(value, key) in resume.infor'>
 						<p v-if="key!='age'&&key!='hd'&&key!='ch'">
-							 {{value}}
+							<template v-if="key=='name'">
+								姓名:{{value}}
+							</template>
+							<template v-else>
+								{{value}}
+							</template>
 						</p>
 					</template>
 				</div>
