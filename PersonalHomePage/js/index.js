@@ -1,7 +1,6 @@
 define('main',['jquery','mybase'], function ($){
-    //交互
     $(function(){
-		//鑾峰彇瀵艰埅鐨勬爣鍑嗘祦绂籨ocument鐨�0锛�0鐐圭殑璺濈..
+		//页面导航交互
 		function navmh(){
 			var bzliu=$('nav').offset().top;
 		    $(window).scroll(function(event){
@@ -26,9 +25,8 @@ define('main',['jquery','mybase'], function ($){
 		    })
 		}
 
-	    setTimeout(function(){navmh();},301)
-	    
-		//	    loading
+	    setTimeout(function(){navmh();},301)    
+		//loading预加载...
 		function loadingFn(){
 		var num=0;
 		var arry=['img/my.png','img/stripes.png','img/myname.png','img/fash.png','img/footer.png','img/or.png','img/section_home_fg.png','img/yuan.png','img/bgindex.jpg','icon/BIL.png','icon/jiant.png','icon/mous.png'];

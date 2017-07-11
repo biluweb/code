@@ -1,4 +1,4 @@
-define('mybase',['jquery','vue','mobileDevice'], function ($,Vue){
+define('mybase',['jquery','vue','mobileDevice','functions'], function ($,Vue){
 	//Device
 	if(isMobileDevice()){
 		$('head').append("<link rel='stylesheet' type='text/css' href='css/myMobile.css' />");
@@ -23,6 +23,7 @@ define('mybase',['jquery','vue','mobileDevice'], function ($,Vue){
 		    	url:"/code/Api/myinfor/resume.json",
 		    	async:false,
 		    	success:function(data, textStatus){
+		    		data.resume[0].infor.age=ages(data.resume[0].infor.age);
 		    		_this.resume=data.resume[0];
 		    	}
 		    });
