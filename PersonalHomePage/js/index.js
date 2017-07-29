@@ -67,5 +67,5 @@ define('main',['jquery','mybase'], function ($){
 	})
 });
 
-require(['main'], function (){console.log('load js ok!');console.log('不是因为我不上天，而是因为我在云端')});
+require(['main'], function (){console.log('load js ok!');/*console.log('不是因为我不上天，而是因为我在云端')*/});
 
