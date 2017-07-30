@@ -1,0 +1,11 @@
+.imgs img {
+	border: thin solid #666;
+	margin: 10px;
+	-webkit-box-shadow: 3px 3px 3px #cCC;
+	-moz-box-shadow: 3px 3px 3px #cCC;
+	box-shadow: 3px 3px 3px #ccc;
+}
+p {
+	margin: 5px;
+	padding: 0px;
+}

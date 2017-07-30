@@ -1,0 +1,90 @@
+.myframe {
+	width: 700px;
+	height: auto;
+	overflow: hidden;
+}
+.frame {
+	width: 200px;
+	height: auto;
+	margin: 15px;
+	float: left;
+}
+.mypic {
+	width: 190px;
+	height: auto;
+	padding: 5px;
+	float: left;
+}
+#container {
+	width: 100%;
+	margin: auto;
+}
+#container > div {
+	-webkit-box-shadow: 0 4px 15px -5px #555;
+	box-shadow: 0 4px 15px -5px #555;
+	background-color: #fff;
+	width: 220px;
+	padding: 2px;
+	margin: 5px;
+	text-align:center;
+}
+#container > div img {
+	padding: 0px;
+	display: block;
+	width: 100%;
+}
+
+#container1 {
+	width: 100%;
+	margin: auto;
+}
+#container1 > div {
+	-webkit-box-shadow: 0 4px 15px -5px #555;
+	box-shadow: 0 4px 15px -5px #555;
+	background-color: #fff;
+	width: 220px;
+	padding: 2px;
+	margin: 5px;
+	text-align:center;
+}
+#container1 > div img {
+	padding: 0px;
+	display: block;
+	width: 100%;
+}
+#container2 {
+	width: 100%;
+	margin: auto;
+}
+#container2 > div {
+	-webkit-box-shadow: 0 4px 15px -5px #555;
+	box-shadow: 0 4px 15px -5px #555;
+	background-color: #fff;
+	width: 220px;
+	padding: 2px;
+	margin: 5px;
+	text-align:center;
+}
+#container2 > div img {
+	padding: 0px;
+	display: block;
+	width: 100%;
+}
+#container3 {
+	width: 100%;
+	margin: auto;
+}
+#container3 > div {
+	-webkit-box-shadow: 0 4px 15px -5px #555;
+	box-shadow: 0 4px 15px -5px #555;
+	background-color: #fff;
+	width: 220px;
+	padding: 2px;
+	margin: 5px;
+	text-align:center;
+}
+#container3 > div img {
+	padding: 0px;
+	display: block;
+	width: 100%;
+}

@@ -1,0 +1,15 @@
+.ls img {
+	border: thin solid #666;
+	margin: 10px;
+	-webkit-box-shadow: 3px 3px 3px #cCC;
+	-moz-box-shadow: 3px 3px 3px #cCC;
+	box-shadow: 3px 3px 3px #ccc;
+}
+.ls {
+	padding: 5px 10px;
+	border-bottom:thin dashed #080403;
+	margin-bottom:15px;
+}
+p{
+	margin:5px;
+	padding:0px;}

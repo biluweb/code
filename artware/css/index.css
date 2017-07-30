@@ -1,0 +1,41 @@
+td img {
+	margin: 10px;
+	-webkit-box-shadow: 3px 3px 3px #cCC;
+	-moz-box-shadow: 3px 3px 3px #cCC;
+	box-shadow: 3px 3px 3px #ccc;
+}
+p {
+	margin: 5px;
+	padding: 0px;
+}
+td a:hover {
+	color: #F00;
+}
+.khbz {
+	border: thin #333 solid;
+	display: inline-block;
+}
+p {
+	text-indent: 0em;
+}
+td {
+	font-size: 12px;
+}
+.hsbg {
+	background-color: #CCC;
+	padding: 2px 5px;
+	margin: 0px 10px;
+}
+.cred a:hover {
+	color: #F00;
+	font-weight:bold;
+}
+.cred a:link {
+	color: #F00;	font-weight:bold;
+}
+.cred a:visited {
+	color: #F00;	font-weight:bold;
+}
+.cred a:active {
+	color: #F00;	font-weight:bold;
+}
