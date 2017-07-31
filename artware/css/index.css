@@ -39,3 +39,7 @@ td {
 .cred a:active {
 	color: #F00;	font-weight:bold;
 }
+
+.bottom a:hover {
+	color: #333;
+}
