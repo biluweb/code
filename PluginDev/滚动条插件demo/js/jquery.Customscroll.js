@@ -234,7 +234,7 @@
                 })
                 return false;
             })
-	    return dirfn;
         }
+	return dirfn;
     }
 })(jQuery);
