@@ -235,7 +235,7 @@
                 return false;
             })
         }
-	//return dirfn;
-	return dft;
+	return dirfn;
+	//return dft;
     }
 })(jQuery);
