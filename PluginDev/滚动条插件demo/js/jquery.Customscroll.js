@@ -3,6 +3,7 @@
 
 ; (function ($) {
     $.fn.Mscrool = function (options) {
+	//返回 dirfn(dir)    dir ='top' || 'bottom';   改变滚动方向
         var dft = {
             //以下为该插件的属性及其默认值
             scrbarHof: '20', //滚动条的高度偏移调整
@@ -137,12 +138,18 @@
 		    var tp,s;
                     tp = BSidebar.height() - bar.height();
 		    s = Bcon.height() + Number(ops.Conwhite);
-		    Bcon.animate({
+		    if (Bcon.height() > BSidebar.height()) {
+                    Bcon.animate({
                         'top': -s
                     }, 'slow');
 		    bar.animate({
                         'top': -tp
                     }, 'slow');	
+
+                } else {
+                    
+                }
+		    
 		}
 	}
 
