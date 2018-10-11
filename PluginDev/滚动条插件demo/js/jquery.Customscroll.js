@@ -122,6 +122,29 @@
                 return false;
             })
         }
+	
+	//滚动条 上下滚动  dir= 'top' ||  'bottom'
+	function dirfn(dir){
+		if(dir=='top'){
+		    Bcon.animate({
+                        'top': 0
+                    }, 'slow');
+		    bar.animate({
+                        'top': 0
+                    }, 'slow');	
+		}
+		if(dir=='bottom'){
+		    var tp,s;
+                    tp = BSidebar.height() - bar.height();
+		    s = Bcon.height() + Number(ops.Conwhite);
+		    Bcon.animate({
+                        'top': -s
+                    }, 'slow');
+		    bar.animate({
+                        'top': -tp
+                    }, 'slow');	
+		}
+	}
 
         function mobileS() {
             var tp = 0,
@@ -211,6 +234,7 @@
                 })
                 return false;
             })
+	    return dirfn;
         }
     }
 })(jQuery);
