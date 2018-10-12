@@ -137,13 +137,13 @@
 		if(dir=='bottom'){
 		    var tp,s;
                     tp = BSidebar.height() - bar.height();
-		    s = Bcon.height() + Number(ops.Conwhite);
-		    if (Bcon.height() > BSidebar.height()) {
+		    s = Bcon.height() + Number(ops.Conwhite) - BSidebar.height();
+		if (Bcon.height() > BSidebar.height()) {
                     Bcon.animate({
                         'top': -s
                     }, 'slow');
 		    bar.animate({
-                        'top': -tp
+                        'top':tp
                     }, 'slow');	
 
                 } else {
