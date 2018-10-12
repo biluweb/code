@@ -138,6 +138,7 @@
 		    var tp,s;
                     tp = BSidebar.height() - bar.height();
 		    s = Bcon.height() + Number(ops.Conwhite) - BSidebar.height();
+		autobarH();
 		if (Bcon.height() > BSidebar.height()) {
                     Bcon.animate({
                         'top': -s
