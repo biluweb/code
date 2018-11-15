@@ -28,7 +28,7 @@
         //PC滚动条事件注册
         _this.bind({
             mouseenter: function () {
-                if (Bcon.height() > BSidebar.height()) {
+                if (Bcon.height() > _this.height()) {
                     autobarH();
                     BSidebar.stop().fadeIn('350');
                     mousefn();
